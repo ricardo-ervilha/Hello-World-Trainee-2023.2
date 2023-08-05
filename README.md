@@ -1,8 +1,8 @@
-# **Trainee 2023.1**
+# **Trainee 2023.2**
 
 # **Nome do seu blog**
 
-## **Projeto Trainee, Code Jr, Grupo 000, 2023.1**
+## **Projeto Trainee, Code Jr, Grupo 000, 2023.2**
 
 | **Sumário** |
 |-------------|
