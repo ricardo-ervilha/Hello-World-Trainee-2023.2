@@ -13,15 +13,15 @@
 
 #### Desenvolvedores:
 
-* Trainee 1
-* Trainee 2
-* Trainee 3
-* Trainee 4
-
+* Paulo Aquino
+* João Paulo
+* Gustavo Duarte
+* João Pedro Daniel
+* Lucas Gonçalves
 
 #### Scrum Master:
 
-* [Ricardo Ervilha Silva](https://github.com/ricardo-ervilha).
+* [Ricardo Ervilha Silva](https://github.com/ricardo-ervilha)
 
 #### Links Úteis:
 
