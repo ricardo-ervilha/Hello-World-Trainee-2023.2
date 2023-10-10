@@ -1,0 +1,378 @@
+html, body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navigation {
+    margin: 0;
+    width: 100%;
+    height: 87px;
+    background-color: #6495ed;
+}
+
+.conteudo {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url(../img/background-2.png);
+}
+
+.header {
+    width: 80%;
+    padding-bottom: 5%;
+    background-color: #C5D8EA;
+    font-family: 'Roboto', sans-serif;
+    margin: auto;
+}
+
+.content {
+    width: 80%;
+    margin: auto;
+}
+
+.img-header {
+    display: inline-block;
+    animation-name: descendo;
+    animation-duration: 2s;
+    vertical-align: top;
+    padding-top: 10%;
+}
+
+.header h1 {
+    color: rgb(54, 53, 53);
+    margin: 0;
+    font-weight: 500;
+    padding-top: 15%;
+    padding-right: 5%;
+    font-size: 40px;
+    width: 60%;
+    display: inline-block;
+
+    animation-name: subindo;
+    animation-duration: 2s;
+}
+
+.logo-h1 {
+    width: 40px;
+    height: 30px;
+    display: inline-block;
+}
+
+.container {
+    width: 80%;
+    background-color: #87ceeb;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: auto;
+}
+
+.bloco {
+    width: 80%;
+    margin: auto;
+    font-weight: 400;
+}
+
+.quadro {
+    background-color: #FFF;
+    width: 95%;
+    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.5);
+
+    animation-name: descendo;
+    animation-duration: 2s;
+}
+
+.topo-quadro {
+    background-color: #6495ed;
+    height: 10%;
+    width: 100%;
+}
+
+.topo-quadro h3 {
+    margin: 0;
+    padding: 1%;
+    color: #FFF;
+    font-weight: 400;
+    display: inline-block;
+}
+
+.fundo-branco {
+    width: 100%;
+    height: 90%;
+    padding: 2%;
+}
+
+.post-left {
+    width: 50%;
+    border-right: 0.5px lightgray solid;
+    display: inline-block;
+}
+
+.text-link {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+    margin: 0;
+    padding: 2%;
+    text-decoration: none;
+    color: black;
+    overflow: hidden;
+}
+
+.text-link:hover{
+    color: #6495ed;
+}
+
+.post-left-1,
+.post-left-2,
+.post-left-3 {
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+.post-right {
+    width: 48%;
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 1%;
+}
+
+.post-right-1,
+.post-right-2 {
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+.image img{
+    width: 100%;
+    height: 100%;
+}
+
+.image {
+    width: 35%;
+    height: 100%;
+    display: inline-block;
+    opacity: 1;
+    padding: 0;
+    margin: 0;
+}
+
+.image:hover {
+    opacity: 0.8;
+}
+
+.footer {
+    background-color: #6495ed;
+    width: 100%;
+    height: 162px;
+}
+
+@keyframes subindo {
+    0% {
+        opacity: 0;
+        transform: translate(0px, 20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes descendo {
+    0% {
+        opacity: 0;
+        transform: translate(0px, -20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0px, 0px);
+    }
+}
+
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------
+Site responsivo
+--------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media (max-width: 1196px) and (min-width: 911px){
+
+    .img-header{
+        width: 200px;
+    }
+
+    .logo-h1{
+        width: 28px;
+        height: 21px;
+    }
+
+    .header h1{
+        font-size: 28px;
+    }
+
+    .topo-quadro h3{
+        font-size: 16px
+    }
+
+    .post-left, 
+    .post-right{
+        display: inline;
+    }
+}
+
+@media (max-width: 910px) and (min-width: 617px){
+
+    .conteudo{
+        background-image: none;
+    }
+
+    .header{
+        width: 100%;
+    }
+
+    .container{
+        width: 100%;
+    }
+
+    .img-header{
+        width: 130px;
+    }
+
+    .logo-h1{
+        width: 24px;
+        height: 18px;
+    }
+
+    .header h1{
+        font-size: 20px;
+    }
+
+    .quadro{
+        width: 80%;
+    }
+
+    .topo-quadro h3{
+        font-size: 16px
+    }
+
+    .post-left, 
+    .post-right{
+        display: inline;
+    }
+}
+
+
+@media (max-width: 616px) and (min-width: 386px){
+
+    .conteudo{
+        background-image: none;
+    }
+
+    .header{
+        width: 100%;
+    }
+
+    .container{
+        width: 100%;
+    }
+
+    .img-header{
+        width: 100px;
+    }
+
+    .logo-h1{
+        width: 20px;
+        height: 15px;
+    }
+
+    .header h1{
+        font-size: 18px;
+    }
+
+    .topo-quadro h3{
+        font-size: 13px
+    }
+
+    .post-left, 
+    .post-right{
+        display: inline;
+        font-size: 10px;
+    }
+
+}
+
+@media (max-width: 385px) and (min-width: 372px){
+
+    .conteudo{
+        background-image: none;
+    }
+
+    .header{
+        width: 100%;
+    }
+
+    .container{
+        width: 100%;
+    }
+
+    .img-header{
+        width: 100px;
+    }
+
+    .logo-h1{
+        width: 20px;
+        height: 15px;
+    }
+    
+    .header h1{
+        font-size: 18px;
+    }
+
+    .topo-quadro h3{
+        font-size: 12px
+    }
+
+    .post-left, 
+    .post-right{
+        display: inline;
+        font-size: 8px;
+    }
+
+}
+
+@media (max-width: 371px){
+
+    .conteudo{
+        background-image: none;
+    }
+
+    .header{
+        width: 100%;
+    }
+
+    .container{
+        width: 100%;
+    }
+
+    .img-header{
+        width: 60px;
+    }
+
+    .logo-h1{
+        width: 16px;
+        height: 12px;
+    }
+    
+    .header h1{
+        font-size: 14px;
+    }
+
+    .topo-quadro h3{
+        font-size: 12px
+    }
+
+    .post-left, 
+    .post-right{
+        display: inline;
+        font-size: 8px;
+    }
+}
