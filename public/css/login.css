@@ -166,130 +166,85 @@ button:hover{
     text-shadow: 2px 2px 2px rgba(255,255,255,0.5);
     transition: 1s;
 }
-/* ------------------------------ Responsividade 1400px ---------------------------*/
-@media(max-width: 1400px){
+
+/* ------------------------------ Responsividade 900px heigth ---------------------------*/
+@media(max-height: 900px){
 
     .tela-login{
-        width: 500px;
-        height: 700px;
-        border-radius: 15px;
-        border: 2px groove white;
-        box-shadow: 5px 5px 10px black;
+        max-height: 300px;
+        margin: 0;
+        padding: 0;
     }
-    /* ----- TEXTO LOGIN ----- */
-    .logo{
-        width: 280px;
-        height: 280px;
-    }
-
-    /* ------------- Div E-mail ----------*/
-    .campo-email{
-        height: 30px;
-        width: 300px;
-    }
-    .campo-email img{
-        width: 30px;
-        height: 30px;
-    }
-    .campo-email input{
-        font-size: 25px;
-        width: 260px;
-        height: 30px;
-    }
-
-    /* --------- Div Senha ----------*/
-    .campo-senha{
-        height: 30px;
-        width: 300px;
-    }
-    .campo-senha img{
-        width: 30px;
-        height: 30px;
-    }
-    .campo-senha input{
-        width: 260px;
-        height: 30px;
-    }   
-
-
-
-}
-
-
-
-/* ------------------------------ Responsividade 500px ---------------------------*/
-@media(max-width: 500px){
-     /* ----- Imagem de Fundo ----- */
-    .container-imagem{
-        display: none;
-    }
-
-    .tela-login{
-        height: 100vh;
-        width: 100vw;
-        background-size: cover;
-        border-radius: 0;
-    }
-
-    /* ----- TEXTO LOGIN ----- */
-    .logo{
-        width: 280px;
-        height: 280px;
-    }
-
-    /* ------------- Div E-mail ----------*/
-    .campo-email{
-        height: 30px;
-        width: 300px;
-    }
-    .campo-email img{
-        width: 30px;
-        height: 30px;
-    }
-    .campo-email input{
-        font-size: 25px;
-        width: 260px;
-        height: 30px;
-    }
-
-    /* --------- Div Senha ----------*/
-    .campo-senha{
-        height: 30px;
-        width: 300px;
-    }
-    .campo-senha img{
-        width: 30px;
-        height: 30px;
-    }
-    .campo-senha input{
-        width: 260px;
-        height: 30px;
-    }   
-}
-
-/* ------------------------------ Responsividade 320px ---------------------------*/
-@media(max-width: 320px){
- 
 
     /* ----- LOGO -----*/
     .logo{
-        width: 250px;
-        height: 250px;
+        width: 280px;
+        height: 280px;
+        float: left;
         position: relative;
-        top: 1%;
+        left: 5%;
+        top: 50%;
+        transform: translate(0, -50%);
     }
     
     /* ----- TEXTO LOGIN -----*/
     .text-login{
-        font-size: 30px;
-        margin-bottom: 30px;
+        font-size: 50px;
+        position: relative;
+        left: 75%;
+        top: -40%;
+        transform: translate(-50%, -50%);
     }
 
-    /* ----- BOTÂO ENTRAR -----*/
+        /* ------------- Div E-mail ----------*/
+    .campo-email{
+        height: 30px;
+        width: 300px;
+
+        position: relative;
+        left: 75%;
+        top: -80%;
+        transform: translate(-50%, -50%);
+    }
+    .campo-email img{
+        width: 30px;
+        height: 30px;
+    }
+    .campo-email input{
+        font-size: 25px;
+        width: 260px;
+        height: 30px;
+    }
+
+    /* --------- Div Senha ----------*/
+    .campo-senha{
+        height: 30px;
+        width: 300px;
+
+        position: relative;
+        left: 75%;
+        top: -75%;
+        transform: translate(-50%, -50%);
+    }
+    .campo-senha img{
+        width: 30px;
+        height: 30px;
+    }
+    .campo-senha input{
+        width: 260px;
+        height: 30px;
+    } 
     button{
         position: relative;
-        top: -5%;
+        left: 75%;
+        top: -60%;
+        transform: translate(-50%, -50%);
     }
 
 }
+    
+
+
+
+
 
