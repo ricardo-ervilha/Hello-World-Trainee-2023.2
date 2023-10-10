@@ -166,10 +166,54 @@ button:hover{
     text-shadow: 2px 2px 2px rgba(255,255,255,0.5);
     transition: 1s;
 }
+/* ------------------------------ Responsividade 1400px ---------------------------*/
+@media(max-width: 1400px){
+
+    .tela-login{
+        width: 500px;
+        height: 700px;
+        border-radius: 15px;
+        border: 2px groove white;
+        box-shadow: 5px 5px 10px black;
+    }
+    /* ----- TEXTO LOGIN ----- */
+    .logo{
+        width: 280px;
+        height: 280px;
+    }
+
+    /* ------------- Div E-mail ----------*/
+    .campo-email{
+        height: 30px;
+        width: 300px;
+    }
+    .campo-email img{
+        width: 30px;
+        height: 30px;
+    }
+    .campo-email input{
+        font-size: 25px;
+        width: 260px;
+        height: 30px;
+    }
+
+    /* --------- Div Senha ----------*/
+    .campo-senha{
+        height: 30px;
+        width: 300px;
+    }
+    .campo-senha img{
+        width: 30px;
+        height: 30px;
+    }
+    .campo-senha input{
+        width: 260px;
+        height: 30px;
+    }   
 
 
 
-
+}
 
 
 
