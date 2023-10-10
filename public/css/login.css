@@ -76,18 +76,16 @@ body{
     position: relative;
     top: 0%;
     left: 50%;
-    transform: translate(-50%, -50%);
-
-     
+    transform: translate(-50%, -50%); 
 }
 .campo-email img{
     width: 60px;
     height: 60px;
+    float: left;
 }
 .campo-email input{
     background-color: transparent;
 
-    float: right;
     height: 60px;
     width: 430px;
     
@@ -104,26 +102,24 @@ body{
 /* ------------------------------ Div Senha ---------------------------*/
 .campo-senha{
     background-color: rgb(166, 198,226,0.6);
-    font-size: large;
-    position: relative;
-    top: 1%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 
     height: 60px;
     width: 500px;
-    border-radius: 10px;  
+    border-radius: 10px; 
 
-   
+    position: relative;
+    top: 1%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
 }
 .campo-senha img{
     width: 60px;
     height: 60px;
+    float: left;
 }
 .campo-senha input{
     background-color: transparent;
 
-    float: right;
     height: 60px;
     width: 430px;
     
@@ -132,7 +128,7 @@ body{
 
     text-align: left;
     font-size: 40px;
-    color: white;
+    color: white;    
 }    
 
 /* ------------------------------ Placeholder ---------------------------*/
@@ -153,7 +149,7 @@ button {
 
 
     position: relative;
-    top: 0;
+    top: 5%;
     left: 50%;
     transform: translate(-50%, -50%);
 
