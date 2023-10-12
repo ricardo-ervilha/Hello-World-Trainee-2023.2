@@ -10,14 +10,8 @@ html, body{
     background-color: #6495ed;
 }
 
-.conteudo {
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-image: url(../assets/background-2.png);
-}
-
 .header {
-    width: 80%;
+    width: 100%;
     padding-bottom: 5%;
     background-color: #C5D8EA;
     font-family: 'Roboto', sans-serif;
@@ -34,17 +28,17 @@ html, body{
     animation-name: descendo;
     animation-duration: 2s;
     vertical-align: top;
-    padding-top: 10%;
+    padding-top: 3%;
 }
 
 .header h1 {
     color: rgb(54, 53, 53);
     margin: 0;
     font-weight: 500;
-    padding-top: 15%;
+    padding-top: 10%;
     padding-right: 5%;
     font-size: 40px;
-    width: 60%;
+    width: 50%;
     display: inline-block;
 
     animation-name: subindo;
@@ -58,7 +52,7 @@ html, body{
 }
 
 .container {
-    width: 80%;
+    width: 100%;
     background-color: #87ceeb;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -196,9 +190,7 @@ Site responsivo
 
 @media (max-width: 1196px) and (min-width: 911px){
 
-    .img-header{
-        width: 200px;
-    }
+   
 
     .logo-h1{
         width: 28px;
@@ -221,21 +213,7 @@ Site responsivo
 
 @media (max-width: 910px) and (min-width: 617px){
 
-    .conteudo{
-        background-image: none;
-    }
-
-    .header{
-        width: 100%;
-    }
-
-    .container{
-        width: 100%;
-    }
-
-    .img-header{
-        width: 130px;
-    }
+    
 
     .logo-h1{
         width: 24px;
@@ -263,21 +241,6 @@ Site responsivo
 
 @media (max-width: 616px) and (min-width: 386px){
 
-    .conteudo{
-        background-image: none;
-    }
-
-    .header{
-        width: 100%;
-    }
-
-    .container{
-        width: 100%;
-    }
-
-    .img-header{
-        width: 100px;
-    }
 
     .logo-h1{
         width: 20px;
@@ -302,21 +265,7 @@ Site responsivo
 
 @media (max-width: 385px) and (min-width: 372px){
 
-    .conteudo{
-        background-image: none;
-    }
-
-    .header{
-        width: 100%;
-    }
-
-    .container{
-        width: 100%;
-    }
-
-    .img-header{
-        width: 100px;
-    }
+   
 
     .logo-h1{
         width: 20px;
@@ -341,21 +290,7 @@ Site responsivo
 
 @media (max-width: 371px){
 
-    .conteudo{
-        background-image: none;
-    }
-
-    .header{
-        width: 100%;
-    }
-
-    .container{
-        width: 100%;
-    }
-
-    .img-header{
-        width: 60px;
-    }
+  
 
     .logo-h1{
         width: 16px;
