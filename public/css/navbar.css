@@ -1,0 +1,172 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif; font-size: 18px;
+}
+
+nav {
+    height: 87px;
+    background-color: #6495ed;
+}
+
+nav div {
+    display: inline-block;
+}
+
+.icon {
+    width: 23.83%;
+    height: 87px;
+}
+
+.icon img {
+    padding-left: 10%;
+    max-height: 87px;
+}
+
+.navigation {
+    height: 87px;
+    width: 41.5%;
+    vertical-align: top;
+}
+
+.navigation ul {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.navigation li {
+    list-style: none;
+    display: inline-block;
+    line-height: 87px;
+    padding-left: 10%;
+    padding-right: 10%;
+    
+}
+
+.navigation li a {
+    text-decoration: none;
+    color: white;
+}
+
+.navigation li a:hover {
+    color: black;
+}
+
+.navigation li.threeline{
+    display: none;
+}
+
+.navigation li.threeline:hover {
+    cursor: pointer;
+}
+
+.botton {
+    height: 87px;
+    width: 34%;
+    vertical-align: top;
+    line-height: 87px;
+    text-align: right;
+}
+
+.botton a.entrar{
+    padding-right: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.botton a.entrar:hover{
+    color: black;
+}
+
+.criar {
+    margin-right: 10%;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 18px;
+    background-color: #5088ED;
+    color: white;
+}
+
+.criar a {
+    text-decoration: none;
+    text-align: center;
+}
+
+.criar:hover {
+    background-color: #3266c7;
+}
+
+.navmobile {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+
+    .navigation {
+        width: 5%;
+    }
+
+    .navigation ul {
+        text-align: left;
+    }
+    
+    .navigation li {
+        display: none;
+    }
+    
+    .navigation li.threeline {
+        display: inline-block;
+        line-height: 50px;
+        margin-top: 18.5px;
+        border-left-style: solid;
+        border-left-width: thin;
+        padding-left: 60%;
+    }
+
+    .icon {
+        width: 105px;  
+    }
+
+    .botton {
+        width: 55%;
+        margin-left: 15%;
+    }
+
+    .criar{
+        margin-right: 0;
+    }
+
+    .navjs {
+        display: block;
+        background-color: #6495ed;
+        height: auto;
+        width: 100%;
+    }
+
+    .navjs ul {
+        margin: 0;
+        padding-bottom: 15px;
+    }
+
+    .navjs li {
+        list-style: none;
+        line-height: 50px;
+    }
+
+    .navjs a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .navjs a:hover {
+        color: black;
+    }
+
+}
