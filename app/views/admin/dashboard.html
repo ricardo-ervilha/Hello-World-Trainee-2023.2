@@ -9,40 +9,64 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../../public/css/dashboard.css">
     <title>Dashboard</title>
+
+    <script>
+
+function mostrarLista(){
+
+    var x = document.getElementById("lista");
+
+    if(x.className === "lista-hidden"){
+        x.className = "show";
+    } else{
+        x.className = "lista-hidden";
+    }
+}
+
+    </script>
 </head>
 
 <body>
-    <div class="navbar">
-        <p> &nabla;</p>
-        <img src="../../../public/assets/foto-usuario.png">
-    </div>
-
     <div class="content">
-        <h1>Bem-vindo de volta, João!</h1>
+        <h1>Bem-vindo de volta, admin!</h1>
 
         <div class="cards-superior">
-            <div class="card"> <img src="../../../public/assets/info-usuarios.png">
+            <button class="card"> <img src="../../../public/assets/info-usuarios.png">
                 <p><span style="font-size: 28px;">50</span> <br> Users</p>
-            </div>
-            <div class="card"> <img src="../../../public/assets/info-publi.png">
+            </button>
+            <button class="card"> <img src="../../../public/assets/info-publi.png">
                 <p><span style="font-size: 28px;">200</span> <br> Posts </p>
-            </div>
-            <div class="card"> <img src="../../../public/assets/info-avaliacoes.png">
+            </button>
+            <button class="card"> <img src="../../../public/assets/info-avaliacoes.png">
                 <p><span style="font-size: 28px;">100</span> <br> Avaliações </p>
-            </div>
+            </button>
 
         </div>
 
         <div class="cards-inferior">
 
-            <div class="card"> <img src="../../../public/assets/editar-usuario.png">
+            <button class="card">
+                <img src="../../../public/assets/editar-usuario.png">
                 <p>Gerenciar <br>usuários</p>
-            </div>
-            <div class="card"> <img src="../../../public/assets/editar-post.png">
+            </button>
+            <button class="card"> <img src="../../../public/assets/editar-post.png">
                 <p>Gerenciar<br> Posts </p>
-            </div>
+            </button>
 
         </div>
+    </div>
+
+    <div class="content-right">
+
+        <div class="logout">
+            <p id="seta" onclick="mostrarLista()">	&nabla;</p>
+            <button onclick="mostrarLista()"><img src="../../../public/assets/foto-usuario.png"></button>
+            <ul id="lista" class="lista-hidden">
+                <li><a>Trocar usuário</a></li>
+                <li><a>Sair</a></li>
+            </ul>
+        </div>
+
     </div>
 </body>
 

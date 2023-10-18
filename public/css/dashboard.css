@@ -9,35 +9,77 @@ body{
     width: 100%;
 }
 
-.navbar {
-    margin: 0;
-    width: 100%;
-    height: 10%;
-    background-color: #6495ed;
-    justify-content: center;
-    text-align: right;
-}
-
-.navbar p{
-    margin: 0;
+.content-right{
     display: inline-block;
     vertical-align: top;
-    padding-top: 2%;
+    width: 29%;
+    height: 100%;
+    padding-top: 4%;
+    margin: 0;
 }
 
-.navbar img{
-    height: 60%;
+.logout{
+    padding-left: 30%;   
+}
+
+.logout p {
+    display: inline-block;    
+    margin: 0;
+}
+.logout p:hover {
+    display: inline-block;    
+    cursor: pointer;
+}
+
+.logout button{
     display: inline-block;
-    padding: 1% 1% 1% 0.75%;
+    width: 26%;
+    height: 100%; 
+    background-color: #FFF;
+    border: none;
+}
+
+.logout button:hover{
+    cursor: pointer;
+}
+
+.logout button img{
+    width: 100%;
+}
+
+.lista-hidden{
+    display: none;
+}
+
+.show{
+    list-style: none;
+    line-height: 45px;
+    width: 45%;
+    background-color:  #5cacee;
+    padding: 0;
+}
+
+.logout ul li{
+    width: 100%;
+    text-align: center;
+}
+
+.logout ul li:hover{
+    background-color: #2794ee;
+    cursor: pointer;
 }
 
 .content{
-    height: 90%;
+    height: 100%;
+    width: 70%;
+    display: inline-block;
+    margin: 0;
+    padding-top: 4%;
 }
 
 .content h1{
     font-weight: 400;
-    padding: 2% 2%  2%;
+    padding-left: 2%;
 }
 
 .cards-superior{
@@ -53,12 +95,20 @@ body{
 .card{
     background-color: rgb(224, 223, 223);
     height: 100%;
-    width: 20%;
+    width: 25%;
     margin: 3%;
     display: inline-block;
     vertical-align: top;
     text-align: center;
     border-radius: 10px;
+}
+
+.card:hover{
+    opacity: 0.8;
+}
+
+.card p:hover{
+    color: #5cacee;
 }
 
 .card img{
