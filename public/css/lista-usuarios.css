@@ -9,7 +9,7 @@ body{
     height: 90vh;
     margin: 0 auto;
     padding: 20px;
-    background-color: rgba(166, 198, 226, 0.5);
+    background-color: rgba(166, 198, 226,0.5);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
 }
@@ -21,19 +21,45 @@ h1{
     background-color: #6495ED;
     border-radius: 5px;
     border: 1px solid white;
+    margin-bottom: 0;
 }
 
-.botao-add img{
-    width: 45px;
-    height: 45px;
+.new-user{
+    display: inline-block;
+    margin: 10px 0px 10px 0;
+    
+    background-color: #6495ED;
+    border: 1px solid white;
+
+    width:max-content ;
+    height: max-content;
+
 }
 
+
+.new-user img{
+    
+    width: 50px;
+    height: 50px;
+    float: left;
+
+}
+
+.new-user h2{
+    width: 70px;
+    margin: 7px 0 0 55px;
+
+    color: white;
+    font-size: medium;
+}
 
 
 table{
     width: 100%;
     border-collapse: collapse;
-    border: 1px solid white;;
+    border: 1px solid white;
+    
+    
 }
 
 th{
@@ -43,9 +69,7 @@ th{
     border-bottom: 1px solid white;
 }
 
-.acoes{
- text-align: center;
-}
+
 
 td{
     padding: 10px;
@@ -59,6 +83,8 @@ td{
     height: 25px;
 }
 
+
+
 button{
     padding-left: 0;
     background: none;
@@ -69,6 +95,8 @@ button{
 button:hover{
     opacity:0.5;
 }
+
+
 
 @media (max-width: 600px){
     .container {
@@ -104,4 +132,9 @@ button:hover{
       .tabela tbody tr{
         display: inline-block;
       }
+}
+
+@media (max-width: 400px){
+
+
 }
