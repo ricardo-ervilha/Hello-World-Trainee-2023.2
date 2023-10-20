@@ -12,14 +12,11 @@ body {
 nav {
     height: 87px;
     background-color: #6495ed;
-}
-
-nav div {
-    display: inline-block;
-}
+    display: grid;
+    grid-template-columns: 23.83% 41.01% 35.16%;
+} 
 
 .icon {
-    width: 23.83%;
     height: 87px;
 }
 
@@ -30,23 +27,30 @@ nav div {
 
 .navigation {
     height: 87px;
-    width: 41.5%;
     vertical-align: top;
+    display: flex;
+    width: 100%;
 }
 
 .navigation ul {
     padding: 0;
     margin: 0;
     text-align: center;
+    width: 100%;
 }
 
 .navigation li {
     list-style: none;
     display: inline-block;
     line-height: 87px;
-    padding-left: 10%;
-    padding-right: 10%;
-    
+}
+
+.navigation .home{
+    padding-right: 30%;
+}
+
+.navigation .posts{
+    padding-right: 30%;
 }
 
 .navigation li a {
@@ -68,7 +72,6 @@ nav div {
 
 .botton {
     height: 87px;
-    width: 34%;
     vertical-align: top;
     line-height: 87px;
     text-align: right;
@@ -92,6 +95,7 @@ nav div {
     font-size: 18px;
     background-color: #5088ED;
     color: white;
+    box-shadow: 2px 2px 1px #303030;
 }
 
 .criar a {
@@ -107,11 +111,23 @@ nav div {
     display: none;
 }
 
+
+@media (max-width: 1500px) {
+    .navigation .home{
+        padding-right: 21%;
+    }
+    
+    .navigation .posts{
+        padding-right: 21%;
+    
+} 
+
+
 @media (max-width: 1000px) {
 
-    .navigation {
-        width: 5%;
-    }
+    nav {
+        grid-template-columns: 20% 18.71% 61.29%;
+    } 
 
     .navigation ul {
         text-align: left;
@@ -127,16 +143,13 @@ nav div {
         margin-top: 18.5px;
         border-left-style: solid;
         border-left-width: thin;
-        padding-left: 60%;
+        padding-left: 15%;
     }
 
-    .icon {
-        width: 105px;  
-    }
+    
 
     .botton {
-        width: 55%;
-        margin-left: 15%;
+        padding-right: 6%;
     }
 
     .criar{
