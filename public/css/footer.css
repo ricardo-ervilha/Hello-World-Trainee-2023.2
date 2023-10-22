@@ -12,17 +12,15 @@ body {
 footer {
     height: 162px;
     background-color: #6495ed;
-    padding-left: 4.16%;
-    padding-right: 7.5%;
-}
-
-footer div {
-    display: inline-block;
+    display: grid;
+    grid-template-columns: 21.4% 21% 21% 36.6%;
 }
 
 .icone {
     height: 162px;
+    padding-left: 13.95%;
     padding-right: 19%;
+
 }
 
 .icone img {
@@ -31,12 +29,13 @@ footer div {
 
 .sobre_nos {
     vertical-align: top;
-    padding-right: 19%;
+    padding-left: 30%;
+    padding-right: 15%;
 }
 
 .sobre_nos h3 {
     margin: 0;
-    padding-top: 47px;
+    padding-top: 40px;
     padding-bottom: 7px;
 }
 
@@ -48,6 +47,7 @@ footer div {
 
 .sobre_nos li {
     display: inline-block;
+    font-size: 16px;
 }
 
 .sobre_nos li a {
@@ -61,12 +61,13 @@ footer div {
 
 .duvidas {
     vertical-align: top;
-    padding-right: 19%;
+    padding-left: 40%;
+    padding-right: 15%;
 }
 
 .duvidas h3 {
     margin: 0;
-    padding-top: 47px;
+    padding-top: 40px;
     padding-bottom: 7px;
 }
 
@@ -78,6 +79,7 @@ footer div {
 
 .duvidas li {
     display: inline-block;
+    font-size: 16px;
 }
 
 .duvidas li a {
@@ -95,6 +97,8 @@ hr {
 
 .redes_sociais {
     vertical-align: top;
+    text-align: right;
+    padding-right: 19.43%;
 }
 
 .redes_sociais h3 {
@@ -107,6 +111,7 @@ hr {
     list-style: none;
     padding: 0;
     margin: 0;
+    padding-right: 2.5%;
 }
 
 .redes_sociais li {
@@ -117,15 +122,18 @@ hr {
 @media (max-width: 1000px) {
     footer {
         height: 276px;
-        background-color: #6495ed;
-        padding-left: 0;
-        padding-right: 0;
-        text-align: center;
+        display: grid;
+        grid-template-columns: 33.33% 33.33% 33.33%;
+        grid-template-rows: 49% 1% 49%;
+        grid-template-areas: "um dois tres"
+        "quatro quatro quatro"
+        "cinco cinco cinco";
     }
 
     .icone {
         padding-right: 5%;
         height: 132px;
+        grid-area: um;
     }
 
     .icone img {
@@ -133,44 +141,62 @@ hr {
     }
 
     .sobre_nos {
-        padding-left: 5%;
+        height: 132px;
+        padding-left: 10%;
         padding-right: 0;
         text-align: left;
+        grid-area: dois;
     }
 
     .sobre_nos h3 {
         padding-top: 40px;
     }
 
+    .sobre_nos li {
+        font-size: 14px;
+    }
+
     .duvidas {
+        height: 132px;
         vertical-align: top;
-        padding-left: 5%;
-        padding-right: 5%;
+        padding-left: 10%;
+        padding-right: 0;
         text-align: left;
+        grid-area: tres;
     }
 
     .duvidas h3 {
         padding-top: 40px;
     }
 
+    .duvidas li {
+        font-size: 14px;
+    }
+
     hr {
         display: block;
         width: 90%;
+        height: 2px;
         margin-top: 0;
         margin-bottom: 0;
-        border: 0.5px solid black;
+        grid-area: quatro;
+        background-color: black;
+        border: none;
     }
 
     .redes_sociais {
         width: 100%;
         display: inline-block;
         padding-top: 15px;
+        grid-area: cinco;
+        text-align: center;
     }
 
     .redes_sociais h3 {
         display: inline-block;
         margin-top: 13px;
         padding-right: 5%;
+        padding-left: 3%;
         padding-top: 30px;
         vertical-align: top;
     }
@@ -178,5 +204,24 @@ hr {
     .redes_sociais ul {
         display: inline-block;
         padding-top: 30px;
+    }
+}
+
+@media (max-width: 650px) {
+    .redes_sociais h3 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 600px) {
+    .redes_sociais h3 {
+        font-size: 16px;
+        padding-top: 15px;
+        margin-top: 0;
+    }
+
+    .redes_sociais ul {
+        display: block;
+        padding-top: 5px;
     }
 }

@@ -80,11 +80,11 @@ nav {
 .botton a.entrar{
     padding-right: 10px;
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 .botton a.entrar:hover{
-    color: black;
+    text-decoration: underline;
 }
 
 .criar {
@@ -94,7 +94,7 @@ nav {
     border-radius: 10px;
     font-size: 18px;
     background-color: #5088ED;
-    color: white;
+    color: black;
     box-shadow: 2px 2px 1px #303030;
 }
 
