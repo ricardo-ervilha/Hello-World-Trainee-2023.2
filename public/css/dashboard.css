@@ -1,16 +1,107 @@
-html{
-    height: 100%;
-}
 
-body{
+body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    height: 100%;
-    width: 100%;
     background-color: #87ceeb;
+    text-align: center;
 }
 
-.content-right{
+.topo {
+    display: inline-block;
+    width: 100%;
+    padding-top: 2%;
+}
+
+.topo h1 {
+    font-weight: 400;
+    font-size: 30px;
+    display: inline-block;
+    margin: 0;
+    width: 69%;
+}
+
+.logout {
+    display: inline-block;
+    width: 30%;
+    text-align: left;
+}
+
+.logout p {
+    display: inline-block;
+    margin: 0;
+}
+
+.logout p:hover {
+    cursor: pointer;
+    color: #FFF;
+}
+
+.logout button {
+    display: inline-block;
+    width: 90px;
+    height: 30px;
+    background-color: #87ceeb;
+    border: none;
+}
+
+.logout button:hover {
+    cursor: pointer;
+}
+
+.logout button img {
+    width: 100%;
+}
+
+.lista-hidden {
+    display: none;
+}
+
+.show {
+    list-style: none;
+    line-height: 45px;
+    width: 115px;
+    background-color: #5cacee;
+    color: #FFF;
+    padding: 0;
+    position: absolute;
+    border: 1px solid black;
+}
+
+.logout ul li {
+    width: 100%;
+    text-align: center;
+}
+
+.logout ul li:hover {
+    background-color: #2794ee;
+    cursor: pointer;
+}
+
+.card {
+    background-color: rgb(224, 223, 223);
+    height: 250px;
+    width: 300px;
+    margin: 5% 1% 1% 1%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.card:hover {
+    opacity: 0.8;
+}
+
+.card p:hover {
+    color: #5cacee;
+}
+
+.card img {
+    width: 50%;
+    padding-top: 5%;
+}
+
+.content-right {
     display: inline-block;
     vertical-align: top;
     width: 29%;
@@ -19,113 +110,29 @@ body{
     margin: 0;
 }
 
-.logout{
-    padding-left: 30%;   
-}
+@media (max-width: 400px) {
 
-.logout p {
-    display: inline-block;    
-    margin: 0;
-    
-}
-.logout p:hover {
-    display: inline-block;    
-    cursor: pointer;
-    color: #FFF;
-}
+    .topo h1{
+        font-size: 24px;
+        text-align: left;
+    }
 
-.logout button{
-    display: inline-block;
-    width: 70px;
-    position: absolute;
-    height: 10%;
-    background-color: #87ceeb;
-    border: none;
-}
+    .topo h1{
+        width: 50%;
+    }
 
-.logout button:hover{
-    cursor: pointer;
-}
+    .logout{
+        width: 30%;
+    }
 
-.logout button img{
-    width: 100%;
-}
-
-.lista-hidden{
-    display: none;
-}
-
-.show{
-    list-style: none;
-    line-height: 45px;
-    width: 45%;
-    background-color:  #5cacee;
-    color: #FFF;
-    padding: 0;
-}
-
-.logout ul li{
-    width: 100%;
-    text-align: center;
-}
-
-.logout ul li:hover{
-    background-color: #2794ee;
-    cursor: pointer;
-}
-
-.content{
-    height: 100%;
-    width: 70%;
-    display: inline-block;
-    margin: 0;
-    padding-top: 4%;
-}
-
-.content h1{
-    font-weight: 400;
-    padding-left: 2%;
-    font-size: 30px;
-}
-
-.bloco-cards{
-    height: 30%;
-    width: 100%;
-    margin-bottom: 3%;
-}
-
-.card{
-    background-color: rgb(224, 223, 223);
-    height: 100%;
-    width: 300px;
-    margin: 3%;
-    display: inline-block;
-    vertical-align: top;
-    text-align: center;
-    border-radius: 10px;
-}
-
-.card:hover{
-    opacity: 0.8;
-}
-
-.card p:hover{
-    color: #5cacee;
-}
-
-.card img{
-    height: 50%;
-    padding-top: 5%;
-}
-
-@media (max-width: 1000px) {
+    .logout button{
+        width: 60px;
+        height: 20px;
+    }
 
     .card{
-        width: 400px;
+        height: 170px;
+        width: 200px;
     }
-    .logout button{
-        position: absolute;
-        height: 10%;
 
-        }
 }
