@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal Delete</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../../public/css/modal_delete.css">
+</head>
+
+<body>
+    <button onclick="document.getElementById('id01').style.display='block'">Open Modal</button>
+
+    <div id="id01" class="modal">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close"
+            title="Close Modal">&times;</span>
+        <form class="modal-content" action="/action_page.php">
+            <div class="container">
+                <img src="../../../public/assets/Delete-Bin-Trash.png">
+                <h2>Tem certeza?</h2>
+
+                <div class="clearfix">
+                    <button type="button" class="cancelbtn">Cancelar</button>
+                    <button type="button" class="deletebtn">Excluir</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+<script src="../../../public/js/modal_delete.js"></script>
+</html>
