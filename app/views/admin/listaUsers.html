@@ -6,7 +6,7 @@
 
 		<meta charset="utf-8">
 		<title>Usuários - Hello World</title>
-		<link rel="stylesheet" href="../../../public/css/lista-usuarios.css">
+		<link rel="stylesheet" href="../../../public/css/listaUsers.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -16,13 +16,18 @@
 
 	<body>
 		<div class="container">
+
 			<h1>Lista de Usuários</h1>
+
 			<div class="new-user">
-					<button>
+					<button id="add-user">
 						<div class="button-new user"><img src="../../../public/assets/icon-add.png"></div>
 						<div class="text-new-user"><h2>Novo Usuário</h2></div>
 					</button>
 			</div>
+
+			<div class="div-tabela">
+
 				<table class="tabela">
 					<thead>
 						<tr class="cabeçalho">
@@ -81,6 +86,49 @@
 						</tr>
 					</tbody>
 				</table>
+
+			</div>
+		
 		</div>
+
+<!-- --------------------------MODAL------------------------- -->
+
+		<div class="modal" id="modal">
+			<div class="modal-content">
+				<span class="close">X</span>
+				<div class="modal-head">
+					<h1> Novo Usuário</h1>
+				</div>
+
+				<div class="content-body">
+					<div class="name">
+						<h2>Nome Completo</h2>       
+						<input class="campo-first-name" type="text" placeholder="Primeiro nome">
+						<input class="campo-last-name" type="text" placeholder="Segundo nome">
+					</div>
+					<div class="campo-phone">
+						<h2>Telefone</h2>
+						<input type="tel" placeholder="(XX) XXXX-XXXX">
+					</div>
+
+					<div class="div-email-senha">
+						<div class="campo-email" >
+							<h2>E-mail</h2>
+							<input type="email">
+						</div>
+
+						<div class="campo-senha">
+							<h2>Senha</h2>
+							<input type="password">
+						</div>
+					</div>
+
+					<button class="button-cadastrar">Cadastrar</button>
+				</div>
+
+			</div>
+		</div>
+
+	<script src="../../../public/js/modalNewUser.js"></script>
 	</body>
 </html>

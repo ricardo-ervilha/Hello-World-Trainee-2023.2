@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<meta charset="utf-8">
+        <link rel="stylesheet" href="../../../public/css/modalNewPost.css">
+		<title>Novo Post</title>
+	</head>
+
+	<body>
+        <div>
+            <h1>Modal Novo Post</h1>
+            <button class="open-modal" id="open-modal">Abrir</button>
+        </div>
+
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <span class="close">X</span>
+                <div class="modal-head">
+                    <h1>Novo Post</h1>
+                </div>
+                <div class="content-body">
+                    <div class="div-title">
+                        <h2>Título</h2>       
+                        <input class="campo-titulo" type="textarea" placeholder="Título do seu novo post">
+                    </div>
+
+                    <div class="div-conteudo">
+                            <h2>Conteúdo</h2>
+                            <textarea>Digite aqui o seu post</textarea>
+                    </div>
+
+                    <div class="div-image">
+                        <h2>Imagem</h2>
+                        <input type="image">
+                    </div>
+
+                    <div class="div-date">
+                        <h2>Data de Criação</h2>
+                        <input type="date">
+                    </div>
+
+                    <div class="div-autor">
+                        <h2>Autor</h2>
+                        <input type="text" placeholder="Nome do Autor">
+                    </div>
+
+                    <button class="button-postar">Postar</button>
+                </div>
+            </div>
+        </div>    
+
+    <script src="../../../public/js/modalNewPost.js"></script>
+    </body>
+</html>
+

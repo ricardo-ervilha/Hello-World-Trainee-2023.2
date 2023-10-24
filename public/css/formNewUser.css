@@ -1,0 +1,99 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: rgba(166, 198, 226,0.5);
+    color: white;
+}
+
+.container{
+    background-color: rgba(103, 149, 237);
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 500px;
+    height: 600px;
+    border-radius: 15px;
+    border: 2px solid white;
+    padding: 0 20px 20px 20px;
+}
+
+.dados{
+     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+h1{
+    text-align: center;
+    font-size: 80px;
+    text-shadow: 5px 5px 2px rgba(0,0,0,0.8);
+}
+
+h2{
+    font-size: 30px;
+    margin-bottom: 5px;
+    text-shadow: 2px 2px 1px rgba(0,0,0,0.8);
+}
+
+input{
+    background-color: rgb(166, 198,226,0.6);
+
+    height: 30px;
+    width: 200px;
+    border-radius: 10px; 
+    border: 1px solid white;
+    outline: 0;
+    color: white;
+    font-size: 20px;
+}
+
+input::placeholder{
+    color: white;
+    opacity: 0.5;
+}
+
+.email-senha{
+    display: inline-flex;
+}
+
+.campo-email{
+    width: max-content;
+ 
+}
+
+.campo-senha{
+    width: max-content;
+    margin-left: 5px;
+}
+
+
+
+button {
+    width: 200px;
+    height: 60px;
+    background-color: rgb(166, 198,226,0.8);
+    border-radius: 5px;
+    border: 2px solid white;;
+
+    font-size: 40px;
+    color: white;
+    
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    text-align: center;
+    text-shadow: 3px 3px 3px black;  
+    transition: 1s;
+}
+
+button:hover{
+    
+    cursor: pointer;
+    box-shadow: inset 0px -1px 5px rgba(255,255,255,1);
+    text-shadow: 2px 2px 2px rgba(255,255,255,0.5);
+    transition: 1s;
+}

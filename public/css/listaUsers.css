@@ -1,0 +1,234 @@
+body{
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto', sans-serif;
+    font-size:30px;
+}
+
+ /* ----- Fundo da lista ------ */
+.container {
+
+    max-width: 100%;
+    height: 95vh;
+    margin: 0;
+    padding: 20px;
+    background-color: rgba(166, 198, 226,0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+
+.container h1{
+    font-size:200%;
+    text-shadow: 5px 5px 2px rgba(0,0,0,0.8);
+    color: white;
+    padding: 15px;
+    text-align: center;
+    background-color: #6495ED;
+    border-radius: 5px;
+    border: 1px solid white;
+    margin-bottom: 0;
+}
+
+/* ------------ div do Botão "Novo Usuário" ----------*/
+.new-user{
+    display: inline-block;
+    margin: 10px 0px 10px 0;
+    
+    background-color: #6495ED;
+    border: 1px solid white;
+
+    width:fit-content ;
+    height: fit-content;
+}
+
+.new-user img{
+
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+
+.new-user h2{
+    width: 70px;
+    margin: 7px 0 0 55px;
+
+    color: white;
+    font-size: medium;
+    text-shadow: 2px 2px 1px rgba(0,0,0,0.8);
+}
+
+/* ---------Tabela---------- */
+table{
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid white;
+}
+/* --------Cabeçalhos-------- */
+th{
+    font-size: 120%;
+    background-color: #6495ED;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid white;
+    text-shadow: 2px 2px 1px rgba(0,0,0,0.8);
+}
+
+/* ---------------Conteúdo------------ */
+td{
+    padding: 10px;
+    text-align: center;
+    color: black;
+    border-bottom: 1px solid white;
+}
+
+/* --------------Ícones Ações-------------- */
+.tabela img{
+    width: 25px;
+    height: 25px;
+}
+
+
+/* -----------------Botões-------------- */
+button{
+    padding-left: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.container button:hover{
+    opacity:0.5;
+}
+
+/* ------------------------MODAL---------------------------- */
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 2;
+    left:0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+
+.modal-content{
+    background-color: rgba(103, 149, 237);
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width:25%;
+    max-width: 450px;
+    min-width: min-content;
+    height: min-content;
+    max-height: 90%;
+    border-radius: 15px;
+    border: 2px solid white;
+    padding: 0 20px 20px 20px;
+
+    text-align: center;
+    overflow-y: auto;
+}
+
+/* ------------------------------------FECHAR MODAL--------------------------- */
+.close{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    border: 2px solid white;
+    background-color: #6495ED;
+    font-size: 15px;
+}
+
+.close:hover{
+    cursor: pointer;
+}
+
+/* ------------------------------------CABEÇALHO MODAL--------------------------- */
+.modal-head{
+    margin: 0 auto;
+    width: min-content;
+}
+.modal-head h1{
+    font-size: 250%;
+    text-shadow: 5px 5px 2px rgba(0,0,0,0.8);
+}
+
+/* ------------------------------------CAMPOS--------------------------- */
+.content-body{
+    width: min-content;
+    text-align: left;
+    margin: 0 auto;
+}
+.content-body h2{
+    font-size: 80%;
+    text-shadow: 2px 2px 1px rgba(0,0,0,0.8);
+    margin-bottom: 0;
+}
+
+.content-body input{
+    background-color: rgb(166, 198,226,0.6);
+    height: 30px;
+    width: 200px;
+    border-radius: 10px; 
+    border: 1px solid white;
+    outline: 0;
+    color: white;
+}
+
+
+.content-body input::placeholder{
+    color: white;
+    opacity: 0.5;
+}
+
+
+/* ------------------------------------BOTÃO CADASTRAR--------------------------- */
+.button-cadastrar{
+    width: 200px;
+    background-color: rgb(166, 198,226,0.8);
+    border-radius: 5px;
+    border: 2px solid white;;
+
+    font-size: 120%;
+    color: white;
+
+    position: relative;
+    margin-top: 25%;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    text-align: center;
+    text-shadow: 3px 3px 3px black;  
+    transition: 1s;
+}
+
+.button-cadastrar:hover{
+        cursor: pointer;
+        box-shadow: inset 0px -1px 5px rgba(255,255,255,1);
+        text-shadow: 2px 2px 2px rgba(255,255,255,0.5);
+        transition: 1s;
+    }
+
+
+
+/* ------------------------------------RESPONSIVIDADE--------------------------- */
+@media(max-height: 500px){
+
+    .modal-content{
+   
+
+        height: 90%;
+    }
+
+    
+}
+
