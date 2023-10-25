@@ -123,7 +123,7 @@ button{
     transform: translate(-50%, -50%);
 
     width:25%;
-    max-width: 450px;
+    
     min-width: min-content;
     height: min-content;
     max-height: 90%;
@@ -132,7 +132,9 @@ button{
     padding: 0 20px 20px 20px;
 
     text-align: center;
-    overflow-y: auto;
+    /* overflow-y: auto; */
+
+    
 }
 
 /* ------------------------------------FECHAR MODAL--------------------------- */
@@ -192,7 +194,11 @@ button{
 
 
 /* ------------------------------------BOTÃO CADASTRAR--------------------------- */
-.button-cadastrar{
+.cadastrar{
+    justify-self: center;
+    width: min-content;
+}
+.cadastrar button{
     width: 200px;
     background-color: rgb(166, 198,226,0.8);
     border-radius: 5px;
@@ -202,7 +208,7 @@ button{
     color: white;
 
     position: relative;
-    margin-top: 25%;
+    margin-top: 20%;
     left: 50%;
     transform: translate(-50%, 0);
 
@@ -211,7 +217,7 @@ button{
     transition: 1s;
 }
 
-.button-cadastrar:hover{
+.cadastrar button:hover{
         cursor: pointer;
         box-shadow: inset 0px -1px 5px rgba(255,255,255,1);
         text-shadow: 2px 2px 2px rgba(255,255,255,0.5);
@@ -221,14 +227,52 @@ button{
 
 
 /* ------------------------------------RESPONSIVIDADE--------------------------- */
-@media(max-height: 500px){
-
-    .modal-content{
-   
-
-        height: 90%;
+@media(max-height: 900px){
+    .modal-head{
+        width: max-content;
+        height: min-content;
     }
 
-    
+    .modal-content{
+        width: 60vw;
+        display: block;
+    }
+
+    .content-body{
+        width: 100%;
+        display: grid;
+ 
+        grid-template-areas:
+        'name phone email senha'
+        'cadastrar cadastrar cadastrar cadastrar';
+        gap: 5px;
+    }
+
 }
 
+@media(max-height: 400px){
+    .modal-content{
+        overflow: auto;
+    }
+}
+
+
+#name{
+    grid-area: name; 
+}
+
+#phone{
+    grid-area: phone;
+}
+
+#email{
+    grid-area: email;
+}
+
+#senha{
+    grid-area: senha;
+}
+
+#cadastrar{
+    grid-area: cadastrar;
+}

@@ -96,34 +96,35 @@
 		<div class="modal" id="modal">
 			<div class="modal-content">
 				<span class="close">X</span>
-				<div class="modal-head">
+				<div class="modal-head" id="cabecalho">
 					<h1> Novo Usuário</h1>
 				</div>
 
 				<div class="content-body">
-					<div class="name">
+					<div class="name" id="name">
 						<h2>Nome Completo</h2>       
 						<input class="campo-first-name" type="text" placeholder="Primeiro nome">
 						<input class="campo-last-name" type="text" placeholder="Segundo nome">
 					</div>
-					<div class="campo-phone">
+					
+					<div class="campo-phone" id="phone">
 						<h2>Telefone</h2>
 						<input type="tel" placeholder="(XX) XXXX-XXXX">
 					</div>
 
-					<div class="div-email-senha">
-						<div class="campo-email" >
-							<h2>E-mail</h2>
-							<input type="email">
-						</div>
-
-						<div class="campo-senha">
-							<h2>Senha</h2>
-							<input type="password">
-						</div>
+					<div class="campo-email" id="email">
+						<h2>E-mail</h2>
+						<input type="email">
 					</div>
 
-					<button class="button-cadastrar">Cadastrar</button>
+					<div class="campo-senha" id="senha">
+						<h2>Senha</h2>
+						<input type="password">
+					</div>
+
+					<div  class="cadastrar" id="cadastrar">
+						<button>Cadastrar</button>
+					</div>
 				</div>
 
 			</div>
