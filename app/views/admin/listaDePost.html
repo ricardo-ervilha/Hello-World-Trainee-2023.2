@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../public/css/listaDePostAdmin.css">
+    <script src="../../../public/js/listaDePostAdmin.js"></script>
+    <title>Lista de Post</title>
+</head>
+<body>
+    <div class="tabela-main">
+        <h1>Lista de Posts</h1>
+
+        <!-- Botão para criar um novo post -->
+        <button id="createPost">Criar Post</button>
+    
+        <!-- Tabela de posts -->
+        <table id="postTable">
+            <thead>
+                <tr>
+                    <th>Título</th>
+                    <th>Conteúdo</th>
+                    <th>Usuário</th>
+                    <th>Data de Modificação</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Os posts serão adicionados aqui -->
+            </tbody>
+        </table>
+    
+        <!-- Formulário para criar/editar um post (inicialmente oculto) -->
+        <div id="postForm" style="display: none;">
+            <h2>Post</h2>
+            <form id="postForm">
+                <label for="title">Título:</label>
+                <input type="text" id="title" required>
+                <label for="content">Conteúdo:</label>
+                <textarea id="content" required></textarea>
+                <button id="savePost">Salvar</button>
+                <button id="cancelPost">Cancelar</button>
+            </form>
+        </div>
+    
+        <!-- Confirmação de exclusão (inicialmente oculta) -->
+        <div id="confirmDelete" style="display: none;">
+            <p>Tem certeza de que deseja excluir este post?</p>
+            <button id="deleteYes">Sim</button>
+            <button id="deleteNo">Não</button>
+        </div>
+        
+    </div>
+</body>
+</html>
