@@ -6,37 +6,42 @@ html, body {
 }
 
 body {
-    font-family: 'Roboto', sans-serif; font-size: 24px;
+    font-family: 'Roboto', sans-serif; font-size: 18px;
 }
 
 .sidebar {
     height: 100vh;
-    width: 384px;
+    max-width: 280px;
     background-color: #6495ed;
-    padding-bottom: 39px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-x: hidden;
 }
 
-.icon {
-    display: inline-block;
+.top {
+    display: flex;
+    align-self: flex-start;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .icon img {
     height: 96px;
     width: 96px;
-    padding-left: 20px;
     padding-top: 20px;
+    margin-right: 10px;
 }
 
 .threeline-div {
-    display: inline-block;
-    vertical-align: top;
+    display: flex;
+    justify-content: center;
     height: 54px;
     width: 54px;
     border-radius: 54px;
     margin-top: 41px;
-    margin-right: 35px;
-    margin-left: 173px;
     background-color: #A6C6E2;
+    margin-left: 26px;
 }
 
 .threeline-div:hover {
@@ -49,11 +54,24 @@ body {
     text-align: center;
 }
 
+.material-symbols-outlined {
+    padding-right: 10px;
+    padding-left: 0;
+
+    vertical-align: top;
+}
+
+.navigation {
+    display: flex;
+    align-self: center;
+    width: 100%;
+}
+
 .navigation ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    padding-top: 133px;
+    width: 280px;
 }
 
 .navigation li {
@@ -74,14 +92,17 @@ body {
 
 hr {
     margin: 0;
-    width: 318px;
-    margin-left: 33px;
+    width: 85%;
+    margin-left: 7.5%;
+    margin-right: 7.5%;
 }
 
+
 .logout {
-    padding-left: 150px;
-    margin-top: 40vh;
+    margin-top: 20vh;
+    margin-bottom: 5vh;
 }
+
 
 .logout h4 {
     margin: 0;
@@ -89,6 +110,7 @@ hr {
 
 .logout li {
     list-style: none;
+    padding-left: 40px;
 }
 
 .logout li a {
@@ -98,4 +120,12 @@ hr {
 
 .logout li a:hover {
     color: black;
+}
+
+.list, .icon{
+    display: inline-block;
+}
+
+.list {
+    line-height: 27px;
 }
