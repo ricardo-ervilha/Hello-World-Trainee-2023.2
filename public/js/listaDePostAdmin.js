@@ -15,48 +15,45 @@ document.addEventListener('DOMContentLoaded', function () {
     let posts = [];
 
     // Função para exibir a tabela de posts
-function displayPosts() {
-    tbody.innerHTML = '';
-    posts.forEach((post, index) => {
-        // Adicione a propriedade "user" aos objetos de post
-        if (!post.user) {
-            post.user = 'admin';
-        }
+    function displayPosts() {
+        tbody.innerHTML = '';
+        posts.forEach((post, index) => {
+            // Adicione a propriedade "user" aos objetos de post
+            if (!post.user) {
+                post.user = 'admin';
+            }
 
-        const row = document.createElement('tr');
-        row.innerHTML = `
-            <td>${post.title}</td>
-            <td><div class="content">${post.content}</div></td>
-            <td>${post.user === 'admin' ? 'Admin' : post.user}</td>
-            <td>${post.createdAt.toLocaleString()}</td>
-            <td>
-            <button class="viewPost">Visualizar</button>
-            <button class="editPost">Editar</button>
-            <button class="deletePost">Excluir</button>
-            </td>
-        `;
+            const row = document.createElement('tr');
+            row.innerHTML = `
+                <td>${post.title}</td>
+                <td><div class="content">${post.content}</div></td>
+                <td>${post.user === 'admin' ? 'Admin' : post.user}</td>
+                <td>${post.createdAt.toLocaleString()}</td>
+                <td>
+                    <img class="viewPost" src="../../../public/assets/icon-ver.png" alt="Visualizar">
+                    <img class="editPost" src="../../../public/assets/icon-editar.png" alt="Editar">
+                    <img class="deletePost" src="../../../public/assets/icon-delete.png" alt="Excluir">
+                </td>
+            `;
 
-        const contentCell = row.querySelector('.content');
-        if (post.content.length > 100) {
-            createExpandButton(post.content, contentCell);
-        }
+            const contentCell = row.querySelector('.content');
+            if (post.content.length > 100) {
+                createExpandButton(post.content, contentCell);
+            }
 
-        const editButton = row.querySelector('.editPost');
+            const editImage = row.querySelector('.editPost');
 
-        // Ação para editar o post
-        editButton.addEventListener('click', () => {
-            titleInput.value = post.title;
-            contentTextarea.value = post.content;
-            savePostButton.dataset.index = index;
-            postForm.style.display = 'block';
+            // Ação para editar o post
+            editImage.addEventListener('click', () => {
+                titleInput.value = post.title;
+                contentTextarea.value = post.content;
+                savePostButton.dataset.index = index;
+                postForm.style.display = 'block';
+            });
+
+            tbody.appendChild(row);
         });
-
-        tbody.appendChild(row);
-    });
-}
-
-
-
+    }
 
     // Ação para criar um novo post
     createPostButton.addEventListener('click', () => {
@@ -101,7 +98,6 @@ function displayPosts() {
     // Ação para cancelar a exclusão de um post
     deleteNoButton.addEventListener('click', () => {
         confirmDelete.style.display = 'none';
-
     });
 
     // Inicialmente, exibimos a tabela de posts
