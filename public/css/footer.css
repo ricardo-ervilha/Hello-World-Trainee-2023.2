@@ -11,6 +11,7 @@ body {
 
 footer {
     height: 162px;
+    width: 100%;
     background-color: #6495ed;
     display: grid;
     grid-template-columns: 21.4% 21% 21% 36.6%;
@@ -223,5 +224,42 @@ hr {
     .redes_sociais ul {
         display: block;
         padding-top: 5px;
+    }
+}
+
+@media (max-width: 300px) {
+
+    .icone {
+        padding-left: 0;    
+    }
+
+    .icone img {
+        height: 100px;
+    }
+
+    .sobre_nos h3{
+        font-size: 18px;
+        padding-bottom: 2px;
+    }
+
+    .sobre_nos li {
+        font-size: 12px;
+    }
+
+    .duvidas h3 {
+        font-size: 18px;
+        padding-bottom: 2px;
+    }
+
+    .duvidas li {
+        font-size: 12px;
+    }
+    
+    .redes_sociais h3 {
+        font-size: 14px;
+    }
+
+    .redes_sociais ul {
+        margin-left: 1.8%;
     }
 }
