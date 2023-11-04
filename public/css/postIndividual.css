@@ -7,8 +7,8 @@ html body {
 .card-container {
     position: absolute;
     top: 5%;
-    left: 7%;
-    width: 90%;
+    left: 21%;
+    width: 68vw;
     height: 90%;
     background-color: #A6C6E2;
     border: 1px solid #ccc;
@@ -20,11 +20,12 @@ html body {
 
 .card-title {
     scale: 170%;
-    position: relative;
+    position: absolute;
     top: 8%;
     font-size: 24px;
     font-weight: bold;
-    margin: 0;
+    margin: 13px;
+    left: 44%;
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -39,15 +40,14 @@ html body {
     background: #4682B4;
     box-shadow: 0px 0px 10px 5px #FFF;
     width: 50%;
-    min-height: 15%; 
+    min-height: 45%;
     position: absolute;
     top: 20%;
     left: 25%;
-
-    display: flex; 
+    display: flex;
     flex-direction: column;
-    justify-content: center; 
-    align-items: center; 
+    justify-content: center;
+    align-items: center;
     z-index: 3;
 }
 
@@ -56,7 +56,7 @@ html body {
     margin-top: -2%;
     color: #FFF;
     font-family: Roboto;
-    font-size: 17px;
+    font-size: 23px;
     font-style: normal;
     font-weight: 900;
     line-height: normal;
@@ -190,16 +190,17 @@ html body {
     position: relative;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1350px) {
     /* Estilos para telas menores */
     .card-container {
-        width: 95%;
+        width: 85%;
         height: 80%;
-        top: 2%;
-        left: 10%;
+        top: 4%;
+        left: 7%;
     }
     .card-title {
         top: 5%;
+        left: 31%;
         scale: 190%;
         height: auto;
     }
@@ -207,6 +208,10 @@ html body {
         top: 15%;
         left: 5%;
         width: 80%;
+        max-height: 75%;
+    }
+    .card-text {
+        font-size: 23px;
     }
     .icone {
         scale: 0;

@@ -133,13 +133,11 @@ th {
     color: #fff;
 }
 
-/* Estilos para as imagens dos botões */
+
 .viewPost, .editPost, .deletePost {
     width: 24px; /* Defina o tamanho adequado */
     height: 24px; /* Defina o tamanho adequado */
     margin: 0 5px; /* Adicione margens a gosto */
 }
 
-.viewPost:hover, .editPost:hover, .deletePost:hover {
-    /* Adicione estilos ao passar o mouse, se desejar */
-}
+
