@@ -8,39 +8,55 @@
     <script src="../../../public/js/postIndividual.js"></script>
 </head>
 <body>
-    <div class="card-container">
-        <h1 class="card-title">JavaScript</h1>
-        <div class="card-content">
-            <p class="card-text">JavaScript é uma linguagem de programação que desempenha um papel vital na indústria de tecnologia e no campo do desenvolvimento web. Sua versatilidade e capacidade de criar interatividade tornam-na uma ferramenta essencial para profissionais de tecnologia. A demanda por desenvolvedores JavaScript está em constante crescimento devido ao seu amplo espectro de aplicações.
-                Desenvolvedores web utilizam JavaScript para criar páginas dinâmicas e sites interativos que respondem às ações dos usuários em tempo real. Isso melhora significativamente a experiência do usuário...</p>
-        </div>
-        <div class="card-areaComent">
-            <form class="comment-form" id="commentForm">
-                <input class="comment-chat" type="text" id="commentText" placeholder="Diga sua opinião.">
-                <div class="rating">
-                    <label for="ratingSelect">Classificação:</label>
-                    <select id="ratingSelect" name="rating" class="cont-stars">
-                        <option name="rating" value="1">&#11088;&#65039</option>
-                        <option name="rating" value="2">&#11088;&#65039&#11088;&#65039</option>
-                        <option name="rating" value="3">&#11088;&#65039&#11088;&#65039&#11088;&#65039</option>
-                        <option name="rating" value="4">&#11088;&#65039&#11088;&#65039&#11088;&#65039&#11088;&#65039</option>
-                        <option name="rating" value="5">&#11088;&#65039&#11088;&#65039&#11088;&#65039&#11088;&#65039&#11088;&#65039</option>
-                    </select>
-                </div>
-                
-                <button type="submit">Comentar</button>
-            </form>
-            <div class="comment-list" id="commentList">
-                <!-- Comentários serão adicionados aqui -->
-            </div>
-           
-        </div>
+    <div class="card-container grid-template-columns">
         
+        <div class="central">
+            <h1 class="card-title">JavaScript</h1>
+            
+            <div class="main-content">
+                <p>JavaScript é uma linguagem de programação que desempenha um papel vital na indústria de tecnologia e no campo do desenvolvimento web. Sua versatilidade e capacidade de criar interatividade tornam-na uma ferramenta essencial para profissionais de tecnologia. A demanda por desenvolvedores JavaScript está em constante crescimento devido ao seu amplo espectro de aplicações.
+                <br>
+                Desenvolvedores web utilizam JavaScript para criar páginas dinâmicas e sites interativos que respondem às ações dos usuários em tempo real. Isso melhora significativamente a experiência do usuário...
+                JavaScript é uma linguagem de programação que desempenha um papel vital na
+                </p>
+            </div>
+        </div>
+
+        <div class = "vertical"></div>
+        
+        <div class="right">
+            <!--Barra de Comentários-->
+            <div class="card-areaComent">
+                <form class="comment-form" id="commentForm">
+                    <label style="font-weight: 500;" for="ratingSelect">Comentário</label>
+                    <input class="comment-chat" type="text" id="commentText" placeholder="Digite...">
+                    <div class="rating">
+                        <label style="font-weight: 500;" for="ratingSelect">Classificação</label>
+                        <select id="ratingSelect" name="rating" class="cont-stars">
+                            <option name="rating" value="1">&#11088;&#65039</option>
+                            <option name="rating" value="2">&#11088;&#65039&#11088;&#65039</option>
+                            <option name="rating" value="3">&#11088;&#65039&#11088;&#65039&#11088;&#65039</option>
+                            <option name="rating" value="4">&#11088;&#65039&#11088;&#65039&#11088;&#65039&#11088;&#65039</option>
+                            <option name="rating" value="5">
+                                &#11088;&#65039&#11088;&#65039&#11088;&#65039&#11088;&#65039&#11088;&#65039</option>
+                        </select>
+                    </div>
+            
+                    <button type="submit">Comentar</button>
+                </form>
+                <div class="comment-list" id="commentList">
+            
+                </div>
+            
+            </div>
+        </div>
+
+        <!--Imagens-->
         <img src="../../../public/assets//javaScript.png" class="icone">
         <img src="../../../public/assets//holograma.png" class="holograma">
         <img src="../../../public/assets//Ellipse1.png" class="overlay-image">
         <img src="../../../public/assets//marcaDagua.png" class="marcaDagua">
+    </div>    
 
-    </div>
 </body>
 </html>
