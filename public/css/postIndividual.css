@@ -37,6 +37,8 @@ html, body {
 
 .central{
     display: flex;
+    position: relative;
+    left: 15%;
     align-items: center;
     flex-direction: column;
     justify-content: center;
