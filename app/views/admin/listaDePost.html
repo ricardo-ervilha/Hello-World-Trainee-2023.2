@@ -12,7 +12,12 @@
         <h1>Lista de Posts</h1>
 
         <!-- Botão para criar um novo post -->
-        <button id="createPost">Criar Post</button>
+        <div class="new-post">
+            <button id="add-post">
+                <div class="button-new post"><img src="../../../public/assets/novoPost.png"></div>
+                <div class="text-new-post"><h2>Novo Post</h2></div>
+            </button>
+    </div>
     
         <!-- Tabela de posts -->
         <table id="postTable">
@@ -26,8 +31,18 @@
                 </tr>
             </thead>
             <tbody>
-                <!-- Os posts serão adicionados aqui -->
-            </tbody>
+                <tr>
+                <td>CodeJr</td>
+                <td><div class="content">Cooooooooooooodeeeeeeeeeee</div></td>
+                <td>Admin</td>
+                <td>06/11/2023, 21:56:30</td>
+                <td>
+                    <img class="viewPost" src="../../../public/assets/icon-ver.png" alt="Visualizar">
+                    <img class="editPost" src="../../../public/assets/icon-editar.png" alt="Editar">
+                    <img class="deletePost" src="../../../public/assets/icon-delete.png" alt="Excluir">
+                </td>
+            </tr>
+        </tbody>
         </table>
     
         <!-- Formulário para criar/editar um post (inicialmente oculto) -->

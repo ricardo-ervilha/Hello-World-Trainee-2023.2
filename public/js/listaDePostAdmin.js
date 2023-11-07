@@ -1,3 +1,4 @@
+/*
 document.addEventListener('DOMContentLoaded', function () {
     const createPostButton = document.getElementById('createPost');
     const postTable = document.getElementById('postTable');
@@ -103,3 +104,4 @@ document.addEventListener('DOMContentLoaded', function () {
     // Inicialmente, exibimos a tabela de posts
     displayPosts();
 });
+*/
