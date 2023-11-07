@@ -1,0 +1,52 @@
+<html>
+    <head>
+
+		<meta charset="utf-8">
+		<title>Novo Usuário - Hello World</title>
+		<link rel="stylesheet" href="../../../public/css/modalNewUser.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+	</head>
+
+    <body>
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <span class="close">&times</span>
+                <div class="modal-head" id="cabecalho">
+                    <h1> Novo Usuário</h1>
+                </div>
+
+                <div class="content-body">
+                    <div class="name" id="name">
+                        <h2>Nome: </h2>       
+                        <input class="campo-first-name" type="text" placeholder="Primeiro nome">
+                        <input class="campo-last-name" type="text" placeholder="Segundo nome">
+                    </div>
+                    
+                    <div class="campo-phone" id="phone">
+                        <h2>Telefone:</h2>
+                        <input type="tel">
+                    </div>
+
+                    <div class="campo-email" id="email">
+                        <h2>E-mail:</h2>
+                        <input type="email">
+                    </div>
+
+                    <div class="campo-senha" id="senha">
+                        <h2>Senha:</h2>
+                        <input type="password">
+                    </div>
+
+                    <div  class="cadastrar" id="cadastrar">
+                        <button>Cadastrar</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <script src="../../../public/js/modalNewUser.js"></script>
+    </body>
+</html>
