@@ -5,6 +5,17 @@ const closePostModalBtn = document.getElementById("closePostModalBtn");
 const userModal = document.getElementById("userModal");
 const postModal = document.getElementById("postModal");
 
+// Variáveis para campos de entrada
+const userNameInput = document.getElementById("userNameInput");
+const userDOBInput = document.getElementById("userDOBInput");
+const userEmailInput = document.getElementById("userEmailInput");
+const userPhoneInput = document.getElementById("userPhoneInput");
+
+const postTitleInput = document.getElementById("postTitleInput");
+const postContentInput = document.getElementById("postContentInput");
+const postAuthorInput = document.getElementById("postAuthorInput");
+const postDateTimeInput = document.getElementById("postDateTimeInput");
+
 openUserModalBtn.addEventListener("click", () => {
     userModal.style.display = "block";
     userNameInput.value = "João da Silva";
@@ -37,14 +48,3 @@ window.addEventListener("click", (event) => {
         postModal.style.display = "none";
     }
 });
-
-// Para exibir os valores nas caixas de entrada quando os modais são abertos
-const userNameInput = document.getElementById("userNameInput");
-const userDOBInput = document.getElementById("userDOBInput");
-const userEmailInput = document.getElementById("userEmailInput");
-const userPhoneInput = document.getElementById("userPhoneInput");
-
-const postTitleInput = document.getElementById("postTitleInput");
-const postContentInput = document.getElementById("postContentInput");
-const postAuthorInput = document.getElementById("postAuthorInput");
-const postDateTimeInput = document.getElementById("postDateTimeInput");

@@ -1,50 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modal de Visualização de Usuário/Post</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <button id="openUserModalBtn">Visualizar Usuário</button>
     <button id="openPostModalBtn">Visualizar Post</button>
-<!-- Modal de usuário -->
-<div id="userModal" class="modal">
-    <div class="modal-content">
-        <h2>Informações do Usuário</h2>
-        <label for="userNameInput"  class="lbl" ><strong>Nome:</strong></label>
-        <input type="text" id="userNameInput" class="imp" value="João da Silva" readonly>
-        <label for="userDOBInput"  class="lbl" ><strong>Data de Nascimento:</strong></label>
-        <input type="text" id="userDOBInput" class="imp" value="15 de maio de 1985" readonly>
-        <label for="userEmailInput"  class="lbl" ><strong>Email:</strong></label>
-        <input type="text" id="userEmailInput" class="imp" value="joao.silva@example.com" readonly>
-        <label for="userPhoneInput"  class="lbl" ><strong>Telefone:</strong></label>
-        <input type="text" id="userPhoneInput" class="imp" value="(11) 555-1234" readonly>
-        <span class="close" id="closeUserModalBtn">&times;</span>
+    <!-- Modal de usuário -->
+    <div id="userModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-head">
+                <h2>Informações do Usuário</h2>
+            </div>
+            <div class="content-body">
+
+                <div class="imputNome">
+                    <label for="userNameInput">
+                        <h2>Nome:</h2>
+                    </label>
+                    <input type="text" id="userNameInput" class="imp" value="João da Silva" readonly>
+                </div>
+
+                <div class="imputData">
+                    <label for="userDOBInput">
+                        <h2>Data de Nascimento:</h2>
+                    </label>
+                    <input type="text" id="userDOBInput" class="imp" value="15 de maio de 1985" readonly>
+                </div>
+
+                <div class="imputEmail">
+                    <label for="userEmailInput">
+                        <h2>Email:</h2>
+                    </label>
+                    <input type="text" id="userEmailInput" class="imp" value="joao.silva@example.com" readonly>
+                </div>
+
+                <div class="imputPhone">
+                    <label for="userPhoneInput">
+                        <h2>Telefone:</h2>
+                    </label>
+                    <input type="text" id="userPhoneInput" class="imp" value="(11) 555-1234" readonly>
+                </div>
+
+                <span class="close" id="closeUserModalBtn">&times;</span>
+            </div>
+        </div>
     </div>
-</div>
 
-<!-- Modal de post -->
-<div id="postModal" class="modal">
-    <div class="modal-content">
-        <span class="close" id="closePostModalBtn">&times;</span>
-        <h2>Informações do Post</h2>
-        <label for="postTitleInput"  class="lbl" ><strong>Título:</strong></label>
-        <input type="text" id="postTitleInput" class="imp" value="Meu Primeiro Post" readonly>
-        <label for="postContentInput"   class="lbl" ><strong>Conteúdo do Post:</strong></label>
-        <input type="text" id="postContentInput" class="imp" value="Este é um post fictício. Lorem ipsum dolor sit amet, consectetur adipiscing elit." readonly>
-        <label for="postAuthorInput"  class="lbl" ><strong>Autor:</strong></label>
-        <input type="text" id="postAuthorInput" class="imp" value="Autor Anônimo" readonly>
-        <label for="postDateTimeInput"  class="lbl" ><strong>Data/Hora da Postagem:</strong></label>
-        <input type="text" id="postDateTimeInput"  class="imp" value="28 de outubro de 2023, 15:30" readonly>
+    <!-- Modal de post -->
+    <div id="postModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-head">
+                <h2>Informações do Post</h2>
+            </div>
+            <div class="content-body">
+    
+                <div class="inputTitulo">
+                    <label for="postTitleInput">
+                        <h2>Título:</h2>
+                    </label>
+                    <input type="text" id="postTitleInput" class="imp" value="Título do Post" readonly>
+                </div>
+    
+                <div class="inputConteudo">
+                    <label for="postContentInput">
+                        <h2>Conteúdo do Post:</h2>
+                    </label>
+                    <input type="text" id="postContentInput" class="imp" value="Conteúdo do post aqui" readonly>
+                </div>
+    
+                <div class="inputAutor">
+                    <label for="postAuthorInput">
+                        <h2>Autor:</h2>
+                    </label>
+                    <input type="text" id="postAuthorInput" class="imp" value="Nome do Autor" readonly>
+                </div>
+    
+                <div class="inputDataHora">
+                    <label for="postDateTimeInput">
+                        <h2>Data/Hora da Postagem:</h2>
+                    </label>
+                    <input type="text" id="postDateTimeInput" class="imp" value="Data e hora da postagem" readonly>
+                </div>
+    
+                <span class="close" id="closePostModalBtn">&times;</span>
+            </div>
+        </div>
     </div>
-</div>
+    
 
-
-
-
-    </div>
-    <script src="script.js"></script>
+        <script src="script.js"></script>
 </body>
+
 </html>

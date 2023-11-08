@@ -1,92 +1,109 @@
-
-.modal {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: azure;
-    font-family: roboto;
+.content-body input{
+    height: 30px;
+    width: 200px;
+    border-radius: 10px; 
+}
+body{
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size:30px;
 }
 
-.modal-content {
-    background-color: #6495ED;
-    padding: 20px;
-    width: 40%;
-    height: 60%;
-    display: grid;
-    position: absolute;
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 2;
+    left:0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+
+.modal-content{
+    background-color: #87ceeb;
+
+    position: fixed;
     top: 50%;
     left: 50%;
-    border: 2px solid #000;
-    border-radius: 32px;
-    border-color: black;
-    border-width: 2px 2px;
     transform: translate(-50%, -50%);
-    align-items: center;
-    justify-content: center;
-    align-content: space-evenly;
-    color: #000;
-    font-family: roboto;
+
+    width: 400px;
+    min-width: min-content; 
+
+    max-height: max-content;
+    min-height: min-content;
+    
+    border-radius: 15px;
+    border: 2px solid black;
+
+    padding: 20px;
     overflow: auto;
 }
 
-.modal-content h2{
-    border-bottom: solid 3px;
-}
-
-.close {
-    color: #000;
-    float: right;
-    cursor: pointer;
+.close{
     position: absolute;
-    left: 93%;
-    width: 3%;
-    bottom: 93%;
-    border: 2px solid #000; /* Define uma borda de 2 pixels de largura, sólida e preta */
-    border-radius: 10px; /* Arredonda os cantos da div em 10 pixels */
-    border-color: #000; /* Define a cor da borda como vermelha */
-    border-width: 2px 2px; /* Define a largura da borda de 2 pixels no topo e na base, e 4 pixels nos lados esquerdo e direito */
+    top: 5px;
+    right: 5px;
+    width: 20px;
+    height: 20px;
+    font-size: 25px;
+}
+
+.close:hover{
+    cursor: pointer;
+}
+
+/* ------------------------------------CABEÇALHO--------------------------- */
+.modal-head{
     text-align: center;
-    line-height: 1;
+    border-bottom: solid 1px;
+}
+.modal-head h1{
+    margin: 0;
+    font-size: 150%;
 }
 
-.highlight {
-    background-color: #A6C6E2; /* Azul mais claro (exemplo) */
-    padding: 1%; /* Espaçamento interno para destacar o conteúdo */
-    margin: 1% 0; /* Espaçamento externo para separar os elementos */
-    display: flex; /* Use flexbox para tornar o campo responsivo */
-    align-items: center; /* Alinhe verticalmente o conteúdo ao centro */
-    border: 2px solid #000; /* Define uma borda de 2 pixels de largura, sólida e preta */
-    border-radius: 10px; /* Arredonda os cantos da div em 10 pixels */
-    border-color: #ffecec; /* Define a cor da borda como vermelha */
-    border-width: 1px 1px; /* Define a largura da borda de 2 pixels no topo e na base, e 4 pixels nos lados esquerdo e direito */
+/* ------------------------------------CAMPOS--------------------------- */
+.content-body{
+    width: min-content;
+    margin: 10% auto;
+    text-align: left;    
+    display: grid;
+}
+.content-body h2{
+    font-size: 80%;
+    margin-bottom: 0;
 }
 
-#h2 {
-    position: relative;
-    top: -25%;
-    scale: 103%;
+.content-body input{
+    height: 30px;
+    width: 200px;
+    border-radius: 10px; 
 }
 
-#label  {
-    position: relative;
-    top: -25%;
-    scale: 103%;
+.name{
+    width: min-content;
 }
 
-.imp {
-   
-height: 135%;
-   
-width: auto;
-   
-border-radius: 7px;
+
+ /* ------------------------------------RESPONSIVIDADE--------------------------- */
+@media(min-width:400px){
+
 }
 
-.lbl {
-   
-font-size: 125%;
+@media(max-height:900px){
+
+  
+    .content-body{
+        height: 40vh;
+        display: grid;
+    }
+
+    .modal-head{
+        text-align: center;
+    }
 }
