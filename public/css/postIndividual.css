@@ -276,12 +276,7 @@ button:focus {
         top: 4%;
         left: 7%;
     }
-    .card-title {
-        top: 5%;
-        left: 31%;
-        scale: 190%;
-        height: auto;
-    }
+    
     .card-content {
         top: 15%;
         left: 5%;
@@ -291,6 +286,10 @@ button:focus {
     .card-text {
         font-size: 23px;
     }        */
+
+    .card-title {
+        font-size: 2rem;
+    }
     
     .vertical {
         scale: 0;
