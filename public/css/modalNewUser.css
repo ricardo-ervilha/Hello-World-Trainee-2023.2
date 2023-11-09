@@ -6,7 +6,7 @@ body{
 
 
 .modal{
-    display: none;
+    display: block;
     position: fixed;
     z-index: 2;
     left:0;
@@ -41,7 +41,6 @@ body{
 
 /* ------------------------------------FECHAR--------------------------- */
 .close{
-    text-align: center;
     position: absolute;
     top: 5px;
     right: 5px;
@@ -56,7 +55,7 @@ body{
 
 /* ------------------------------------CABEÇALHO--------------------------- */
 .modal-head{
-    text-align: left;
+    text-align: center;
     border-bottom: solid 1px;
 }
 .modal-head h1{
@@ -81,8 +80,6 @@ body{
     border-radius: 10px; 
 }
 
-
-
 .name{
     width: min-content;
 }
@@ -103,19 +100,19 @@ body{
 
 .cadastrar button:hover{
         cursor: pointer;
-        /* box-shadow: inset 0px -1px 3px rgba(135,206,225,1); */
-        /* text-shadow: 2px 2px 2px rgba(255,255,255,0.5); */
     }
 
 
 /* ------------------------------------RESPONSIVIDADE--------------------------- */
+@media(min-width:400px){
 
+}
 
 @media(max-height:900px){
 
   
     .content-body{
-        height: 50vh;
+        height: 40vh;
         display: grid;
  
         grid-template-areas:

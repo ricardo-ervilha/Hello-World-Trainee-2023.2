@@ -39,9 +39,9 @@ body{
     overflow: auto;
 }
 
+
 /* ------------------------------------FECHAR--------------------------- */
 .close{
-    text-align: center;
     position: absolute;
     top: 5px;
     right: 5px;
@@ -56,7 +56,7 @@ body{
 
 /* ------------------------------------CABEÇALHO--------------------------- */
 .modal-head{
-    text-align: left;
+    text-align: center;
     border-bottom: solid 1px;
 }
 .modal-head h1{
@@ -76,15 +76,20 @@ body{
     margin-bottom: 0;
 }
 
+.content-body input{
+    border-radius: 10px; 
+    font-size: 20px;
+}
+
 .div-title input{
-    width: 98%;
+    width: 300px;
 }
 
 .div-conteudo textarea{
     font-size: 70%;
     font-family: 'Roboto', sans-serif;
 
-    width: 98%;
+    width: 300px;
     margin-top: 5px;
     
     border: 2px solid black;
@@ -102,14 +107,10 @@ body{
     width: max-content;
 }
 
-.div-autor{
-    width: max-content;
+.div-autor input{
+    width: 300px;
 }
 
-.content-body input{
-    border-radius: 10px; 
-    font-size: 20px;
-}
 
 .div-postar {
     margin-top: 20px;
@@ -125,7 +126,7 @@ body{
 }
 
 
-.button-postar:hover{
+.div-postar button:hover{
     cursor: pointer;
 }
 
