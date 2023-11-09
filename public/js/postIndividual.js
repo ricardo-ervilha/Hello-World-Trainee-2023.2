@@ -1,29 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const myButton = document.getElementById('lerButton');
-    const cardOculto = document.getElementById('cardOculto');
-    
-    const myButton2 = document.getElementById('tutorialButton');
-    const cardOculto2 = document.getElementById('cardTutorial');
-    
-    myButton.addEventListener('click', function() {
-        if (cardOculto.style.display === 'none' || cardOculto.style.display === '') {
-            cardOculto.style.display = 'block';
-            myButton.innerText = 'Fechar';
-        } else {
-            cardOculto.style.display = 'none';
-            myButton.innerText = 'Ler Mais';
-        }
-    });
-    
-    myButton2.addEventListener('click', function() {
-        if (cardOculto2.style.display === 'none' || cardOculto2.style.display === '') {
-            cardOculto2.style.display = 'block';
-            myButton2.innerText = 'Fechar';
-        } else {
-            cardOculto2.style.display = 'none';
-            myButton2.innerText = 'Tutorial';
-        }
-    });
     
     const commentForm = document.getElementById("commentForm");
     const commentText = document.getElementById("commentText");
@@ -64,4 +39,3 @@ document.addEventListener('DOMContentLoaded', function() {
     
     
     });
-    

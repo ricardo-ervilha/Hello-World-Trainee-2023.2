@@ -1,0 +1,138 @@
+/* Estilos para a tabela */
+.tabela-main {
+    display: contents;
+    width: 90vw;
+    height: 90vh;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(166, 198, 226, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+h1 {
+    color: white;
+    padding: 15px;
+    text-align: center;
+    background-color: #6495ED;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid white;
+    background-color: transparent; /* Remover o fundo colorido */
+}
+
+th, td {
+    border: 1px solid white;
+    padding: 10px;
+    text-align: center; /* Centralizar o texto */
+    color: black; /* Alterar a cor do texto */
+}
+
+th {
+    background-color: #6495ED;
+    color: white;
+}
+
+/* Estilos para a página em geral */
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: larger;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: rgba(166, 198, 226, 0.5); /* Aplicar fundo semelhante */
+}
+
+.button img {
+    width: 45px;
+    height: 45px;
+}
+
+/* Estilos para os botões */
+button {
+    padding: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    opacity: 0.5;
+}
+
+/* Estilos para as imagens na tabela */
+.adcPost {
+    width: 30px;
+    height: 30px;
+    margin: 0; /* Remover a margem entre as imagens */
+}
+.viewPost, .editPost, .deletePost {
+    width: 25px;
+    height: 25px;
+    margin: 0; /* Remover a margem entre as imagens */
+}
+.new-post{
+
+    margin: 10px 0px 10px 0;
+    
+    background-color: #6495ED;
+    border: 1px solid white;
+
+    width:fit-content ;
+    height: fit-content;
+}
+
+.new-post img{
+
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+
+.new-post h2{
+    width: 70px;
+    margin: 7px 0 0 55px;
+
+    color: white;
+    font-size: medium;
+}
+@media (max-width: 600px){
+    .tabela-main {
+        max-width: 100vw;
+        height: 100vh;
+    }
+    .postTable {
+        display: block;
+        position: relative;
+        width: 100%;
+      }
+      
+    .postTable thead, .postTable tbody, .postTable th, .postTable td, .postTable tr {
+        display: block;
+      }
+
+    .postTable th, .postTable td{
+        height: 35px;
+    }
+
+    .postTable thead{
+        float: left;
+    }
+
+    .postTable tbody{
+        width: auto;
+        position: relative;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        white-space: nowrap;
+      }
+
+      .postTable tbody tr{
+        display: inline-block;
+      }
+}
