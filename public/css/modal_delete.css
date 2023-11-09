@@ -65,6 +65,7 @@ button:hover {
   border: 1px solid #888;
   border-radius: 10px;
   width: 50%; /* Could be more or less, depending on screen size */
+  border: 1px solid black;
 }
 
 /* Style the horizontal ruler */
