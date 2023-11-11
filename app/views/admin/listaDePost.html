@@ -37,34 +37,20 @@
                 <td>Admin</td>
                 <td>06/11/2023, 21:56:30</td>
                 <td>
-                    <img class="viewPost" src="../../../public/assets/icon-ver.png" alt="Visualizar">
-                    <img class="editPost" src="../../../public/assets/icon-editar.png" alt="Editar">
-                    <img class="deletePost" src="../../../public/assets/icon-delete.png" alt="Excluir">
+                    <button id="openPostModalBtn">
+                        <img class="viewPost" src="../../../public/assets/icon-ver.png" alt="Visualizar">
+                    </button>
+                    <button>
+                        <img class="editPost" src="../../../public/assets/icon-editar.png" alt="Editar">
+                    </button>
+                    <button>
+                        <img class="deletePost" src="../../../public/assets/icon-delete.png" alt="Excluir">
+                    </button>
                 </td>
             </tr>
         </tbody>
         </table>
     
-        <!-- Formulário para criar/editar um post (inicialmente oculto) -->
-        <div id="postForm" style="display: none;">
-            <h2>Post</h2>
-            <form id="postForm">
-                <label for="title">Título:</label>
-                <input type="text" id="title" required>
-                <label for="content">Conteúdo:</label>
-                <textarea id="content" required></textarea>
-                <button id="savePost">Salvar</button>
-                <button id="cancelPost">Cancelar</button>
-            </form>
-        </div>
-    
-        <!-- Confirmação de exclusão (inicialmente oculta) -->
-        <div id="confirmDelete" style="display: none;">
-            <p>Tem certeza de que deseja excluir este post?</p>
-            <button id="deleteYes">Sim</button>
-            <button id="deleteNo">Não</button>
-        </div>
-        
     </div>
 </body>
 </html>

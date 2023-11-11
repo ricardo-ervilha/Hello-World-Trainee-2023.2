@@ -6,8 +6,11 @@
 
 		<meta charset="utf-8">
 		<title>Usuários - Hello World</title>
+
+		<link rel="stylesheet" href="../../../public/css/modalNewUser.css">
 		<link rel="stylesheet" href="../../../public/css/listaUsers.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
+        
+		<link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
@@ -24,6 +27,8 @@
 						<div class="button-new user"><img src="../../../public/assets/icon-add.png"></div>
 						<div class="text-new-user"><h2>Novo Usuário</h2></div>
 					</button>
+
+					<?php require('./app/views/admin/modalNewUser.html') ?>
 			</div>
 
 			<div class="div-tabela">
@@ -44,9 +49,17 @@
 							<td>Usuário 1</td>
 							<td>usuario1@example.com</td>
 							<td>
-								<button class="icon-visualizar"><img src="../../../public/assets/icon-ver.png"></button>
-								<button class="icon-editar"><img src="../../../public/assets/icon-editar.png"></button>
-								<button class="icon-excluir"><img src="../../../public/assets/icon-delete.png"></button>
+								<button id="openUserModalBtn" class="icon-visualizar"><img src="../../../public/assets/icon-ver.png"></button>
+
+								<?php require('./app/views/admin/modalViewUser.html') ?>
+
+								<button id="open-modal" class="icon-editar"><img src="../../../public/assets/icon-editar.png"></button>
+
+								<?php require('./app/views/admin/modal_edit_user.html') ?>
+
+								<button onclick="document.getElementById('id01').style.display='block'" class="icon-excluir"><img src="../../../public/assets/icon-delete.png"></button>
+
+								<?php require('./app/views/admin/modal_delete_user.html') ?>
 							</td>
 						</tr>
 						
@@ -56,7 +69,7 @@
 							<td>Usuário 2</td>
 							<td>usuario2@example.com</td>
 							<td>
-								<button class="icon-visualizar"><img src="../../../public/assets/icon-ver.png"></button>
+								<button id="openUserModalBtn" class="icon-visualizar"><img src="../../../public/assets/icon-ver.png"></button>
 								<button class="icon-editar"><img src="../../../public/assets/icon-editar.png"></button>
 								<button class="icon-excluir"><img src="../../../public/assets/icon-delete.png"></button>
 							</td>
@@ -90,6 +103,7 @@
 			</div>
 		
 		</div>
-		<script src="../../../public/js/modalNewUser.js"></script>
+
+		<script src="../../../public/js/allModals.js"></script>
 	</body>
 </html>
