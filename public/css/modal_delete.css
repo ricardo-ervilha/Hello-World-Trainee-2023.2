@@ -1,7 +1,7 @@
 * {box-sizing: border-box}
 * {font-family: 'Roboto', sans-serif; font-weight: 400;}
 
-/* Set a style for all buttons */
+/* Set a style for all buttons 
 button {
   background-color: #04AA6D;
   color: white;
@@ -21,6 +21,16 @@ button:hover {
 .cancelbtn, .deletebtn {
   float: left;
   width: 50%;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.h2-d{
+  font-size: 30px;
 }
 
 /* Add a color to the cancel button */
@@ -29,19 +39,28 @@ button:hover {
   color: black;
 }
 
+.cancelbtn:hover{
+  opacity: 1;
+}
+
+.deletebtn:hover{
+  opacity: 1;
+}
+
 /* Add a color to the delete button */
 .deletebtn {
   background-color: #f44336;
 }
 
 /* Add padding and center-align text to the container */
-.container {
+.container-d {
   padding: 0px 16px 16px 16px;
   text-align: center;
 }
 
-.container img{
-    width: 70px;
+.container-d img{
+  width: 70px;
+  height: 70px;
 }
 
 /* The Modal (background) */
@@ -60,11 +79,12 @@ button:hover {
 
 /* Modal Content/Box */
 .modal-content {
-  background-color: #5cacee;
+  background-color: #87ceeb;
   margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
   border: 1px solid #888;
   border-radius: 10px;
   width: 50%; /* Could be more or less, depending on screen size */
+  border: 2px solid black;
 }
 
 /* Style the horizontal ruler */
