@@ -42,62 +42,32 @@
 						</tr>
 					</thead>
 
-					<tbody>
-						<tr>
-							<td>1</td>
-							<td>Usuário 1</td>
-							<td>usuario1@example.com</td>
-							<td>
-								<button id="openUserModalBtn" class="icon-visualizar"><img src="../../../public/assets/icon-ver.png"></button>
-
-								<?php require('./app/views/admin/modalViewUser.html') ?>
-
-								<button id="open-modal" class="icon-editar"><img src="../../../public/assets/icon-editar.png"></button>
-
-								<?php require('./app/views/admin/modal_edit_user.html') ?>
-
-								<button onclick="document.getElementById('id01').style.display='block'" class="icon-excluir"><img src="../../../public/assets/icon-delete.png"></button>
-
-								<?php require('./app/views/admin/modal_delete_user.html') ?>
-							</td>
-						</tr>
-						
+			<?php 
+			
+			$pdo = new PDO('mysql:host=localhost;dbname=helloworld', 'root', '');
+			$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+			$pdo->setAttribute(PDO::MYSQL_ATTR_INIT_COMMAND, "SET NAMES 'utf8'");
+		
+			try {
+				$pdoStatement = $pdo->query("SELECT * FROM users");
+		
+				while($row = $pdoStatement->fetch(PDO::FETCH_ASSOC)){
+		
+					echo "<tbody> <tr> <td>{$row['id']}</td> <td>{$row['nome']}</td> <td>{$row['email']}</td>"; 
 					
-						<tr>
-							<td>2</td>
-							<td>Usuário 2</td>
-							<td>usuario2@example.com</td>
-							<td>
-								<button id="openUserModalBtn" class="icon-visualizar"><img src="../../../public/assets/icon-ver.png"></button>
-								<button class="icon-editar"><img src="../../../public/assets/icon-editar.png"></button>
-								<button class="icon-excluir"><img src="../../../public/assets/icon-delete.png"></button>
-							</td>
-							
-						</tr>
+					require ('./app/views/admin/icons.php');
 
-						<tr>
-							<td>3</td>
-							<td>Usuário 3</td>
-							<td>usuario3@example.com</td>
-							<td>
-								<button class="icon-visualizar"><img src="../../../public/assets/icon-ver.png"></button>
-								<button class="icon-editar"><img src="../../../public/assets/icon-editar.png"></button>
-								<button class="icon-excluir"><img src="../../../public/assets/icon-delete.png"></button>
-							</td>
-						</tr>
-				
-						<tr>
-							<td>4</td>
-							<td>Usuário 4</td>
-							<td>usuario4@example.com</td>
-							<td>
-								<button class="icon-visualizar"><img src="../../../public/assets/icon-ver.png"></button>
-								<button class="icon-editar"><img src="../../../public/assets/icon-editar.png"></button>
-								<button class="icon-excluir"><img src="../../../public/assets/icon-delete.png"></button>
-							</td>
-						</tr>
-					</tbody>
-				</table>
+					echo "</tr>";
+				}
+		
+			} catch(Exception $e) {
+				echo "Erro: {$e->getMessage()}";
+			}
+			
+			?>
+
+		</tbody>
+		</table>
 
 			</div>
 		
