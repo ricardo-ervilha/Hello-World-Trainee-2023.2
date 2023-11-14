@@ -11,4 +11,8 @@ class UserController{
         return view("admin/listaUsers");
     }
 
+    public function posts(){
+        return view("admin/listaPosts");
+    }
+
 }

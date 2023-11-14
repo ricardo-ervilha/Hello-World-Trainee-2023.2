@@ -1,3 +1,4 @@
+
 <td>
 								<button id="openUserModalBtn" class="icon-visualizar"><img src="../../../public/assets/icon-ver.png"></button>
 
@@ -10,4 +11,4 @@
 								<button onclick="document.getElementById('id01').style.display='block'" class="icon-excluir"><img src="../../../public/assets/icon-delete.png"></button>
 
 								<?php require('./app/views/admin/modal_delete_user.html') ?>
-							</td>
+</td>
