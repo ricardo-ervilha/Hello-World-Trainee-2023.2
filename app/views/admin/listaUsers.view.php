@@ -19,7 +19,7 @@
 	<body>
 		<div class="container">
 
-			<h1>Lista de Usuários</h1>
+			<h1 class="h1-list-users">Lista de Usuários</h1>
 
 			<div class="new-user">
 					<button id="add-user">
