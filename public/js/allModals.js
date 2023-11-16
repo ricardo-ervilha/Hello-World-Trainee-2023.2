@@ -28,7 +28,7 @@ btnView.onclick = function () {
 }
 
 closeUserModalBtn.addEventListener("click", () => {
-    userModal.style.display = "none";
+    modalView.style.display = "none";
 });
 
 /* Modais do João Pedro */
