@@ -64,7 +64,7 @@ button:hover {
 }
 
 /* The Modal (background) */
-.modal {
+.modal-d {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
@@ -78,7 +78,7 @@ button:hover {
 }
 
 /* Modal Content/Box */
-.modal-content {
+.modal-d-content {
   background-color: #87ceeb;
   margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
   border: 1px solid #888;
@@ -94,7 +94,7 @@ hr {
 }
 
 /* The Modal Close Button (x) */
-.close {
+.close-delete {
   text-align: right;
   display: block;
   font-size: 40px;
@@ -102,8 +102,8 @@ hr {
   color: black;
 }
 
-.close:hover,
-.close:focus {
+.close-delete:hover,
+.close-delete:focus {
   color: #f44336;
   cursor: pointer;
 }
