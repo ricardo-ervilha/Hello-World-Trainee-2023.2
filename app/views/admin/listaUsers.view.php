@@ -53,7 +53,7 @@
 		
 				while($row = $pdoStatement->fetch(PDO::FETCH_ASSOC)){
 		
-					echo "<tbody> <tr> <td>{$row['id']}</td> <td>{$row['nome']}</td> <td>{$row['email']}</td>"; 
+					echo "<tbody> <tr> <td>{$row['id']}</td> <td>{$row['name']}</td> <td>{$row['email']}</td>"; 
 					
 					require ('./app/views/admin/icons.php');
 
