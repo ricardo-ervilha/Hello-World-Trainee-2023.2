@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="../../../public/css/edit_modal.css">
 
-<div class="modal" id="modal-edit" style="display: none;">
+<div class="modal" id="modal-edit<?=$row['id']?>" style="display: none;">
     <div class="modal-content">
         <div class="modal-head">
             <div class="close-container">
