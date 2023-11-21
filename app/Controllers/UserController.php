@@ -12,7 +12,7 @@ class UserController{
     }
 
     public function posts(){
-        return view("admin/listaPosts");
+        return view("admin/listaPosts2");
     }
 
 }
