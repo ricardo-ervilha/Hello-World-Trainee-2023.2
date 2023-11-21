@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-
+<link rel="stylesheet" href="../../../public/css/modalNewPost.css">
 <html>
 
 	<head>
