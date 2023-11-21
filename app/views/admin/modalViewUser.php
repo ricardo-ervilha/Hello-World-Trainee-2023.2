@@ -1,7 +1,6 @@
-
 <link rel="stylesheet" href="../../../public/css/modalView.css">
 
-<div id="userModal" class="modal-view" style="display: none;">
+<div id="userModal<?=$row['id']?>" class="modal-view" style="display: none;">
     <div class="modal-view-content">
         <div class="modal-head">
             <h2>Informações do Usuário</h2>
