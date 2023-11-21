@@ -55,7 +55,7 @@
 		
 					echo "<tbody> <tr> <td>{$row['id']}</td> <td>{$row['name']}</td> <td>{$row['email']}</td>"; 
 					
-					require ('./app/views/admin/icons.php');
+					require ('./app/views/admin/icons-users.php');
 
 					echo "</tr>";
 				}
