@@ -13,11 +13,6 @@
 	</head>
 
 	<body>
-        <div>
-            <h1>Modal Novo Post</h1>
-            <button class="open-modal" id="open-modal">Abrir</button>
-        </div>
-
         <div class="modal" id="modal">
             <div class="modal-content">
                 <span class="close">&times</span>
@@ -58,7 +53,7 @@
             </div>
         </div>    
 
-    <script src="../../../public/js/modalNewPost.js"></script>
+    <script src="../../../public/js/allModals.js"></script>
     </body>
 </html>
 
