@@ -5,18 +5,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Kelly+Slab&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-<div id="id01" class="modal-d" style="display: none;">
+<div id="id01<?=$row['id']?>" class="modal-d" style="display: none;">
     <form class="modal-d-content" action="/action_page.php">
         <div class="container-d">
-            <span onclick="document.getElementById('id01').style.display='none'" class="close-delete"
+            <span class="close-delete"
                 title="Close Modal">&times;</span>
             <img src="../../../public/assets/Delete-Bin-Trash.png">
             <h2 class="h2-d">Tem certeza?</h2>
 
             <div class="clearfix">
-                <button onclick="document.getElementById('id01').style.display='none'" type="button"
-                    class="cancelbtn">Cancelar</button>
-                <button type="button" class="deletebtn">Excluir</button>
+                <button type="button"class="cancelbtn">Cancelar</button>
+                <button type="submit" class="deletebtn">Excluir</button>
             </div>
         </div>
     </form>
