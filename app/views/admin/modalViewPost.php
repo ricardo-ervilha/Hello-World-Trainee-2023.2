@@ -1,6 +1,4 @@
 <!-- Modal de post -->
-<link rel="stylesheet" href="../../../public/css/modalViewPosts.css">
-
 
 <div id="userModal<?=$row['id']?>" class="modal" style="display: none;">
     <div class="modal-content">
@@ -35,6 +33,13 @@
                     <h2>Data/Hora da Postagem:</h2>
                 </label>
                 <input type="text" id="postDateTimeInput" class="imp" value="<?=$row['created_at']?>" readonly>
+            </div>
+
+            <div class="inputImage">
+                <label for="postImageInput">
+                    <h2>Imagem:</h2>
+                </label>
+                <img id="postImageInput" class="imp" src="<?=$row['image']?>">
             </div>
 
             <span class="close" id="closePostModalBtn">&times;</span>
