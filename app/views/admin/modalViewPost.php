@@ -39,7 +39,7 @@
                 <label for="postImageInput">
                     <h2>Imagem:</h2>
                 </label>
-                <img id="postImageInput" class="imp" src="<?=$row['image']?>">
+                <img id="postImageInput" class="img-fluid" src="<?=$row['image']?>">
             </div>
 
             <span class="close" id="closePostModalBtn">&times;</span>
