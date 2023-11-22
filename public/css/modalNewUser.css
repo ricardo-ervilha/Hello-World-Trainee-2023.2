@@ -26,7 +26,7 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
 
-    width: 400px;
+    max-width: 400px;
     min-width: min-content; 
 
     max-height: max-content;
@@ -40,12 +40,13 @@ body{
 }
 
 /* ------------------------------------FECHAR--------------------------- */
-.close{
+.modal-content span{
+    color: black;
     position: absolute;
     top: 5px;
     right: 5px;
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     font-size: 25px;
 }
 
@@ -59,7 +60,7 @@ body{
     right: 5px;
     width: 20px;
     height: 20px;
-    font-size: 25px;
+    font-size: 5px;
 }
 
 .closeEdit:hover{
@@ -67,27 +68,30 @@ body{
 }
 
 /* ------------------------------------CABEÇALHO--------------------------- */
-.modal-head{
+.modal-head-new-user{
+    color: black;
     text-align: center;
     border-bottom: solid 1px;
 }
-.modal-head h1{
+.modal-head-new-user h1{
     margin: 0;
     font-size: 150%;
+    
 }
 
 /* ------------------------------------CAMPOS--------------------------- */
-.content-body{
+.modal-content-body{
+    color: black;
     width: min-content;
     margin: 10% auto;
     text-align: left;    
 }
-.content-body h2{
-    font-size: 80%;
+.modal-content-body label{
+    font-size: 60%;
     margin-bottom: 0;
 }
 
-.content-body input{
+.modal-content-body input{
     height: 30px;
     width: 200px;
     border-radius: 10px; 
@@ -100,15 +104,19 @@ body{
 
 /* ------------------------------------BOTÃO CADASTRAR--------------------------- */
 .cadastrar{
-    width: 100px;
+    width: 150px;
+    height: min-content;
     margin: 20px auto;
+    background-color: #6495ED;
+    border-radius: 50px;
+    border: 1px solid black;
+    text-align: center;
+
 }
 .cadastrar button{
-    border-radius: 50px;
-    background-color: #6495ED;
-
-    font-size: 60%;
-    text-align: center;
+    font-size: 70%;
+    vertical-align: middle;
+    padding-bottom:5px;
 }
 
 .cadastrar button:hover{
@@ -124,7 +132,7 @@ body{
 @media(max-height:900px){
 
   
-    .content-body{
+    .modal-content-body{
         height: 40vh;
         display: grid;
  
@@ -136,7 +144,7 @@ body{
         gap: 5px;
     }
 
-    .modal-head{
+    .modal-head-new-user{
         text-align: center;
     }
 

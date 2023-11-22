@@ -55,11 +55,12 @@ body{
 }
 
 /* ------------------------------------CABEÇALHO--------------------------- */
-.modal-head{
+.modal-head-new-post{
+    color: black;
     text-align: center;
     border-bottom: solid 1px;
 }
-.modal-head h1{
+.modal-head-new-post h1{
     margin: 0;
     font-size: 150%;
 }
