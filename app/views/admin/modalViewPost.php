@@ -11,28 +11,28 @@
                 <label for="postTitleInput">
                     <h2>Título:</h2>
                 </label>
-                <input type="text" id="postTitleInput" class="imp" value="<?=$row['title']?>" readonly>
+                <input type="text" id="postTitleInput" class="imp" value="<?=$row['title']?>" readonly disabled>
             </div>
 
             <div class="inputConteudo">
                 <label for="postContentInput">
                     <h2>Conteúdo do Post:</h2>
                 </label>
-                <input type="text" id="postContentInput" class="imp" value="<?=$row['content']?>" readonly>
+                <input type="text" id="postContentInput" class="imp" value="<?=$row['content']?>" readonly disabled>
             </div>
 
             <div class="inputAutor">
                 <label for="postAuthorInput">
                     <h2>Autor:</h2>
                 </label>
-                <input type="text" id="postAuthorInput" class="imp" value="<?=$row['author_post']?>" readonly>
+                <input type="text" id="postAuthorInput" class="imp" value="<?=$row['author_post']?>" readonly disabled>
             </div>
 
             <div class="inputDataHora">
                 <label for="postDateTimeInput">
                     <h2>Data/Hora da Postagem:</h2>
                 </label>
-                <input type="text" id="postDateTimeInput" class="imp" value="<?=$row['created_at']?>" readonly>
+                <input type="text" id="postDateTimeInput" class="imp" value="<?=$row['created_at']?>" readonly disabled>
             </div>
 
             <div class="inputImage">
