@@ -42,29 +42,16 @@
 						</tr>
 					</thead>
 
-			<?php 
-			
-			$pdo = new PDO('mysql:host=localhost;dbname=helloworld', 'root', '');
-			$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-			$pdo->setAttribute(PDO::MYSQL_ATTR_INIT_COMMAND, "SET NAMES 'utf8'");
-		
-			try {
-				$pdoStatement = $pdo->query("SELECT * FROM users");
-		
-				while($row = $pdoStatement->fetch(PDO::FETCH_ASSOC)){
-		
-					echo "<tbody> <tr> <td>{$row['id']}</td> <td>{$row['name']}</td> <td>{$row['email']}</td>"; 
-					
-					require ('./app/views/admin/icons-users.php');
+					<?php foreach ($users as $read) : ?>
 
-					echo "</tr>";
-				}
 		
-			} catch(Exception $e) {
-				echo "Erro: {$e->getMessage()}";
-			}
-			
-			?>
+					<tbody> <tr> <td><?=$read->id?></td> <td><?=$read->name?></td> <td><?=$read->email?></td>
+					
+					<?php require ('./app/views/admin/icons-users.php'); ?>
+
+					</tr>
+
+					<?php endforeach; ?>
 
 		</tbody>
 		</table>

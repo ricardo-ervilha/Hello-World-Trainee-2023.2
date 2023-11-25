@@ -9,17 +9,9 @@ class UserController{
 
     public function readUsers(){
 
-        $usuarios = App::get('helloworld')->selectAll('users');
+        $users = App::get('helloworld')->selectAll('users');
         $tables = [
-            
-            'id' => $id,
-            'name' => $name,
-            'sobrenome' => $sobrenome,
-            'phone' => $phone,
-            'email' => $email,
-            'password' => $password,
-            'updated_at' => $updated_at,
-            'created_at' => $created_at;
+            'users' => $users,
         ];
 
         return view("admin/listaUsers", $tables);
