@@ -4,5 +4,5 @@ use App\Core\Router;
 
 //Rotas da aplicação
 
-$router->get('listaDeUsuarios', 'UserController@index');
-$router->get('listaDePosts', 'UserController@posts');
+$router->get('listaDeUsuarios', 'UserController@readUsers');
+$router->get('listaDePosts', 'UserController@readPosts');
