@@ -1,59 +1,53 @@
-<!DOCTYPE html>
-<link rel="stylesheet" href="../../../public/css/modalNewPost.css">
-<html>
+<?php
+if(isset($_FILES['image'])) {
+    $arquivo = $_FILES['image'];
 
-	<head>
-		<meta charset="utf-8">
-        <title>Novo Post</title>
-        <link rel="stylesheet" href="../../../public/css/modalNewPost.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-		
-	</head>
+    if($arquivo['error'])
+        die("Falha ao enviar arquivo");
+    $pasta = "../../../public/assets/";
+    $nomeDoArquivo = $arquivo['name'];
 
-	<body>
-        <div class="modal" id="modal">
-            <div class="modal-content">
-                <span class="close">&times</span>
-                <div class="modal-head">
-                    <h1>Novo Post</h1>
-                </div>
-                <div class="content-body">
-                    <div class="div-title">
-                        <h2>Título:</h2>       
-                        <input class="campo-titulo" placeholder="Título do seu novo post">
-                    </div>
+    $deu_certo = move_uploaded_file($arquivo["temp_name"], $pasta);
+}
+?>
 
-                    <div class="div-conteudo">
-                            <h2>Conteúdo:</h2>
-                            <textarea>Digite aqui o seu post</textarea>
-                    </div>
-
-                    <div class="div-image">
-                        <h2>Imagem:</h2>
-                        <input type="image">
-                    </div>
-
-                    <div class="div-date">
-                        <h2>Data de Criação:</h2>
-                        <input type="date">
-                    </div>
-
-                    <div class="div-autor">
-                        <h2>Autor:</h2>
-                        <input type="text" placeholder="Nome do Autor">
-                    </div>
-
-                    <div  class="div-postar">
-                        <button>Postar</button>
-                    </div> 
-
-                </div>
+<div class="modal" id="modal">
+    <div class="modal-content">
+        <form action="posts/create" method="POST">
+        <span class="close">&times</span>
+        <div class="modal-head">
+            <h1>Novo Post</h1>
+        </div>
+        <div class="content-body">
+            <div class="div-title">
+                <h2>Título:</h2>       
+                <input class="campo-titulo" placeholder="Título do seu novo post" name="title">
             </div>
-        </div>    
 
-    <script src="../../../public/js/allModals.js"></script>
-    </body>
-</html>
+            <div class="div-conteudo">
+                    <h2>Conteúdo:</h2>
+                    <textarea name="content">Digite aqui o seu post</textarea>
+            </div>
+
+            <div class="div-image">
+                <form enctype="multipart/form-data" action="" method='POST'>
+                <h2>Imagem:</h2>
+                <input type="file" name="image">
+                </form>
+            </div>
+
+            <div class="div-date">
+                <h2>Data de Criação:</h2>
+                <input type="date" name="created_at">
+            </div>
+
+            <div  class="div-postar">
+                <button>Postar</button>
+            </div> 
+        </div>
+        </form>
+    </div>
+</div>    
+<script src="../../../public/js/allModals.js"></script>
+<link rel="stylesheet" href="../../../public/css/modalNewPost.css">
 

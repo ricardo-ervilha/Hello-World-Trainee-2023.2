@@ -12,4 +12,23 @@ class QueryBuilder
     {
         $this->pdo = $pdo;
     }
+
+
+public function insert($table, $parameters)
+    {
+        $sql = sprintf(
+            'INSERT INTO %s (%s) VALUES (%s)',
+            $table,
+            implode(', ', array_keys($parameters)),
+            ':' . implode(' , :', array_keys($parameters))
+        );
+
+        try{
+            $statement = $this->pdo->prepare($sql);
+
+            $statement->execute($parameters);
+        } catch (Exception $e) {
+            die("An error ocurred when trying to insert into database: {$e->getMessage()}");
+        }
+    }
 }
