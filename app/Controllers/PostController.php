@@ -14,16 +14,20 @@ class PostController{
 
     public function postsCreate()
     {
+        $imagePath = "public/assets/img_posts/" . basename($_FILES['image']['name']);
+        move_uploaded_file($_FILES['image']['tmp_name'], $imagePath);
+               
         $parameters = [
             'title' => $_POST['title'],
             'content' => $_POST['content'],
-            'image' => $_POST['image'],
+            'image' => $imagePath,
             'created_at' => $_POST['created_at'],
-            'author_post' => 14,
+            'author_post' => 1,
         ];
-    App::get('database')->insert('posts', $parameters);
 
-    header('Location: /listaDePost2');
+        App::get('database')->insert('posts', $parameters);
+
+        header('Location: /listaDePosts');
     }
 
     public function postsView()

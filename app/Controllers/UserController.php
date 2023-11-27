@@ -7,7 +7,7 @@ use Exception;
 
 class UserController{
 
-    public function index()
+    public function users()
     {
         return view("admin/listaUsers");
     }
