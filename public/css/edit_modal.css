@@ -125,7 +125,7 @@ textarea {
     font-size: 60%;
 }
 
-.save:hover {
+button .save:hover {
     background-color: #3266c7;
 }
 

@@ -20,7 +20,7 @@
 	<body>
 		<div class="container">
 
-			<h1>Lista de Usuários</h1>
+			<h1 class="title-users-list">Lista de Usuários</h1>
 
 			<div class="new-user">
 					<button id="add-user">
@@ -55,7 +55,7 @@
 
 								<button id="open-modal" class="icon-editar"><img src="../../../public/assets/icon-editar.png"></button>
 
-								<?php require('./app/views/admin/modal_edit_user.html') ?>
+								<?php require('./app/views/admin/modal_edit_user.php') ?>
 
 								<button onclick="document.getElementById('id01').style.display='block'" class="icon-excluir"><img src="../../../public/assets/icon-delete.png"></button>
 

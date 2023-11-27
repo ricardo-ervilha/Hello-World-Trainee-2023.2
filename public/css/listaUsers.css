@@ -17,7 +17,7 @@ body{
 }
 
 
-.container h1{
+.container .title-users-list{
     font-size:200%;
     text-shadow: 5px 5px 2px rgba(0,0,0,0.8);
     color: white;
@@ -89,14 +89,14 @@ td{
 
 
 /* -----------------Botões-------------- */
-button{
+#add-user, #openUserModalBtn, .icon-visualizar, .icon-editar, .icon-excluir{
     padding-left: 0;
     background: none;
     border: none;
     cursor: pointer;
 }
 
-.container button:hover{
+#add-user:hover, #openUserModalBtn:hover, .icon-vizualizar:hover, .icon-editar:hover, .icon-excluir:hover{
     opacity:0.5;
 }
 
@@ -106,3 +106,19 @@ button{
 
 
 
+.save {
+    height: 30px;
+    width: 30%;
+    align-self: center;
+    background-color: #5088ED;
+    border-radius: 1rem;
+    margin-top: 15%;
+}
+
+.save{
+    font-size: 60%;
+}
+
+button .save:hover {
+    background-color: #3266c7;
+}
