@@ -48,3 +48,4 @@
 </div>
 
 <script src="../../../public/js/allModals.js"></script>
+<link rel="stylesheet" href="../../../public/css/modalView.css">
