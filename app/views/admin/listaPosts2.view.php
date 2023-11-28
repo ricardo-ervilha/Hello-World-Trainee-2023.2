@@ -36,36 +36,21 @@
 					<thead>
 						<tr class="cabeçalho">
                         <th>Título</th>
-                        <th>Conteúdo</th>
                         <th>Usuário</th>
                         <th>Data de Modificação</th>
                         <th>Ações</th>
 						</tr>
 					</thead>
 
-			<?php 
+			<?php foreach($posts as $function) : ?>
 			
-			$pdo = new PDO('mysql:host=localhost;dbname=helloworld', 'root', '');
-			$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-			$pdo->setAttribute(PDO::MYSQL_ATTR_INIT_COMMAND, "SET NAMES 'utf8'");
-		
-			try {
-				$pdoStatement = $pdo->query("SELECT * FROM posts");
-		
-				while($row = $pdoStatement->fetch(PDO::FETCH_ASSOC)){
-		
-					echo "<tbody> <tr class='linha'> <td>{$row['title']}</td> <td>{$row['content']}</td> <td>{$row['author_post']}</td> <td>{$row['updated_at']}</td>"; 
+			<tbody> <tr class='linha'> <td><?=$function->title?></td> <td><?=$function->author_post?></td> <td><?=$function->updated_at?></td>
 					
-					require ('./app/views/admin/icons-posts.php');
+			<?php require ('./app/views/admin/icons-posts.php'); ?>
 
-					echo "</tr>";
-				}
-		
-			} catch(Exception $e) {
-				echo "Erro: {$e->getMessage()}";
-			}
+			</tr>
 			
-			?>
+			<?php endforeach; ?>
 
 		</tbody>
 		</table>

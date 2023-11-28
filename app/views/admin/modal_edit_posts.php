@@ -9,7 +9,7 @@
 </head>
 
 <body>
-        <div class="modal" id="modal-edit<?=$row['id']?>" style="display: none;">
+        <div class="modal" id="modal-edit<?=$function->id?>" style="display: none;">
             <div class="modal-content">
                 
                 <div class="modal-head">

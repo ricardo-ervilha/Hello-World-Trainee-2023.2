@@ -7,11 +7,6 @@ use Exception;
 
 class PostController{
 
-    public function posts()
-    {
-        return view("admin/listaPosts2");
-    }
-
     public function postsCreate()
     {
         $imagePath = "public/assets/img_posts/" . basename($_FILES['image']['name']);
@@ -32,7 +27,12 @@ class PostController{
 
     public function postsView()
     {
+        $posts = App::get('database')->selectAll('posts');
+        $tables = [
+            'posts' => $posts,
+        ];
 
+        return view("admin/listaPosts2", $tables);
     }
 
     public function postsEdit()

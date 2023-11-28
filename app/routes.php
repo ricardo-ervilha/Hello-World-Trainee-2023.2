@@ -11,3 +11,5 @@ $router->post('users/create', 'UserController@usersCreate');
 $router->post('posts/create', 'PostController@postsCreate');
 
 $router->get('listaDeUsuarios', 'UserController@usersView');
+$router->get('listaDePosts', 'PostController@postsView');
+
