@@ -47,5 +47,20 @@ class QueryBuilder
         }
     }
 
+    public function recuperaDadosDoAutor($id)
+    {
+        $sql = "SELECT * FROM users WHERE id == $id";
+
+        try{
+            $stmt = $this->pdo->prepare($sql);
+
+            $stmt->execute();
+
+            return $stmt->fetchAll(PDO::FETCH_CLASS);
+        }catch(Exception $e){
+            die($e->getMessage());
+        }
+    }
+
 }
 
