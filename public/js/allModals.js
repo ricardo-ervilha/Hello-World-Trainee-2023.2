@@ -11,6 +11,12 @@ span.onclick = function () {
     modal.style.display = "none";
 }
 
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
 /* Modais do Paulo */
 
 document.querySelectorAll('.icon-visualizar').forEach(function (button) {
