@@ -7,16 +7,6 @@ use Exception;
 
 class UserController{
 
-    public function readUsers(){
-
-        $users = App::get('helloworld')->selectAll('users');
-        $tables = [
-            'users' => $users,
-        ];
-
-        return view("admin/listaUsers", $tables);
-    }
-
     public function usersCreate()
     {
         $parameters = [
@@ -33,7 +23,12 @@ class UserController{
 
     public function usersView()
     {
+        $users = App::get('database')->selectAll('users');
+        $tables = [
+            'users' => $users,
+        ];
 
+        return view("admin/listaUsers", $tables);
     }
 
     public function usersEdit()

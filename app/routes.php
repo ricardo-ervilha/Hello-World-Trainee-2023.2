@@ -10,5 +10,4 @@ $router->get('dashboard', 'LoginController@inicio');
 $router->post('users/create', 'UserController@usersCreate');
 $router->post('posts/create', 'PostController@postsCreate');
 
-$router->get('listaDeUsuarios', 'UserController@readUsers');
-$router->get('listaDePosts', 'UserController@readPosts');
+$router->get('listaDeUsuarios', 'UserController@usersView');

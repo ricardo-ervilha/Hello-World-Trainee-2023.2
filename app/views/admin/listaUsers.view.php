@@ -42,10 +42,10 @@
 						</tr>
 					</thead>
 
-					<?php foreach ($users as $read) : ?>
+					<?php foreach ($users as $function) : ?>
 
 		
-					<tbody> <tr> <td><?=$read->id?></td> <td><?=$read->name?></td> <td><?=$read->email?></td>
+					<tbody> <tr> <td><?=$function->id?></td> <td><?=$function->name?></td> <td><?=$function->email?></td>
 					
 					<?php require ('./app/views/admin/icons-users.php'); ?>
 

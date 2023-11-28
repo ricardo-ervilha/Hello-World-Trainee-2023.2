@@ -14,7 +14,7 @@ class QueryBuilder
     }
 
 
-public function insert($table, $parameters)
+    public function insert($table, $parameters)
     {
         $sql = sprintf(
             'INSERT INTO %s (%s) VALUES (%s)',
@@ -31,4 +31,21 @@ public function insert($table, $parameters)
             die("An error ocurred when trying to insert into database: {$e->getMessage()}");
         }
     }
+
+    public function selectAll($table)
+    {
+        $sql = "SELECT * FROM ($table)";
+
+        try{
+            $stmt = $this->pdo->prepare($sql);
+
+            $stmt->execute();
+
+            return $stmt->fetchAll(PDO::FETCH_CLASS);
+        }catch(Exception $e){
+            die($e->getMessage());
+        }
+    }
+
 }
+
