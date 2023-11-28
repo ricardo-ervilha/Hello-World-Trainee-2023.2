@@ -7,9 +7,14 @@ use Exception;
 
 class UserController{
 
-    public function users()
-    {
-        return view("admin/listaUsers");
+    public function readUsers(){
+
+        $users = App::get('helloworld')->selectAll('users');
+        $tables = [
+            'users' => $users,
+        ];
+
+        return view("admin/listaUsers", $tables);
     }
 
     public function usersCreate()

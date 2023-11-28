@@ -83,7 +83,7 @@ td{
 }
 
 /* --------------Ícones Ações-------------- */
-.tabela img{
+.icones{
     width: 25px;
     height: 25px;
 }
@@ -101,7 +101,10 @@ button{
     opacity:0.5;
 }
 
-
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+  }
 
 /* ------------------------------------RESPONSIVIDADE--------------------------- */
 
