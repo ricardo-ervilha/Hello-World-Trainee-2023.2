@@ -1,8 +1,10 @@
-.content-body input{
-    height: 30px;
-    width: 200px;
-    border-radius: 10px; 
+body{
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size:30px;
 }
+
+
 
 .modal-view{
     display: none;
@@ -25,10 +27,11 @@
     left: 50%;
     transform: translate(-50%, -50%);
 
-    width: 400px;
-    min-width: min-content; 
+    width: 20vw;
+    max-width: 600px;
+    min-width: min-content;
 
-    max-height: max-content;
+    max-height: 70vh;
     min-height: min-content;
     
     border-radius: 15px;
@@ -52,11 +55,12 @@
 }
 
 /* ------------------------------------CABEÇALHO--------------------------- */
-.modal-head{
+.modal-viewuser-head{
     text-align: center;
     border-bottom: solid 1px;
 }
-.modal-head h1{
+.modal-viewuser-head h1{
+    
     margin: 0;
     font-size: 150%;
 }
@@ -65,6 +69,7 @@
 .content-body{
     width: min-content;
     margin: 10% auto;
+    margin-bottom: 0;
     text-align: left;    
     display: grid;
 }
@@ -74,9 +79,17 @@
 }
 
 .content-body input{
-    height: 30px;
-    width: 200px;
-    border-radius: 10px; 
+    width:200px;
+
+    font-size: 20px;
+    margin-bottom: 20px;
+
+    border: none;
+    border-radius: 5px; 
+
+    outline:0;
+
+    background-color: white;
 }
 
 .name{

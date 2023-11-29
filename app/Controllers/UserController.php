@@ -18,6 +18,7 @@ class UserController{
 
     public function usersCreate()
     {
+        var_dump("teste");
         $parameters = [
             'name' => $_POST['name'],
             'sobrenome' => $_POST['sobrenome'],
@@ -27,7 +28,7 @@ class UserController{
         ];
     App::get('database')->insert('users', $parameters);
 
-    header('Location: /listaDeUsuarios');
+    header('Location: /admin/listaDeUsuarios');
     }
 
     public function usersView()
