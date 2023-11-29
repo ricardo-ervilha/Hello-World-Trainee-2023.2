@@ -77,5 +77,20 @@ class QueryBuilder
         }
     }
 
+    public function deletePosts($table, $id)
+    {
+        $sql = sprintf(
+            'DELETE FROM %s WHERE %s;',
+            $table,
+            "id = :id"
+        );
+        try {
+            $statement = $this->pdo->prepare($sql);
+            $statement->execute(compact('id'));
+        } catch (Exeption $e) {
+            die("An error ocurred when trying to delete from database: {$e->getMessage()}");
+        }
+    }
+
 }
 

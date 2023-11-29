@@ -40,10 +40,10 @@ class PostController{
 
     }
 
-    public function postsDelete()
-    {
-
-    }
+    public function delete(){
+        App::get('database')->deletePosts('posts', $_POST['id']);
+        header('Location: /listaDePosts');   
+       }
 
     
 }

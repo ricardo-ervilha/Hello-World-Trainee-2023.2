@@ -6,8 +6,9 @@
 </head>
 <body>
 <div id="id01<?=$function->id?>" class="modal-d" style="display: none;">
-    <form class="modal-d-content" action="/action_page.php">
-        <div class="container-d">
+    <form class="modal-d-content" action="delete" method="POST">
+    <input type="hidden" value="<?= $function->id ?>" name="id">
+        <div class="container-d"> 
             <span class="close-delete"
                 title="Close Modal">&times;</span>
             <img src="../../../public/assets/Delete-Bin-Trash.png">
