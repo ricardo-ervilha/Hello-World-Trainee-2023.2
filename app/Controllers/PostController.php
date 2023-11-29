@@ -4,6 +4,8 @@ namespace App\Controllers;
 
 use App\Core\App;
 use Exception;
+use \Datetime;
+
 
 class PostController{
 
@@ -11,12 +13,13 @@ class PostController{
     {
         $imagePath = "public/assets/img_posts/" . basename($_FILES['image']['name']);
         move_uploaded_file($_FILES['image']['tmp_name'], $imagePath);
-               
+        $now = new DateTime();
+
         $parameters = [
             'title' => $_POST['title'],
             'content' => $_POST['content'],
             'image' => $imagePath,
-            'created_at' => $_POST['created_at'],
+            'created_at' =>  $now->format('Y-m-d H:i:s'),
             'author_post' => 1,
         ];
 
@@ -40,9 +43,11 @@ class PostController{
 
     }
 
-    public function postsDelete()
+    public function delete()
     {
+        App::get('database')->delete('posts', $_POST['id']);
+        header('Location: /listaDePosts');   
+       }
 
-    }
-    
 }
+    
