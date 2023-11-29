@@ -72,7 +72,7 @@ class QueryBuilder
         try {
             $statement = $this->pdo->prepare($sql);
             $statement->execute(compact('id'));
-        } catch (Exeption $e) {
+        } catch (Exception $e) {
             die("An error ocurred when trying to delete from database: {$e->getMessage()}");
         }
     }
