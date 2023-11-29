@@ -8,6 +8,7 @@
 <div id="id01<?=$function->id?>" class="modal" style="display: none;">
     <form class="modal-d-content" action="delete" method="POST">
     <input type="hidden" value="<?= $function->id ?>" name="id">
+
         <div class="container-d">
             <span class="close-delete"
                 title="Close Modal">&times;</span>
