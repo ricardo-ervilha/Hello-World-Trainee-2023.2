@@ -1,4 +1,4 @@
-<div class="modal" id="modalEdit" style="display: none;">
+<div class="modal" id="modal-edit" style="display: none;">
     <div class="modal-content">
         
         <div class="modal-head">

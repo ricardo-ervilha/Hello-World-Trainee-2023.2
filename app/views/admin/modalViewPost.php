@@ -1,6 +1,6 @@
 <!-- Modal de post -->
 
-<div id="modalView<?=$row['id']?>" class="modal" style="display: none;">
+<div id="modalView" class="modal" style="display: none;">
     <div class="modal-content">
         <div class="modal-head">
             <h2>Informações do Post</h2>

@@ -1,7 +1,7 @@
 
 
 <div id="modalDelete" class="modal-d" style="display: none;">
-    <form class="modal-d-content" action="/action_page.php">
+    <form class="modal-delete-content" action="/action_page.php">
         <div class="container-d">
             <span class="close-delete"
                 title="Close Modal">&times;</span>

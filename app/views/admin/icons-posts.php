@@ -1,6 +1,6 @@
 <td>
 	
-<button id="open-view<?=$row['id']?>" class="icon-visualizar"><img class="icones" src="../../../public/assets/icon-ver.png"></button>
+<button id="open-view" class="icon-visualizar"><img class="icones" src="../../../public/assets/icon-ver.png"></button>
 
 <?php require('./app/views/admin/modalViewPost.php') ?>
 

@@ -1,4 +1,4 @@
-<div id="modalView<?=$row['id']?>" class="modal-view" style="display:none;">
+<div id="modalView" class="modal-view" style="display:none;">
     <div class="modal-view-content">
         <div class="modal-viewuser-head">
             <h1>Informações do Usuário</h1>

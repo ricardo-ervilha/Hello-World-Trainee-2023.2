@@ -10,7 +10,7 @@ var btnEdit = document.getElementById("open-edit");     //BOTAO EDITAR USER/POST
 var btnDelete = document.getElementById("open-delete"); //BOTAO DELETAR USER/POST
 
 var closeNew = document.getElementsByClassName("close-new")[0];         //FECHAR MODAL DE NOVO USER/POST
-var closeView = document.getElementById("close-view");                  //FECHAR MODAL DE VISUALIZAR USER/POST
+var closeView = document.getElementById("close-view")[0];                //FECHAR MODAL DE VISUALIZAR USER/POST
 var closeEdit = document.getElementsByClassName("close-edit")[0];       //FECHAR MODAL DE EDITAR USER/POST
 var closeDelete = document.getElementsByClassName("close-delete")[0];   //FECHAR MODAL DE DELETERAR USER/POST
 

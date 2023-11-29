@@ -6,7 +6,7 @@ body{
 
 
 
-.modal-view{
+.modal{
     display: none;
     position: fixed;
     z-index: 2;
@@ -19,7 +19,7 @@ body{
 }
 
 
-.modal-view-content{
+.modal-content{
     background-color: #87ceeb;
 
     position: fixed;

@@ -29,7 +29,9 @@ body{
     width: 40vw;
     min-width: min-content;
 
-    height: 85vh;
+    
+    height: max-content;
+    max-height: 85vh;
     min-height: min-content;
     
     border-radius: 15px;

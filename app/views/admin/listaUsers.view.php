@@ -27,7 +27,7 @@
 						<div class="text-new-user"><h2>Novo Usuário</h2></div>
 					</button>
 
-					<?php require('./app/views/admin/modalNewUser.html') ?>
+					<?php require('./app/views/admin/modalNewUser.php') ?>
 			</div>
 
 			<div class="div-tabela">
