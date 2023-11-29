@@ -13,3 +13,5 @@ $router->post('posts/create', 'PostController@postsCreate');
 $router->get('listaDeUsuarios', 'UserController@usersView');
 $router->get('listaDePosts', 'PostController@postsView');
 
+//deleteUsers
+$router->post('delete', 'UserController@delete');

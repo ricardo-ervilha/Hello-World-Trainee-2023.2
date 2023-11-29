@@ -36,8 +36,8 @@ class UserController{
 
     }
 
-    public function usersDelete()
-    {
-
-    }
+    public function delete(){
+        App::get('database')->delete('users', $_POST['id']);
+        header('Location: /listaDeUsuarios');   
+       }
 }
