@@ -1,7 +1,7 @@
 <!-- Modal de post -->
 
 <div id="userModal<?=$function->id?>" class="modal" style="display: none;">
-    <div class="modal-content">
+    <div class="modal-view-content">
         <div class="modal-head">
             <h2>Informações do Post</h2>
         </div>
