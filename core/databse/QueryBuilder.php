@@ -31,4 +31,34 @@ public function insert($table, $parameters)
             die("An error ocurred when trying to insert into database: {$e->getMessage()}");
         }
     }
+
+    public function selectAll($table)
+    {
+        $sql = "select * from {$table}";
+
+        try {
+            $statement = $this->pdo->prepare($sql);
+
+            $statement->execute();
+
+            return $statement->fetchAll(PDO::FETCH_CLASS);
+        } catch (Exception $e) {
+            die($e->getMessage());
+        }
+    }
+    public function validateLogin($email, $senha)
+    {
+        $sql = "SELECT * FROM users WHERE email = '$email' AND password = '$senha'";
+
+        try{
+            $statement = $this->pdo->prepare($sql);
+
+            $statement->execute();
+            return $statement->rowCount();
+        } catch (Exception $e) {
+            die("An error ocurred when trying to insert into database: {$e->getMessage()}");
+        }
+    }
+
+
 }

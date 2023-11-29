@@ -8,8 +8,7 @@ use Exception;
 class UserController{
 
     public function readUsers(){
-
-        $users = App::get('helloworld')->selectAll('users');
+        $users = App::get('database')->selectAll('users');
         $tables = [
             'users' => $users,
         ];

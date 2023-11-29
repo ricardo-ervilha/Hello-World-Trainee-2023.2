@@ -7,7 +7,7 @@ use Exception;
 
 class PostController{
 
-    public function posts()
+    public function readPosts()
     {
         return view("admin/listaPosts2");
     }

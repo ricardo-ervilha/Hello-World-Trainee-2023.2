@@ -1,99 +1,86 @@
-/* Modais do Lucas */
+var modalNew = document.getElementById("modalNew");     //MODAL DE NOVO USER/POST
+var modalView = document.getElementById("modalView");   //MODAL DE VISUALIZAR USER/POST
+var modalEdit = document.getElementById("modalEdit");  //MODAL DE EDITAR USER/POST
+var modalDelete = document.getElementById('modalDelete');      //MODAL DE DELETAR USER/POST
 
-var btn = document.getElementById("add-user");
-var span = document.getElementsByClassName("close")[0];
 
-btn.onclick = function () {
-    modal.style.display = "block";
+var btnNew = document.getElementById("open-new");       //BOTAO NOVO USER/POST
+var btnView = document.getElementById("open-view");     //BOTAO VISUALIZAR USER/POST
+var btnEdit = document.getElementById("open-edit");     //BOTAO EDITAR USER/POST
+var btnDelete = document.getElementById("open-delete"); //BOTAO DELETAR USER/POST
+
+var closeNew = document.getElementsByClassName("close-new")[0];         //FECHAR MODAL DE NOVO USER/POST
+var closeView = document.getElementById("close-view");                  //FECHAR MODAL DE VISUALIZAR USER/POST
+var closeEdit = document.getElementsByClassName("close-edit")[0];       //FECHAR MODAL DE EDITAR USER/POST
+var closeDelete = document.getElementsByClassName("close-delete")[0];   //FECHAR MODAL DE DELETERAR USER/POST
+
+/* Modais do Lucas - NOVO USER/POST  */
+
+btnNew.onclick = function () {
+    modalNew.style.display = "block";
 }
 
-span.onclick = function () {
-    modal.style.display = "none";
+closeNew.onclick = function () {
+    modalNew.style.display = "none";
 }
 
-/* Modais do Paulo */
 
-document.querySelectorAll('.icon-visualizar').forEach(function (button) {
-    button.addEventListener('click', function () {
-        var match = button.id.match(/\d+/);
-        var rowId = match ? match[0] : null;
-        
-        var modalId = "userModal" + rowId;
-        var modalView = document.getElementById(modalId);
-        
-        modalView.style.display = "block";
+/* Modais do Paulo - VISUALIZAR USER/POST    */
 
-        closeUserModalBtn = modalView.querySelector('.close');
+btnView.onclick = function () {
+    modalView.style.display = "block";
+}
 
-        closeUserModalBtn.addEventListener("click", () => {
-            modalView.style.display = "none";
-        });
-        
-        window.onclick = function(event) {
-            if (event.target == modalView) {
-                modalView.style.display = "none";
-            }
-        }
-    });
-});
+closeView.onclick = function () {
+    modalView.style.display = "none";
+}
 
 
-/* Modais do João Pedro */
+/* Modais do João Pedro  -  EDITAR USER/POST      */
 
-document.querySelectorAll('.icon-editar').forEach(function (button) {
-    button.addEventListener('click', function () {
-        var match = button.id.match(/\d+/);
-        var rowId = match ? match[0] : null;
-        
-        var modalId = "modal-edit" + rowId;
-        var modalView = document.getElementById(modalId);
-        
-        modalView.style.display = "block";
+btnEdit.onclick = function () {
+    modalEdit.style.display = "block";
+}
 
-        closeEditModalBtn = modalView.querySelector('.closeEdit');
-       
+closeEdit.onclick = function () {
+    modalEdit.style.display = "none";
+}
 
-        closeEditModalBtn.addEventListener("click", () => {
-            modalView.style.display = "none";
-        });
-        
-        window.onclick = function(event) {
-            if (event.target == modalView) {
-                modalView.style.display = "none";
-            }
-        }
-    });
-});
 
-/* Modais do João Paulo */
+/* Modais do João Pedro  -  EDITAR USER/POST      */
 
-document.querySelectorAll('.icon-excluir').forEach(function (button) {
-    button.addEventListener('click', function () {
+btnEdit.onclick = function () {
+    modalEdit.style.display = "block";
+}
 
-        var match = button.id.match(/\d+/);
-        var rowId = match ? match[0] : null;
-        
-        var modalId = "id01" + rowId;
-        var modalView = document.getElementById(modalId);
-        
-        modalView.style.display = "block";
+closeEdit.onclick = function () {
+    modalEdit.style.display = "none";
+}
 
-        closeDeleteModalBtn = modalView.querySelector('.close-delete');
-       
-        cancel = modalView.querySelector('.cancelbtn');
 
-        closeDeleteModalBtn.addEventListener("click", () => {
-            modalView.style.display = "none";
-        });
+/* Modais do João Paulo  -  DELETAR USER/POST      */
 
-        cancel.addEventListener("click", () => {
-            modalView.style.display = "none";
-        });
-        
-        window.onclick = function(event) {
-            if (event.target == modalView) {
-                modalView.style.display = "none";
-            }
-        }
-    });
-});
+btnDelete.onclick = function () {
+    modalDelete.style.display = "block";
+}
+
+closeDelete.onclick = function () {
+    modalDelete.style.display = "none";
+}
+
+
+/* Todos */
+
+window.onclick = function(event) {
+    if(event.target == modalNew){
+        modalNew.style.display= "none";
+    } else if(event.target == modalView){
+        modalView.style.display= "none";
+    } else if(event.target == modalEdit){
+        modalEdit.style.display= "none";
+    } else if(event.target == modalDelete){
+        modalDelete.style.display= "none";
+    }
+}
+
+

@@ -5,7 +5,7 @@ body{
 }
 
 
-.modal{
+.modalNewUser{
     display: none;
     position: fixed;
     z-index: 2;
@@ -26,7 +26,7 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
 
-    width: 40vw;
+    width: 20vw;
     max-width: 600px;
     min-width: min-content;
 
@@ -42,7 +42,7 @@ body{
 
 
 /* ------------------------------------FECHAR--------------------------- */
-.close{
+.modal-newuser-content span{
     position: absolute;
     top: 5px;
     right: 5px;
@@ -51,7 +51,7 @@ body{
     font-size: 25px;
 }
 
-.close:hover{
+.modal-newuser-content span:hover{
     cursor: pointer;
 }
 

@@ -1,8 +1,8 @@
 
-<div class="modal" id="modal" style="display: none">
+<div class="modal" id="modalNew" style="display: none">
     <div class="modal-newpost-content">
         <form action="posts/create" method="POST" enctype="multipart/form-data">
-        <span class="close">&times</span>
+        <span class="close-new">&times</span>
         <div class="modal-head">
             <h1>Novo Post</h1>
         </div>
@@ -36,6 +36,7 @@
         </form>
     </div>
 </div>    
-<script src="../../../public/js/allModals.js"></script>
+
 <link rel="stylesheet" href="../../../public/css/modalNewPost.css">
+<script src="../../../public/js/allModals.js"></script>
 

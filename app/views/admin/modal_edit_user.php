@@ -1,10 +1,8 @@
-<link rel="stylesheet" href="../../../public/css/edit_modal.css">
-
-<div class="modal" id="modal-edit<?=$row['id']?>" style="display: none;">
+<div class="modal" id="modalEdit" style="display: none;">
     <div class="modal-content">
         <div class="modal-head">
             <div class="close-container">
-                <span class="closeEdit">&times;</span>
+                <span class="close-edit">&times;</span>
             </div>
             <div class="title-container">
                 <h1>Edição de usuários</h1>
@@ -37,3 +35,6 @@
         </div>
     </div>
 </div>
+
+<link rel="stylesheet" href="../../../public/css/edit_modal.css">
+<script src="../../../public/js/allModals.js"></script>

@@ -1,6 +1,4 @@
-<link rel="stylesheet" href="../../../public/css/modalView.css">
-
-<div id="userModal<?=$row['id']?>" class="modal-view" style="display: none;">
+<div id="modalView" class="modal-view" style="display:none;">
     <div class="modal-view-content">
         <div class="modal-head">
             <h2>Informações do Usuário</h2>
@@ -35,7 +33,10 @@
                 <input disabled type="text" id="userPhoneInput" class="imp"  readonly value="<?=$row['phone']?>">
             </div>
 
-            <span class="close" id="closeUserModalBtn">&times;</span>
+            <span class="close" id="close-view">&times;</span>
         </div>
     </div>
 </div>
+
+<link rel="stylesheet" href="../../../public/css/modalView.css">
+<script src="../../../public/js/allModals.js"></script>

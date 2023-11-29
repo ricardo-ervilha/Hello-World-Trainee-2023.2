@@ -7,32 +7,31 @@ use Exception;
 
 class LoginController{
 
-    public function login()
+    
+
+    public function view()
     {
         return view("site/login");
     }
 
-    public function inicio()
+    public function login()
     {
-        if(isset($_POST['email']) || isset($_POST['senha'])) {
+        if(isset($_POST['email']) || isset($_POST['password'])) {
 
             if(strlen($_POST['email']) == 0) {
                 echo "Preencha seu e-mail";
-            } else if(strlen($_POST['senha']) == 0) {
+            } else if(strlen($_POST['password']) == 0) {
                 echo "Preencha sua senha";
             } else {
         
-                $email = $mysqli->real_escape_string($_POST['email']);
-                $senha = $mysqli->real_escape_string($_POST['senha']);
+                $email = $_POST['email'];
+                $senha = $_POST['password'];
         
-                $sql_code = "SELECT * FROM users WHERE email = '$email' AND password = '$senha'";
-                $sql_query = $mysqli->query($sql_code) or die("Falha na execução do código SQL: " . $mysqli->error);
-        
-                $quantidade = $sql_query->num_rows;
+                $quantidade = App::get('database')->validateLogin($email, $senha);
         
                 if($quantidade == 1) {
                     
-                    $usuario = $sql_query->fetch_assoc();
+                    
         
                     if(!isset($_SESSION)) {
                         session_start();
@@ -48,8 +47,22 @@ class LoginController{
                 }
         
             }
+        }
+
+    }  
+
+    public function dashboard()
+    {
+        return view("admin/dashboard");
     }
 
-}
+    public function home()
+    {
+        
+        $page = 1;
+        $total_pages = 5;
+        return view("site/landingPage", compact("page","total_pages"));
+    
+    }
 }
     
