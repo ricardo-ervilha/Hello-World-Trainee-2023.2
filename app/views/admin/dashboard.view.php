@@ -1,3 +1,8 @@
+<?php
+
+include('protect.php');
+
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -28,17 +33,20 @@
 </head>
 
 <body>
-<div class="alert alert-primary" role="alert">
-  This is a primary alert—check it out!
+
+<div class="alert alert-success" role="alert">
+  Login realizado com sucesso
 </div>
         <div class="topo">
-            <h1>Bem-vindo de volta, admin!</h1>
+            
+
+            <h1>Bem-vindo de volta, <?php echo $_SESSION['nome'];?>!</h1>
             <div class="logout">
                 <p id="seta" onclick="mostrarLista()"> &nabla;</p>
                 <button onclick="mostrarLista()"><img src="../../../public/assets/foto-usuario.png"></button>
                 <ul id="lista" class="lista-hidden">
                     <li><a>Trocar usuário</a></li>
-                    <li><a>Sair</a></li>
+                    <li><a href="/logout">Sair</a></li>
                 </ul>
             </div>
         </div>

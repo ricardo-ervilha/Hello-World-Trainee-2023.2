@@ -28,7 +28,7 @@ class UserController{
         ];
     App::get('database')->insert('users', $parameters);
 
-    header('Location: /admin/listaDeUsuarios');
+    header('Location: /listaDeUsuarios');
     }
 
     public function usersView()

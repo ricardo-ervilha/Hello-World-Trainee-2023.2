@@ -26,20 +26,25 @@ class LoginController{
         
                 $email = $_POST['email'];
                 $senha = $_POST['password'];
+
         
                 $quantidade = App::get('database')->validateLogin($email, $senha);
         
                 if($quantidade == 1) {
                     
-                    
-        
+                    $usuario = App::get('database')->selectUser($email, $senha);
+
+
+
                     if(!isset($_SESSION)) {
                         session_start();
                     }
+
         
                     $_SESSION['id'] = $usuario['id'];
-                    $_SESSION['nome'] = $usuario['nome'];
-        
+                    $_SESSION['nome'] = $usuario['name'];
+
+                    
                     header("Location: /dashboard");
         
                 } else {
@@ -56,6 +61,16 @@ class LoginController{
         return view("admin/dashboard");
     }
 
+    public function logout(){
+        if(!isset($_SESSION)){
+            session_start();
+        }
+    
+        session_destroy();
+    
+        header("Location: /loginView");
+    }
+
     public function home()
     {
         
@@ -64,5 +79,7 @@ class LoginController{
         return view("site/landingPage", compact("page","total_pages"));
     
     }
+
+ 
 }
     

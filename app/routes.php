@@ -10,10 +10,12 @@ $router->post('login', 'LoginController@login');
 $router->get('dashboard', 'LoginController@dashboard');
 $router->get('home', 'LoginController@home');
 
-$router->post('admin/users/create', 'UserController@usersCreate');
-$router->post('admin/posts/create', 'PostController@postsCreate');
+$router->post('users/create', 'UserController@usersCreate');
+$router->post('posts/create', 'PostController@postsCreate');
 
-$router->get('admin/listaDeUsuarios', 'UserController@readUsers');
-$router->get('admin/listaDePosts', 'PostController@readPosts');
+$router->get('listaDeUsuarios', 'UserController@readUsers');
+$router->get('listaDePosts', 'PostController@readPosts');
+
+$router->get('logout', 'LoginController@logout');
 
 

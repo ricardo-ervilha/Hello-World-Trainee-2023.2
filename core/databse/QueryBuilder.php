@@ -14,7 +14,7 @@ class QueryBuilder
     }
 
 
-public function insert($table, $parameters)
+    public function insert($table, $parameters)
     {
         $sql = sprintf(
             'INSERT INTO %s (%s) VALUES (%s)',
@@ -32,9 +32,10 @@ public function insert($table, $parameters)
         }
     }
 
+
     public function selectAll($table)
     {
-        $sql = "select * from {$table}";
+        $sql = "SELECT * FROM {$table}";
 
         try {
             $statement = $this->pdo->prepare($sql);
@@ -46,6 +47,8 @@ public function insert($table, $parameters)
             die($e->getMessage());
         }
     }
+
+
     public function validateLogin($email, $senha)
     {
         $sql = "SELECT * FROM users WHERE email = '$email' AND password = '$senha'";
@@ -54,11 +57,29 @@ public function insert($table, $parameters)
             $statement = $this->pdo->prepare($sql);
 
             $statement->execute();
+
             return $statement->rowCount();
         } catch (Exception $e) {
             die("An error ocurred when trying to insert into database: {$e->getMessage()}");
         }
     }
+
+    public function selectUser($email, $senha)
+    {
+        $sql = "SELECT * FROM users WHERE email = '$email' AND password = '$senha'";
+
+        try{
+            $statement = $this->pdo->prepare($sql);
+
+            $statement->execute();
+
+            return $statement->fetch(PDO::FETCH_ASSOC);
+        } catch (Exception $e) {
+            die("An error ocurred when trying to insert into database: {$e->getMessage()}");
+        }
+    }
+
+
 
 
 }
