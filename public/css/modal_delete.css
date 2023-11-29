@@ -20,7 +20,7 @@ button:hover {
 /* Float cancel and delete buttons and add an equal width */
 .cancelbtn, .deletebtn {
   float: left;
-  width: 50%;
+  width: 50%; 
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
