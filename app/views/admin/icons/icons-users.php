@@ -10,5 +10,6 @@
 
 <button id="delModal<?=$function->id?>" class="icon-excluir"><img class="icones" src="../../../public/assets/icon-delete.png"></button>
 
+<?php require('./app/views/admin/modals/modal_delete_user.php') ?>
 
 </td>
