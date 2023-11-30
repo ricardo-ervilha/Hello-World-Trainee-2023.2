@@ -56,7 +56,7 @@ document.querySelectorAll('.icon-editar').forEach(function (button) {
         
         modalView.style.display = "block";
 
-        closeEditModalBtn = modalView.querySelector('.closeEdit');
+        closeEditModalBtn = modalView.querySelector('.close');
        
 
         closeEditModalBtn.addEventListener("click", () => {

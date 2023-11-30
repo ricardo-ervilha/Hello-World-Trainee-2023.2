@@ -1,13 +1,13 @@
-<link rel="stylesheet" href="../../../public/css/edit_modal.css">
+<link rel="stylesheet" href="../../../public/css/modalView.css">
 
 <div class="modal" id="modal-edit<?=$function->id?>" style="display: none;">
     <div class="modal-content">
         <div class="modal-head">
             <div class="close-container">
-                <span class="closeEdit">&times;</span>
+            <span class="close" id="closeUserModalBtn">&times;</span>
             </div>
-            <div class="title-container">
-                <h1>Edição de usuários</h1>
+            <div class="modal-head">
+                <h2>Edição de usuários</h2>
             </div>
         </div>
 
