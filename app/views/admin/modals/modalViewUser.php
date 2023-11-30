@@ -1,4 +1,4 @@
-<div id="userModal<?=$function->id?>" class="modal-view">
+<div id="userModal<?=$function->id?>" class="modal">
     <div class="modal-content">
         <div class="modal-head">
             <h2>Informações do Usuário</h2>

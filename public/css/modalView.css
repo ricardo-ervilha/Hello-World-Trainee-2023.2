@@ -1,5 +1,5 @@
 
-.modal-view{
+.modal{
     display: none;
     position: fixed;
     z-index: 2;
@@ -69,6 +69,7 @@
     height: 30px;
     width: 100%;
     border-radius: 10px; 
+    border: none;
 }
 
 .name{

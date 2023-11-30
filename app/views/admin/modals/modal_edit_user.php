@@ -1,39 +1,40 @@
-<link rel="stylesheet" href="../../../public/css/modalView.css">
-
 <div class="modal" id="modal-edit<?=$function->id?>" style="display: none;">
-    <div class="modal-content">
+<div class="modal-content">
         <div class="modal-head">
-            <div class="close-container">
-            <span class="close" id="closeUserModalBtn">&times;</span>
-            </div>
-            <div class="modal-head">
-                <h2>Edição de usuários</h2>
-            </div>
+            <h2>Edição de Usuários</h2>
         </div>
-
         <div class="content-body">
-            <div class="name">
-                <h2 class="h2-edit">Nome</h2>
-                <input type="text" placeholder="Primeiro nome">
-                <input type="text" placeholder="Sobrenomes">
+
+            <div class="imputNome">
+                <label for="userNameInput">
+                    <h2>Nome:</h2>
+                </label>
+                <input type="text" id="userNameInput" class="imp" value="<?=$function->name?>">
             </div>
 
-            <div class="celular">
-                <h2 class="h2-edit">Telefone</h2>
-                <input type="tel">
+            <div class="imputData">
+                <label for="userDOBInput">
+                    <h2>Sobrenome:</h2>
+                </label>
+                <input type="text" id="userDOBInput" class="imp" value="<?=$function->sobrenome?>">
             </div>
 
-            <div class="email">
-                <h2 class="h2-edit">E-mail</h2>
-                <input type="email">
+            <div class="imputEmail">
+                <label for="userEmailInput">
+                    <h2>Email:</h2>
+                </label>
+                <input type="text" id="userEmailInput" class="imp" value="<?=$function->email?>">
             </div>
 
-            <div class="senha">
-                <h2 class="h2-edit">Senha</h2>
-                <input type="password">
+            <div class="imputPhone">
+                <label for="userPhoneInput">
+                    <h2>Senha:</h2>
+                </label>
+                <input type="text" id="userPhoneInput" class="imp" value="<?=$function->password?>">
             </div>
 
-            <button class="save">Salvar</button>
+            <span class="close" id="closeUserModalBtn">&times;</span>
         </div>
     </div>
 </div>
+<link rel="stylesheet" href="../../../../public/css/modalView.css">
