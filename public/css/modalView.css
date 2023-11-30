@@ -3,14 +3,8 @@
     width: 200px;
     border-radius: 10px; 
 }
-body{
-    color: black;
-    font-family: 'Roboto', sans-serif;
-    font-size:30px;
-}
 
-
-.modal{
+.modal-view{
     display: none;
     position: fixed;
     z-index: 2;

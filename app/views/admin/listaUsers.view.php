@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<title>Usuários - Hello World</title>
 
-		<link rel="stylesheet" href="../../../public/css/teste/listaUsers.css">
+		<link rel="stylesheet" href="../../../public/css/listaUsers.css">
         
 		<link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
