@@ -9,17 +9,12 @@
 </head>
 
 <body>
-    <div>
-        <h2>Admin</h2>
-        <button class="open-modal" id="open-modal">Editar</button>
-    </div>
-
-        <div class="modal" id="modal">
+        <div class="modal" id="modal-edit<?=$function->id?>" style="display: none;">
             <div class="modal-content">
                 
                 <div class="modal-head">
                     <div class="close-container">
-                        <span class="close">&times;</span>
+                        <span class="closeEdit">&times;</span>
                     </div>
                     <div class="title-container">
                         <h1>Edição de Posts</h1>
@@ -56,6 +51,6 @@
                 </div>
             </div>
         </div>
-        <script src="../../../public/js/edit_modal.js"></script>
+        <script src="../../../public/js/allModals.js"></script>
 </body>
 </html>
