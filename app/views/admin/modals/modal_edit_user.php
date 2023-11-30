@@ -33,8 +33,11 @@
                 <input type="text" id="userPhoneInput" class="imp" value="<?=$function->password?>">
             </div>
 
-            <span class="close" id="closeUserModalBtn">&times;</span>
-        </div>
+            <button class="savebtn">Salvar</button>
+
+            <span class="close"
+                title="Close Modal">&times;</span>
+            </div>
     </div>
 </div>
 <link rel="stylesheet" href="../../../../public/css/modalView.css">

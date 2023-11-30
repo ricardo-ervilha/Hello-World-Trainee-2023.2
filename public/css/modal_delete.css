@@ -94,6 +94,7 @@ hr {
 
 /* The Modal Close Button (x) */
 .close-delete {
+  position: relative;
   text-align: right;
   display: block;
   font-size: 40px;

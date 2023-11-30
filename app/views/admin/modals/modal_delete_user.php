@@ -9,8 +9,8 @@
     <form class="modal-d-content" action="deleteUser" method="POST">
     <input type="hidden" value="<?= $function->id ?>" name="id">
         <div class="container-d">
-            <span class="close-delete"
-                title="Close Modal">&times;</span>
+            <span class="close-delete" title="Close Modal">&times;</span>
+            
             <img src="../../../public/assets/Delete-Bin-Trash.png">
             <h2 class="h2-d">Tem certeza?</h2>
 
