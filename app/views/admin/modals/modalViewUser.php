@@ -1,5 +1,3 @@
-<link rel="stylesheet" href="../../../public/css/modalView.css">
-
 <div id="userModal<?=$function->id?>" class="modal-view" style="display: none;">
     <div class="modal-view-content">
         <div class="modal-head">
