@@ -35,7 +35,6 @@
 			
 			<tbody> <tr class='linha'> <td><?=$function->title?></td> <td><?=$function->author_post?></td> <td><?=$function->updated_at?></td>
 					
-			<?php require ('./app/views/admin/icons-posts.php'); ?>
 
 			</tr>
 			

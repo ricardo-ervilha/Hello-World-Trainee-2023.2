@@ -35,5 +35,5 @@
         </form>
     </div>
 </div>    
-<link rel="stylesheet" href="../../../public/css/modalNewPost.css">
+<link rel="stylesheet" href="../../../public/css/modals/modalNewPost.css">
 
