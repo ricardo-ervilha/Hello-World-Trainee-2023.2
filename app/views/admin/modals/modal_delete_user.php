@@ -23,4 +23,4 @@
 </div>
 </body>
 
-<link rel="stylesheet" href="../../../../public/css/modal_delete.css">
+<link rel="stylesheet" href="../../../../public/css/modals/modal_delete.css">

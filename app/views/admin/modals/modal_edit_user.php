@@ -40,4 +40,4 @@
             </div>
     </div>
 </div>
-<link rel="stylesheet" href="../../../../public/css/modalView.css">
+<link rel="stylesheet" href="../../../../public/css/modals/modalView.css">
