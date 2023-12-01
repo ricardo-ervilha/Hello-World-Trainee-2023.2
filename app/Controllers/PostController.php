@@ -25,7 +25,7 @@ class PostController{
 
         App::get('database')->insert('posts', $parameters);
 
-        header('Location: admin/listaDePosts');
+        header('Location: /listaDePosts');
     }
 
     public function postsView()
