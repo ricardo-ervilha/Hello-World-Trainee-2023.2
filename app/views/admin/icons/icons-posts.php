@@ -2,7 +2,7 @@
 	
 <button id="openUserModalBtn<?=$function->id?>" class="icon-visualizar"><img class="icones" src="../../../public/assets/icon-ver.png"></button>
 
-<?php require('./app/views/admin/modalViewPost.php') ?>
+<?php require('./app/views/admin/modals/modalViewPost.php') ?>
 
 <button id="open-modal<?=$function->id?>" class="icon-editar"><img class="icones" src="../../../public/assets/icon-editar.png"></button>
 

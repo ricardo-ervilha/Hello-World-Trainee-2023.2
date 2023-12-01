@@ -23,9 +23,9 @@
 			<div class="div-tabela">
 				<table class="tabela">
 					<thead>
-						<tr class="cabeçalho">
+						<tr class="cabeçalho">	
                         <th>Título</th>
-                        <th>Usuário</th>
+                        <th>Autor</th>
                         <th>Data de Modificação</th>
                         <th>Ações</th>
 						</tr>
@@ -35,6 +35,7 @@
 			
 			<tbody> <tr class='linha'> <td><?=$function->title?></td> <td><?=$function->author_post?></td> <td><?=$function->updated_at?></td>
 					
+			<?php require ('./app/views/admin/icons/icons-posts.php'); ?>
 
 			</tr>
 			
