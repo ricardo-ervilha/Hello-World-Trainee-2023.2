@@ -19,4 +19,4 @@ $router->post('posts/create', 'PostController@postsCreate');
 
 //Delete
 $router->post('deleteUser', 'UserController@delete');
-$router->post('deletePost', 'PostController@delete');
+$router->post('deletePost', 'PostController@postsDelete');

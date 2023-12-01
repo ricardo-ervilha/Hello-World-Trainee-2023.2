@@ -35,7 +35,7 @@ class PostController{
             'posts' => $posts,
         ];
 
-        return view("admin/listaPosts2", $tables);
+        return view("admin/listaPosts", $tables);
     }
 
     public function postsEdit()
@@ -43,7 +43,7 @@ class PostController{
 
     }
 
-    public function delete()
+    public function postsDelete()
     {
         App::get('database')->delete('posts', $_POST['id']);
         header('Location: /listaDePosts');   
