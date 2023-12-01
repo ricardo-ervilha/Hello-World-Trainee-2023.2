@@ -19,6 +19,8 @@
 						<div class="text-new-user"><h2>Novo Usuário</h2></div>
 					</button>
 
+					<?php require ('./app/views/admin/modals/modalNewUser.php'); ?>
+
 			</div>
 			<div class="div-tabela">
 				<table class="tabela">

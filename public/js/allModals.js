@@ -1,21 +1,28 @@
 /* Modais do Lucas */
 
-var btn = document.getElementById("add-user");
-var span = document.getElementsByClassName("close")[0];
+document.querySelectorAll('#add-user').forEach(function (button) {
+    button.addEventListener('click', function () {
+        
+        console.log("teste");
+        var modalView = document.querySelector(".modal");
+        
+        modalView.style.display = "block";
 
-btn.onclick = function () {
-    modal.style.display = "block";
-}
+        var span = document.getElementsByClassName("close")[0];
 
-span.onclick = function () {
-    modal.style.display = "none";
-}
+        span.addEventListener("click", () => {
+            modalView.style.display = "none";
+        });
+        
+        window.onclick = function(event) {
+            if (event.target == modalView) {
+                console.log("Chegou aqui");
+                modalView.style.display = "none";
+            }
+        }
+    });
+});
 
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
 
 /* Modais do Paulo */
 
