@@ -20,12 +20,12 @@ class PostController{
             'content' => $_POST['content'],
             'image' => $imagePath,
             'created_at' =>  $now->format('Y-m-d H:i:s'),
-            'author_post' => 1,
+            'author_post' => 7,
         ];
 
         App::get('database')->insert('posts', $parameters);
 
-        header('Location: /listaDePosts');
+        header('Location: admin/listaDePosts');
     }
 
     public function postsView()

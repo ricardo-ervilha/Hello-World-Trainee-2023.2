@@ -18,7 +18,7 @@
                 <label for="postContentInput">
                     <h2>Conteúdo do Post:</h2>
                 </label>
-                <input type="text" id="postContentInput" class="imp" value="<?=$function->content?>" readonly disabled>
+                <textarea type="text" id="postContentInput" class="imp" readonly disabled><?=$function->content?></textarea>
             </div>
 
             <div class="inputAutor">
