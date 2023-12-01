@@ -36,4 +36,5 @@
     </div>
 </div>    
 <link rel="stylesheet" href="../../../public/css/modals/modalNewPost.css">
+<script src="../../../public/js/allModals.js"></script>
 
