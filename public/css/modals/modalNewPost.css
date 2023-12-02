@@ -187,3 +187,8 @@
     opacity: 0.8;
 }
 
+#postImageInput{
+    width: auto;
+    height: auto;
+    max-width: 100%;
+}
