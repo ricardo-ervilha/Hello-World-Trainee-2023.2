@@ -1,7 +1,7 @@
 <div class="modal" id="modal" style="display:none;">
     <div class="modal-newuser-content">
         <form action="users/create" method="POST">
-        <span class="close">&times</span>
+        <span class="close">&times;</span>
         <div class="modal-newuser-head" id="cabecalho">
             <h1 class="h1-newuser"> Novo Usuário</h1>
         </div>

@@ -38,33 +38,38 @@
                         <h3>Últimas postagens</h3>
                     </div>
 
+                    <?php foreach($posts as $function) : ?>
+
                     <div class="fundo-branco">
                         <div class="post-left">
                             <div class="post-left-1">
-                                <a href="https://www.google.com.br/?hl=pt-BR" target="_blank" class="image"><img src="../../../public/assets/mergulho.png" class="image"></a>
-                                <a href="https://www.google.com.br/?hl=pt-BR" target="_blank" class="text-link">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</a>
+                                <a href="" target="_blank" class="image"><img src="<?=$function->image?>" class="image"></a>
+                                <a href="" target="_blank" class="text-link"><?=$function->title?></a>
                             </div>
                             <div class="post-left-2">
-                                <a href="https://www.google.com.br/?hl=pt-BR" target="_blank" class="image"><img src="../../../public/assets/mergulho.png" class="image"></a>
-                                <a href="https://www.google.com.br/?hl=pt-BR" target="_blank"class="text-link">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</a>
+                                <a href="" target="_blank" class="image"><img src="<?=$function->image?>" class="image"></a>
+                                <a href="" target="_blank"class="text-link"><?=$function->title?></a>
                             </div>
                             <div class="post-left-3">
-                                <a href="https://www.google.com.br/?hl=pt-BR" target="_blank" class="image"><img src="../../../public/assets/mergulho.png" class="image"></a>
-                                <a href="https://www.google.com.br/?hl=pt-BR" target="_blank"class="text-link">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</a>
+                                <a href="" target="_blank" class="image"><img src="<?=$function->image?>" class="image"></a>
+                                <a href="" target="_blank"class="text-link"><?=$function->title?></a>
                             </div>
                         </div>
 
                         <div class="post-right">
                             <div class="post-right-1">
-                                <a href="https://www.google.com.br/?hl=pt-BR" target="_blank" class="image"><img src="../../../public/assets/mergulho.png" class="image"></a>
-                                <a href="https://www.google.com.br/?hl=pt-BR" target="_blank"class="text-link">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</a>
+                                <a href="" target="_blank" class="image"><img src="<?=$function->image?>" class="image"></a>
+                                <a href="" target="_blank"class="text-link"><?=$function->title?></a>
                             </div>
                             <div class="post-right-2">
-                                <a href="https://www.google.com.br/?hl=pt-BR" target="_blank" class="image"><img src="../../../public/assets/mergulho.png" class="image"></a>
-                                <a href="https://www.google.com.br/?hl=pt-BR" target="_blank"class="text-link">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</a>
+                                <a href="" target="_blank" class="image"><img src="<?=$function->image?>" class="image"></a>
+                                <a href="" target="_blank"class="text-link"><?=$function->title?></a>
                             </div>
                         </div>
                     </div>
+
+                    <?php endforeach; ?>
+
                 </div>
             </div>
         </div>

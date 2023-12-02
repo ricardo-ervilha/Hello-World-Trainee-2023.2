@@ -13,7 +13,13 @@ class LoginController{
     }
 
     public function landingPage(){
-        return view("site/landingPage");
+
+        $posts = App::get('database')->selectAll('posts');
+        $tables = [
+            'posts' => $posts,
+        ];
+
+        return view("site/landingPage", $tables);
     }
 
     public function inicio()
