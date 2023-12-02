@@ -6,6 +6,7 @@ use App\Core\Router;
 
 $router->get('login', 'LoginController@login');
 $router->get('dashboard', 'LoginController@admin');
+$router->get('home', 'LoginController@landingPage');
 
 $router->post('users/create', 'UserController@usersCreate');
 $router->post('posts/create', 'PostController@postsCreate');

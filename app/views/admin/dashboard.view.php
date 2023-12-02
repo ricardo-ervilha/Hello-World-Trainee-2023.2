@@ -33,8 +33,8 @@
                 <p id="seta" onclick="mostrarLista()"> &nabla;</p>
                 <button onclick="mostrarLista()"><img src="../../../public/assets/foto-usuario.png"></button>
                 <ul id="lista" class="lista-hidden">
-                    <li><a>Trocar usuário</a></li>
-                    <li><a>Sair</a></li>
+                    <a href="./login"><li>Trocar usuário</li></a>
+                    <a href="./home"><li>Sair</li></a>
                 </ul>
             </div>
         </div>
@@ -42,7 +42,7 @@
         <div class="bloco-cards">
 
             <div class="cards-superior">
-
+                
                 <button class="card"> <img src="../../../public/assets/info-usuarios.png">
                     <p><span style="font-size: 28px;"><?=$users?></span> <br> Users</p>
                 </button>
@@ -58,14 +58,18 @@
             </div>
 
             <div class="cards-inferior">
+                <a href="./listaDeUsuarios">
                 <button class="card">
                     <img src="../../../public/assets/editar-usuario.png">
                     <p>Gerenciar <br>usuários</p>
                 </button>
+                </a>
 
+                <a href="./listaDePosts">
                 <button class="card"> <img src="../../../public/assets/editar-post.png">
                     <p>Gerenciar<br> Posts </p>
                 </button>
+                </a>
             </div>
         </div>
 </body>

@@ -56,6 +56,11 @@ body {
     display: none;
 }
 
+#lista a{
+    text-decoration: none;
+    color: black;
+}
+
 .show {
     list-style: none;
     line-height: 45px;
@@ -90,6 +95,7 @@ body {
 
 .card:hover {
     opacity: 0.8;
+    cursor: pointer;
 }
 
 .card p:hover {

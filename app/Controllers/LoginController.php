@@ -12,6 +12,10 @@ class LoginController{
         return view("site/login");
     }
 
+    public function landingPage(){
+        return view("site/landingPage");
+    }
+
     public function inicio()
     {
         if(isset($_POST['email']) || isset($_POST['senha'])) {
