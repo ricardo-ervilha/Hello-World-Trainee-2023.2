@@ -20,7 +20,7 @@ class PostController{
             'content' => $_POST['content'],
             'image' => $imagePath,
             'created_at' =>  $now->format('Y-m-d H:i:s'),
-            'author_post' => 7,
+            'author_post' => 1,
         ];
 
         App::get('database')->insert('posts', $parameters);
@@ -43,7 +43,7 @@ class PostController{
 
     }
 
-    public function postsDelete()
+    public function delete()
     {
         App::get('database')->delete('posts', $_POST['id']);
         header('Location: /listaDePosts');   
