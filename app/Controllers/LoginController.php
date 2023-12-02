@@ -57,7 +57,12 @@ class LoginController{
     }
 
     public function admin(){
-        return view("admin/dashboard");
+        $usersCount = App::get('database')->contador('users');
+        $postsCount = App::get('database')->contador('posts');
+    
+        // Passando a contagem como variável para a view
+        return view("admin/dashboard", ['postsCount' => $postsCount, 'usersCount' => $usersCount] );
     }
+    
 }
     

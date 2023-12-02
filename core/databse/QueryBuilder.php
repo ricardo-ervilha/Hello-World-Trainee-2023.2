@@ -77,17 +77,19 @@ class QueryBuilder
         }
     }
 
-    public function contador($table){
-
-        $sql = "SELECT count(*) FROM ($table)";
-
-        try{
+    public function contador($table) {
+        $sql = "SELECT COUNT(*) as total FROM $table";
+    
+        try {
             $stmt = $this->pdo->prepare($sql);
-
             $stmt->execute();
-
-            return $stmt->fetchAll(PDO::FETCH_CLASS);
-        }catch(Exception $e){
+    
+            $result = $stmt->fetch(PDO::FETCH_ASSOC);
+    
+            // Retorna o número total de linhas
+            return $result['total'];
+        } catch (Exception $e) {
+            // Em vez de 'die', você pode querer lidar com a exceção de uma maneira mais elegante, logando ou retornando um valor de erro, por exemplo.
             die($e->getMessage());
         }
     }
