@@ -55,5 +55,9 @@ class LoginController{
     }
 
     }
+
+    public function admin(){
+        return view("admin/dashboard");
+    }
 }
     

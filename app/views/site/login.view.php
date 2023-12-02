@@ -53,30 +53,38 @@ if(isset($_POST['email']) || isset($_POST['senha'])) {
 
 	</head>
 
-    <body>
+<body>
 
-<div class="container-imagem">
-</div> 
-
-<div class="tela-login" >
-    <img class="logo" src="../../../public/assets/logo_hello_world.png" alt="Logo Hello World">
-
-    <h1 class="text-login">Login</h1>
-
-    <div class="campo-email">
-        <img src="../../../public/assets/icon-user-white (2).png" alt="Ícone de login">
-        <input type="text">
-    </div>
-
-    <div class="campo-senha">
-        <img src="../../../public/assets/icon-key-white.png" alt="Ícone de senha">
-        <input type="password">
-    </div>
+    <div class="container">
     
 
-    <button type="submit">Entrar</button>
+    <div class="tela-login" >
+        <form action="inicio" method="POST">
+            <div class=logo>
+                <img src="../../../public/assets/logo_hello_world.png" alt="Logo Hello World">
+            </div>
 
-</div>
+            <div class="text-login">
+                <h1 >Login</h1>
+            </div>
+
+            <div class="campo-email">
+                <img src="../../../public/assets/icon-user-white (2).png" alt="Ícone de login">
+                <input type="text" name="email">
+            </div>
+
+            <div class="campo-senha">
+                <img src="../../../public/assets/icon-key-white.png" alt="Ícone de senha">
+                <input type="password" name="password">
+            </div>
+            
+            <div class="button-entrar">
+                <button type="submit" >Entrar</a></button>
+        </div>
+        </form>
+  
+    </div>
+    
 
 
 
