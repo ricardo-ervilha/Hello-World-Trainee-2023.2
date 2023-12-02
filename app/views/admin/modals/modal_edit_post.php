@@ -1,6 +1,5 @@
 <div class="modal" id="modal-edit<?=$function->id?>" style="display: none">
     <div class="modal-newpost-content">
-        <form action="posts/create" method="POST" enctype="multipart/form-data">
         <span class="close">&times;</span>
         <div class="modal-head">
             <h1>Editar Post</h1>
@@ -27,7 +26,6 @@
                 <button>Editar</button>
             </div> 
         </div>
-        </form>
     </div>
 </div>    
 <link rel="stylesheet" href="../../../public/css/modals/modalNewPost.css">
