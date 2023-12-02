@@ -1,8 +1,10 @@
+html{
+    background-color: #87ceeb;
+}
 
-body {
+.dashboard{
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    background-color: #87ceeb;
     text-align: center;
 }
 
@@ -20,23 +22,23 @@ body {
     width: 69%;
 }
 
-.logout {
+.logout-dashboard {
     display: inline-block;
     width: 30%;
     text-align: left;
 }
 
-.logout p {
+.logout-dashboard p {
     display: inline-block;
     margin: 0;
 }
 
-.logout p:hover {
+.logout-dashboard p:hover {
     cursor: pointer;
     color: #FFF;
 }
 
-.logout button {
+.logout-dashboard button {
     display: inline-block;
     width: 90px;
     height: 30px;
@@ -44,11 +46,11 @@ body {
     border: none;
 }
 
-.logout button:hover {
+.logout-dashboard button:hover {
     cursor: pointer;
 }
 
-.logout button img {
+.logout-dashboard button img {
     width: 100%;
 }
 
@@ -72,12 +74,12 @@ body {
     border: 1px solid black;
 }
 
-.logout ul li {
+.logout-dashboard ul li {
     width: 100%;
     text-align: center;
 }
 
-.logout ul li:hover {
+.logout-dashboard ul li:hover {
     background-color: #2794ee;
     cursor: pointer;
 }
@@ -127,11 +129,11 @@ body {
         width: 50%;
     }
 
-    .logout{
+    .logout-dashboard{
         width: 30%;
     }
 
-    .logout button{
+    .logout-dashboard button{
         width: 60px;
         height: 20px;
     }

@@ -27,9 +27,11 @@
 </head>
 
 <body>
+    
+<div class="dashboard">
         <div class="topo">
             <h1>Bem-vindo de volta, admin!</h1>
-            <div class="logout">
+            <div class="logout-dashboard">
                 <p id="seta" onclick="mostrarLista()"> &nabla;</p>
                 <button onclick="mostrarLista()"><img src="../../../public/assets/foto-usuario.png"></button>
                 <ul id="lista" class="lista-hidden">
@@ -51,10 +53,6 @@
                     <p><span style="font-size: 28px;"><?=$posts?></span> <br> Posts </p>
                 </button>
 
-                <button class="card"> <img src="../../../public/assets/info-avaliacoes.png">
-                    <p><span style="font-size: 28px;">100</span> <br> Avaliações </p>
-                </button>
-
             </div>
 
             <div class="cards-inferior">
@@ -72,6 +70,7 @@
                 </a>
             </div>
         </div>
+</div>
 </body>
 
 </html>
