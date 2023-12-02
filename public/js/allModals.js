@@ -3,7 +3,6 @@
 document.querySelectorAll('#add-user').forEach(function (button) {
     button.addEventListener('click', function () {
         
-        console.log("teste");
         var modalView = document.querySelector(".modal");
         
         modalView.style.display = "block";
@@ -16,7 +15,6 @@ document.querySelectorAll('#add-user').forEach(function (button) {
         
         window.onclick = function(event) {
             if (event.target == modalView) {
-                console.log("Chegou aqui");
                 modalView.style.display = "none";
             }
         }

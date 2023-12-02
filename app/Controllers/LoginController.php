@@ -50,6 +50,14 @@ class LoginController{
             }
     }
 
-}
+    }
+
+    public function admin(){
+
+        $users = App::get('database')->contador('users');
+        $posts = App::get('database')->contador('posts');
+
+        return view("admin/dashboard", $users, $posts);
+    }
 }
     

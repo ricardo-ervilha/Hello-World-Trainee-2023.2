@@ -44,11 +44,11 @@
             <div class="cards-superior">
 
                 <button class="card"> <img src="../../../public/assets/info-usuarios.png">
-                    <p><span style="font-size: 28px;">50</span> <br> Users</p>
+                    <p><span style="font-size: 28px;"><?=$users?></span> <br> Users</p>
                 </button>
 
                 <button class="card"> <img src="../../../public/assets/info-publi.png">
-                    <p><span style="font-size: 28px;">200</span> <br> Posts </p>
+                    <p><span style="font-size: 28px;"><?=$posts?></span> <br> Posts </p>
                 </button>
 
                 <button class="card"> <img src="../../../public/assets/info-avaliacoes.png">

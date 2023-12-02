@@ -77,5 +77,20 @@ class QueryBuilder
         }
     }
 
+    public function contador($table){
+
+        $sql = "SELECT count(*) FROM ($table)";
+
+        try{
+            $stmt = $this->pdo->prepare($sql);
+
+            $stmt->execute();
+
+            return $stmt->fetchAll(PDO::FETCH_CLASS);
+        }catch(Exception $e){
+            die($e->getMessage());
+        }
+    }
+
 }
 
