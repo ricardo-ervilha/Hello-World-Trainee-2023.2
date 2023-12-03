@@ -44,30 +44,17 @@
                           <?php foreach($posts as $function) : ?>
 
                             <div class="post-left-1">
-                                <a href="" target="_blank" class="image"><img src="<?=$function->image?>" class="image"></a>
+                                <a href="" target="_blank" class="image"><img src="<?=$function->image?>"></a>
                                 <a href="" target="_blank" class="text-link"><?=$function->title?></a>
                             </div>
 
                             <?php endforeach; ?>
 
                         </div>
-
-                        <div class="post-right">
-                            <div class="post-right-1">
-                                <a href="" target="_blank" class="image"><img src="<?=$function->image?>" class="image"></a>
-                                <a href="" target="_blank"class="text-link"><?=$function->title?></a>
-                            </div>
-                            <div class="post-right-2">
-                                <a href="" target="_blank" class="image"><img src="<?=$function->image?>" class="image"></a>
-                                <a href="" target="_blank"class="text-link"><?=$function->title?></a>
-                            </div>
-                        </div>
                     </div>
-
                 </div>
             </div>
         </div>
     </div>
-    <div class="footer"></div>
 </body>
 </html>
