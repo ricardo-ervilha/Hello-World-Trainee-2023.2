@@ -9,7 +9,9 @@
 </head>
 
 <body>
-        <div class="modal" id="modal-edit<?=$function->id?>" style="display: none;">
+        <div class="modal" id="modal-edit<?=$row['id']?>" style="display: none;">
+        <form action="update_post" method="POST" enctype="multipart/form-data">
+        <input hidden value='<?=$row['id']?>' name="id">        
             <div class="modal-content">
                 
                 <div class="modal-head">
@@ -21,35 +23,26 @@
                     </div>
                 </div>
 
-                <div class="content-body">
+                <div class="content-bodyy">
                     <div class="titulo">
                         <h2>Título</h2>
-                        <input class="input-edit" type="text">
+                        <input class="input-edit" type="text" name="title">
                     </div>
                     
                     <div class="texto">
                         <h2>Conteúdo</h2>
-                        <textarea class="input-edit"></textarea>
+                        <textarea class="input-edit" name="content"></textarea>
                     </div>
 
                     <div class="imagem">
                         <h2>Imagem</h2>
-                        <input class="input-edit" type="image" placeholder="Enviar">
-                    </div>
-
-                    <div class="data">
-                        <h2>Data de criação</h2>
-                        <input class="input-edit" type="date">
-                    </div>
-                      
-                    <div class="autor">
-                        <h2>Autor</h2>
-                        <input class="input-edit" type="text">
+                        <button><input class="input-edit" type="file" placeholder="Enviar" name="image"></button>
                     </div>
 
                     <button class="save">Salvar</button>
                 </div>
             </div>
+        </form>    
         </div>
         <script src="../../../public/js/allModals.js"></script>
 </body>

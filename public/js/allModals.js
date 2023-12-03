@@ -53,7 +53,7 @@ document.querySelectorAll('.icon-editar').forEach(function (button) {
         
         var modalId = "modal-edit" + rowId;
         var modalView = document.getElementById(modalId);
-        
+        console.log(modalId)
         modalView.style.display = "block";
 
         closeEditModalBtn = modalView.querySelector('.closeEdit');

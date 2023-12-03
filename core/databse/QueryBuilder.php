@@ -62,6 +62,28 @@ class QueryBuilder
         }
     }
 
+    public function edit($table, $id, $parameters)
+    {
+        $sql = sprintf(
+            'UPDATE %s SET %s WHERE %s',
+            $table,
+            implode(', ', array_map(function ($parameters) {
+                return "{$parameters} = :{$parameters}";
+            }, array_keys($parameters))),
+            'id = :id'
+        );
+
+        $parameters['id'] = $id;
+
+        try {
+            $stnt = $this->pdo->prepare($sql);
+            $stnt->execute($parameters);
+
+        } catch (Exception $e) {
+            die($e->getMessage());
+        }
+    }
+
     public function delete($table, $id)
     {
         $sql = sprintf(

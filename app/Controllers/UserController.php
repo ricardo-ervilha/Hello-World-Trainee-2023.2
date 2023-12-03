@@ -31,10 +31,21 @@ class UserController{
         return view("admin/listaUsers", $tables);
     }
 
-    public function usersEdit()
+    public function update_user()
     {
+        $parameters = [
+            'name' => $_POST['name'],
+            'sobrenome' => $_POST['sobrenome'],
+            'phone' => $_POST['phone'],
+            'email' => $_POST['email'],
+            'password' => $_POST['password'],
+        ];
 
+        App::get('database')->edit('users', $_POST['id'], $parameters);
+
+        header('Location: /listaDeUsuarios');
     }
+
 
     public function delete(){
         App::get('database')->delete('users', $_POST['id']);
