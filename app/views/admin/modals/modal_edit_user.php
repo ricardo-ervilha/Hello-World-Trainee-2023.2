@@ -1,5 +1,7 @@
 <div class="modal" id="modal-edit<?=$function->id?>" style="display: none;">
-<div class="modal-content">
+        <form action="update_user" method="POST" enctype="multipart/form-data">
+        <input hidden value='<?=$function->id?>' name="id">  
+        <div class="modal-content">
         <div class="modal-head">
             <h2>Edição de Usuários</h2>
         </div>
@@ -39,5 +41,6 @@
                 title="Close Modal">&times;</span>
             </div>
     </div>
+</form>
 </div>
 <link rel="stylesheet" href="../../../../public/css/modals/modalView.css">
