@@ -9,9 +9,9 @@
 </head>
 
 <body>
-        <div class="modal" id="modal-edit<?=$row['id']?>" style="display: none;">
+        <div class="modal" id="modal-edit<?=$function->id?>" style="display: none;">
         <form action="update_post" method="POST" enctype="multipart/form-data">
-        <input hidden value='<?=$row['id']?>' name="id">        
+        <input hidden value='<?=$function->id?>' name="id">        
             <div class="modal-content">
                 
                 <div class="modal-head">

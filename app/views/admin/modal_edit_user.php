@@ -1,8 +1,8 @@
 <link rel="stylesheet" href="../../../public/css/edit_modal.css">
 
-<div class="modal" id="modal-edit<?=$row['id']?>" style="display: none;">
-    <form action="update" method="POST">
-    <input hidden value='<?=$row['id']?>' name="id">
+<div class="modal" id="modal-edit<?=$function->id?>" style="display: none;">
+    <form action="update_user" method="POST">
+    <input hidden value='<?=$function->id?>' name="id">
     <div class="modal-content" id="modal-content-user">
         <div class="modal-head">
             <div class="close-container">
