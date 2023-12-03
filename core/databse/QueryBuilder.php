@@ -77,6 +77,43 @@ class QueryBuilder
         }
     }
 
+    public function edit($table, $id, $parameters)
+    {
+        $parameters = array_filter($parameters, function ($value) {
+            return !empty($value);
+        });
+
+        $parametros_p_editar = array();
+
+        foreach($parameters as $name=>$value){
+            if(!empty($value) ){
+                $parametros_p_editar[] = "{$name} = :{$name}";
+            }
+        }
+
+        if(!empty($parametros_p_editar)){
+            $sql = sprintf(
+                'UPDATE %s SET %s WHERE %s',
+                $table,
+                implode(', ', $parametros_p_editar),
+                'id = :id'
+            );
+
+            $parameters['id'] = $id;
+
+            try {
+                $stnt = $this->pdo->prepare($sql);
+                $stnt->execute($parameters);
+
+            } catch (Exception $e) {
+                die($e->getMessage());
+            }
+        } else {
+            die("Todos os campos estão vazios.");
+        }    
+    }
+
+
     public function contador($table) {
         $sql = "SELECT COUNT(*) as total FROM $table";
     
