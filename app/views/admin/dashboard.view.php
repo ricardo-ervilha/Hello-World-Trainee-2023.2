@@ -34,7 +34,7 @@ include('protect.php');
 
 <body>
 
-<div class="alert alert-success" role="alert">
+<div class="alert-success" role="alert">
   Login realizado com sucesso
 </div>
         <div class="topo">
@@ -76,7 +76,7 @@ include('protect.php');
                 </button>
 
                 <button class="card"> <img src="../../../public/assets/editar-post.png">
-                    <p>Gerenciar<br> Posts </p>
+                    <p><a href="/listaDePosts">>Gerenciar<br> Posts </a></p>
                 </button>
             </div>
         </div>

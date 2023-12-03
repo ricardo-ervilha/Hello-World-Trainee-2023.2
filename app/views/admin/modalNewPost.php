@@ -33,6 +33,9 @@
                 <button>Postar</button>
             </div> 
         </div>
+
+        <?php  $author_post = $_SESSION['id'] ?>
+
         </form>
     </div>
 </div>    

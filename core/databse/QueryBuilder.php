@@ -79,6 +79,21 @@ class QueryBuilder
         }
     }
 
+    public function selectUserID($id)
+    {
+        $sql = "SELECT * FROM users WHERE id = '$id'" ;
+
+        try{
+            $statement = $this->pdo->prepare($sql);
+
+            $statement->execute();
+
+            return $statement->fetch(PDO::FETCH_ASSOC);
+        } catch (Exception $e) {
+            die("An error ocurred when trying to insert into database: {$e->getMessage()}");
+        }
+    }
+
 
 
 
