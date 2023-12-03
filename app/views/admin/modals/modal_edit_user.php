@@ -11,28 +11,28 @@
                 <label for="userNameInput">
                     <h2>Nome:</h2>
                 </label>
-                <input type="text" id="userNameInput" class="imp" value="<?=$function->name?>">
+                <input type="text" id="userNameInput" class="imp" value="<?=$function->name?>" name="name">
             </div>
 
             <div class="imputData">
                 <label for="userDOBInput">
                     <h2>Sobrenome:</h2>
                 </label>
-                <input type="text" id="userDOBInput" class="imp" value="<?=$function->sobrenome?>">
+                <input type="text" id="userDOBInput" class="imp" value="<?=$function->sobrenome?>" name="sobrenome">
             </div>
 
             <div class="imputEmail">
                 <label for="userEmailInput">
                     <h2>Email:</h2>
                 </label>
-                <input type="text" id="userEmailInput" class="imp" value="<?=$function->email?>">
+                <input type="text" id="userEmailInput" class="imp" value="<?=$function->email?>" name="email">
             </div>
 
             <div class="imputPhone">
                 <label for="userPhoneInput">
                     <h2>Senha:</h2>
                 </label>
-                <input type="text" id="userPhoneInput" class="imp" value="<?=$function->password?>">
+                <input type="text" id="userPhoneInput" class="imp" value="<?=$function->password?>" name="password">
             </div>
 
             <button class="savebtn">Salvar</button>
