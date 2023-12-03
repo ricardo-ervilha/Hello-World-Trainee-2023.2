@@ -1,6 +1,6 @@
 <div class="modal" id="modal-edit<?=$function->id?>" style="display: none;">
-        <form action="update_user" method="POST" enctype="multipart/form-data">
-        <input hidden value='<?=$function->id?>' name="id">  
+    <form action="update_user" method="POST">
+    <input hidden value='<?=$function->id?>' name="id">
         <div class="modal-content">
         <div class="modal-head">
             <h2>Edição de Usuários</h2>
