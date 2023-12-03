@@ -1,5 +1,7 @@
-<div class="modal" id="modal-edit<?=$function->id?>" style="display: none">
-    <div class="modal-newpost-content">
+<div class="modal" id="modal-edit<?=$function->id?>" style="display: none;">
+        <form action="update_post" method="POST" enctype="multipart/form-data">
+        <input hidden value='<?=$function->id?>' name="id">    
+        <div class="modal-newpost-content">
         <span class="close">&times;</span>
         <div class="modal-head">
             <h1>Editar Post</h1>
@@ -26,6 +28,7 @@
                 <button>Editar</button>
             </div> 
         </div>
+</form>
     </div>
 </div>    
 <link rel="stylesheet" href="../../../public/css/modals/modalNewPost.css">
