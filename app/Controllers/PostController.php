@@ -38,9 +38,21 @@ class PostController{
         return view("admin/listaPosts", $tables);
     }
 
-    public function postsEdit()
+    public function update_post()
     {
+        $imagePath = "public/assets/img_posts/" . basename($_FILES['image']['name']);
+        move_uploaded_file($_FILES['image']['tmp_name'], $imagePath);
 
+        $parameters = [
+            'title' => $_POST['title'],
+            'content' => $_POST['content'],
+            'image' => $imagePath,
+            'author_post' => 1,
+        ];
+
+        App::get('database')->edit('posts', $_POST['id'], $parameters);
+
+        header('Location: /listaDePosts');
     }
 
     public function delete()
