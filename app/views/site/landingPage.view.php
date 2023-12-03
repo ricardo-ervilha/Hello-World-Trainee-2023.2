@@ -38,22 +38,18 @@
                         <h3>Últimas postagens</h3>
                     </div>
 
-                    <?php foreach($posts as $function) : ?>
-
                     <div class="fundo-branco">
                         <div class="post-left">
+
+                          <?php foreach($posts as $function) : ?>
+
                             <div class="post-left-1">
                                 <a href="" target="_blank" class="image"><img src="<?=$function->image?>" class="image"></a>
                                 <a href="" target="_blank" class="text-link"><?=$function->title?></a>
                             </div>
-                            <div class="post-left-2">
-                                <a href="" target="_blank" class="image"><img src="<?=$function->image?>" class="image"></a>
-                                <a href="" target="_blank"class="text-link"><?=$function->title?></a>
-                            </div>
-                            <div class="post-left-3">
-                                <a href="" target="_blank" class="image"><img src="<?=$function->image?>" class="image"></a>
-                                <a href="" target="_blank"class="text-link"><?=$function->title?></a>
-                            </div>
+
+                            <?php endforeach; ?>
+
                         </div>
 
                         <div class="post-right">
@@ -67,8 +63,6 @@
                             </div>
                         </div>
                     </div>
-
-                    <?php endforeach; ?>
 
                 </div>
             </div>
