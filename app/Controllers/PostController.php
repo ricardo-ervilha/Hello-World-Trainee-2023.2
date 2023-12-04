@@ -59,7 +59,21 @@ class PostController{
     {
         App::get('database')->delete('posts', $_POST['id']);
         header('Location: /listaDePosts');   
-       }
+    }
 
+    public function listaDosPosts()
+    {
+        return view("site/lista_de_posts");
+    }
+    
+    public function postIndividual()
+    {
+        return view("site/postIndividual");
+    }   
+
+    public function dashboardView()
+    {
+        return view("admin/dashboard");
+    }  
 }
     

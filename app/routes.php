@@ -21,3 +21,12 @@ $router->post('update_post', 'PostController@update_post');
 //deleteUsers
 $router->post('deleteUser', 'UserController@delete');
 $router->post('deletePost', 'PostController@delete');
+
+//lista de posts
+$router->get('listaDosPosts', 'PostController@listaDosPosts');
+
+//post individual
+$router->get('postIndividual', 'PostController@postIndividual');
+
+//dashboard
+$router->get('dashboardView', 'PostController@dashboardView');
