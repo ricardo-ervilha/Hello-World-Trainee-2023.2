@@ -7,7 +7,7 @@ use Exception;
 
 class LoginController{
 
-    public function loginView()
+    public function view()
     {
         return view("site/login");
     }

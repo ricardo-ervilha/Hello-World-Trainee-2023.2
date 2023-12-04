@@ -4,7 +4,7 @@ use App\Core\Router;
 
 //Rotas da aplicação
 
-$router->get('loginView', 'LoginController@login');
+$router->get('loginView', 'LoginController@view');
 $router->get('dashboard', 'LoginController@admin');
 $router->get('home', 'LoginController@landingPage');
 
