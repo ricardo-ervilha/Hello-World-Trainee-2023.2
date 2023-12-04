@@ -8,6 +8,8 @@ $router->get('login', 'LoginController@login');
 $router->get('dashboard', 'LoginController@inicio');
 $router->get('home', 'LoginController@landingPage');
 
+$router->get('posts', 'LoginController@listaPosts');
+
 $router->post('users/create', 'UserController@usersCreate');
 $router->post('posts/create', 'PostController@postsCreate');
 
