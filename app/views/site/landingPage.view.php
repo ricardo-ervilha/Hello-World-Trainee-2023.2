@@ -24,7 +24,7 @@
                     tecnológico.
                     <img src="../../../public/assets/logo_transp.png" class="logo-h1" alt="Imagem da logo transparente">
                 </h1>
-                <img class="img-header" src="../../../public/assets/img-capa.png" alt="Imagem de um homem usando um notebook" width="40%">
+                <img class="img-header" src="../../../public/assets/landing-page.svg" alt="Imagem de um homem usando um notebook" width="40%">
 
             </div>
         </div>

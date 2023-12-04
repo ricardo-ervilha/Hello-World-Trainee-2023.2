@@ -13,7 +13,6 @@ html, body{
 
 .header {
     width: 100%;
-    padding-bottom: 5%;
     background-color: #C5D8EA;
     font-family: 'Roboto', sans-serif;
     margin: auto;
@@ -29,14 +28,13 @@ html, body{
     animation-name: descendo;
     animation-duration: 2s;
     vertical-align: top;
-    padding-top: 3%;
 }
 
 .header h1 {
     color: rgb(54, 53, 53);
     margin: 0;
     font-weight: 500;
-    padding-top: 10%;
+    padding-top: 15%;
     padding-right: 5%;
     font-size: 40px;
     width: 50%;
