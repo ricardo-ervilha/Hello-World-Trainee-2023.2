@@ -221,7 +221,10 @@ Site responsivo
     .text-link p{
         -webkit-line-clamp: 2;
     }
-    
+    .image img{
+        width: 100%;
+        height: 100px;
+    }
 }
 
 @media (max-width: 910px) and (min-width: 617px){
@@ -254,6 +257,10 @@ Site responsivo
     .text-link p{
         -webkit-line-clamp: 2;
     }
+    .image img{
+        width: 100%;
+        height: 100px;
+    }
 }
 
 
@@ -282,6 +289,10 @@ Site responsivo
     }
     .text-link p{
         -webkit-line-clamp: 2;
+    }
+    .image img{
+        width: 100%;
+        height: 70px;
     }
 }
 
@@ -312,6 +323,10 @@ Site responsivo
     .text-link p{
         -webkit-line-clamp: 2;
     }
+    .image img{
+        width: 100%;
+        height: 50px;
+    }
 }
 
 @media (max-width: 371px){
@@ -340,5 +355,9 @@ Site responsivo
     }
     .text-link p{
         -webkit-line-clamp: 2;
+    }
+    .image img{
+        width: 100%;
+        height: 50px;
     }
 }
