@@ -147,5 +147,53 @@ class QueryBuilder
         }
     }
 
+
+    public function validateLogin($email, $senha)
+    {
+        $sql = "SELECT * FROM users WHERE email = '$email' AND password = '$senha'";
+
+        try{
+            $statement = $this->pdo->prepare($sql);
+
+            $statement->execute();
+
+            return $statement->rowCount();
+        } catch (Exception $e) {
+            die("An error ocurred when trying to insert into database: {$e->getMessage()}");
+        }
+    }
+
+    public function selectUser($email, $senha)
+    {
+        $sql = "SELECT * FROM users WHERE email = '$email' AND password = '$senha'";
+
+        try{
+            $statement = $this->pdo->prepare($sql);
+
+            $statement->execute();
+
+            return $statement->fetch(PDO::FETCH_ASSOC);
+        } catch (Exception $e) {
+            die("An error ocurred when trying to insert into database: {$e->getMessage()}");
+        }
+    }
+
+    public function selectUserID($id)
+    {
+        $sql = "SELECT * FROM users WHERE id = '$id'" ;
+
+        try{
+            $statement = $this->pdo->prepare($sql);
+
+            $statement->execute();
+
+            return $statement->fetch(PDO::FETCH_ASSOC);
+        } catch (Exception $e) {
+            die("An error ocurred when trying to insert into database: {$e->getMessage()}");
+        }
+    }
+
+
+
 }
 
