@@ -11,6 +11,15 @@ class LoginController{
     {
         return view("site/login");
     }
+    public function landingPage(){
+
+        $posts = App::get('database')->selectFive('posts');
+        $tables = [
+            'posts' => $posts,
+        ];
+
+        return view("site/landingPage", $tables);
+    }
 
     public function inicio()
     {
