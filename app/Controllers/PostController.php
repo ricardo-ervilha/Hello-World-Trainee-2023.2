@@ -35,7 +35,11 @@ class PostController{
             'posts' => $posts,
         ];
 
-        return view("admin/listaPosts", $tables);
+        $autor = App::get('database')->recuperaDadosDoAutor($posts->author_post);
+        var_dump($autor);
+        die();
+
+        return view("admin/listaPosts", compact('tables', 'autor'));
     }
 
     public function update_post()

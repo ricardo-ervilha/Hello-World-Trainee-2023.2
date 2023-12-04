@@ -65,7 +65,7 @@ class QueryBuilder
 
     public function recuperaDadosDoAutor($id)
     {
-        $sql = "SELECT `name` FROM `users` WHERE `id` = $id";
+        $sql = "SELECT name FROM users WHERE id = {$id}";
 
         try{
             $stmt = $this->pdo->prepare($sql);
