@@ -44,8 +44,8 @@
                           <?php foreach($posts as $function) : ?>
 
                             <div class="post-left-1">
-                                <a href="" target="_blank" class="image"><img src="<?=$function->image?>"></a>
-                                <a href="" target="_blank" class="text-link"><?=$function->title?></a>
+                                <a class="image"><img src="<?=$function->image?>"></a>
+                                <a class="text-link"><p><?=$function->title?><p></p></a>
                             </div>
 
                             <?php endforeach; ?>

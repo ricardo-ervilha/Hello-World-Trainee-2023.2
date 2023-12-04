@@ -14,7 +14,7 @@ class LoginController{
 
     public function landingPage(){
 
-        $posts = App::get('database')->selectAll('posts');
+        $posts = App::get('database')->selectFive('posts');
         $tables = [
             'posts' => $posts,
         ];

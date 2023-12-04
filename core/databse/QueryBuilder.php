@@ -34,7 +34,23 @@ class QueryBuilder
 
     public function selectAll($table)
     {
-        $sql = "SELECT * FROM ($table)";
+        $sql = "SELECT * FROM ($table) ORDER BY created_at DESC";
+
+        try{
+            $stmt = $this->pdo->prepare($sql);
+
+            $stmt->execute();
+
+            return $stmt->fetchAll(PDO::FETCH_CLASS);
+        }catch(Exception $e){
+            die($e->getMessage());
+        }
+    }
+
+    
+    public function selectFive($table)
+    {
+        $sql = "SELECT * FROM ($table) ORDER BY created_at DESC LIMIT 5";
 
         try{
             $stmt = $this->pdo->prepare($sql);
