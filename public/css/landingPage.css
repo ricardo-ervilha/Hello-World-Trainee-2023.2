@@ -1,5 +1,6 @@
 html, body{
     margin: 0;
+    background-color: #87ceeb;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -92,10 +93,12 @@ html, body{
     width: 100%;
     height: 90%;
     padding: 2%;
+    display: flex;
+    flex-direction: row;
 }
 
 .post-left {
-    width: 50%;
+    width: 100%;
     border-right: 0.5px lightgray solid;
     display: inline-block;
 }
@@ -115,11 +118,23 @@ html, body{
     color: #6495ed;
 }
 
+.text-link p{
+    margin: 0;
+    white-space: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
 .post-left-1,
 .post-left-2,
 .post-left-3 {
-    width: 100%;
-    margin-bottom: 5%;
+    width: 45%;
+    display: inline-block;
+    margin-bottom: 3%;
+    vertical-align: top;
 }
 
 .post-right {
@@ -137,7 +152,7 @@ html, body{
 
 .image img{
     width: 100%;
-    height: 100%;
+    height: 150px;
 }
 
 .image {
@@ -151,12 +166,6 @@ html, body{
 
 .image:hover {
     opacity: 0.8;
-}
-
-.footer {
-    background-color: #6495ed;
-    width: 100%;
-    height: 162px;
 }
 
 @keyframes subindo {
@@ -205,9 +214,16 @@ Site responsivo
         font-size: 16px
     }
 
-    .post-left, 
-    .post-right{
-        display: inline;
+    .fundo-branco {
+        display: flex;
+        flex-direction: column;
+    }
+    .text-link p{
+        -webkit-line-clamp: 2;
+    }
+    .image img{
+        width: 100%;
+        height: 100px;
     }
 }
 
@@ -231,10 +247,19 @@ Site responsivo
     .topo-quadro h3{
         font-size: 16px
     }
-
-    .post-left, 
-    .post-right{
-        display: inline;
+    .fundo-branco {
+        display: flex;
+        flex-direction: column;
+    }
+    .post-left-1{
+        width: 100%;
+    }
+    .text-link p{
+        -webkit-line-clamp: 2;
+    }
+    .image img{
+        width: 100%;
+        height: 100px;
     }
 }
 
@@ -255,12 +280,20 @@ Site responsivo
         font-size: 13px
     }
 
-    .post-left, 
-    .post-right{
-        display: inline;
-        font-size: 10px;
+    .fundo-branco {
+        display: flex;
+        flex-direction: column;
     }
-
+    .post-left-1{
+        width: 100%;
+    }
+    .text-link p{
+        -webkit-line-clamp: 2;
+    }
+    .image img{
+        width: 100%;
+        height: 70px;
+    }
 }
 
 @media (max-width: 385px) and (min-width: 372px){
@@ -280,12 +313,20 @@ Site responsivo
         font-size: 12px
     }
 
-    .post-left, 
-    .post-right{
-        display: inline;
-        font-size: 8px;
+    .fundo-branco {
+        display: flex;
+        flex-direction: column;
     }
-
+    .post-left-1{
+        width: 100%;
+    }
+    .text-link p{
+        -webkit-line-clamp: 2;
+    }
+    .image img{
+        width: 100%;
+        height: 50px;
+    }
 }
 
 @media (max-width: 371px){
@@ -305,9 +346,18 @@ Site responsivo
         font-size: 12px
     }
 
-    .post-left, 
-    .post-right{
-        display: inline;
-        font-size: 8px;
+    .fundo-branco {
+        display: flex;
+        flex-direction: column;
+    }
+    .post-left-1{
+        width: 100%;
+    }
+    .text-link p{
+        -webkit-line-clamp: 2;
+    }
+    .image img{
+        width: 100%;
+        height: 50px;
     }
 }
