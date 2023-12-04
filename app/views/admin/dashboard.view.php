@@ -1,6 +1,5 @@
 <?php
 include ('protect.php');
-
 ?>
 
 <!DOCTYPE html>
@@ -35,7 +34,7 @@ include ('protect.php');
 
 <div class="dashboard">
         <div class="topo">
-            <h1>Bem-vindo de volta, <?php echo $_SESSION['nome'];?>!</h1>
+            <h1>Bem-vindo(a) de volta, <?php echo $_SESSION['nome'];?>!</h1>
             <div class="logout-dashboard">
                 <p id="seta" onclick="mostrarLista()"> &nabla;</p>
                 <button onclick="mostrarLista()"><img src="../../../public/assets/foto-usuario.png"></button>
