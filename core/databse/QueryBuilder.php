@@ -47,6 +47,21 @@ class QueryBuilder
         }
     }
 
+    public function selectFive($table)
+    {
+        $sql = "SELECT * FROM ($table) ORDER BY created_at DESC LIMIT 5";
+
+        try{
+            $stmt = $this->pdo->prepare($sql);
+
+            $stmt->execute();
+
+            return $stmt->fetchAll(PDO::FETCH_CLASS);
+        }catch(Exception $e){
+            die($e->getMessage());
+        }
+    }
+
     public function recuperaDadosDoAutor($id)
     {
         $sql = "SELECT `name` FROM `users` WHERE `id` = $id";
