@@ -74,10 +74,12 @@ class LoginController{
 
     public function listaPosts(){
 
-        $page = 1;
-        $total_pages = 5;
+        $posts = App::get('database')->selectAll('posts');
+        $tables = [
+            'posts' => $posts,
+        ];
 
-        return view('site/lista_de_posts');
+        return view('site/lista_de_posts', $tables);
     }
     
 }

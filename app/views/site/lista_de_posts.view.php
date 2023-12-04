@@ -17,54 +17,19 @@
     <h1>Hello World</h1>
 
     <div class="flex-container">
+
+        <?php foreach($posts as $function) : ?>
+
         <div>
-            <img height="50%" src="../../../public/assets/image-post-1.jpg">
+            <img height="50%" src="<?=$function->image?>">
             <div class="text-area">
-                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam accusamus dolorum minus maiores
-                    odit laudantium vero nemo, cum eaque minima praesentium explicabo, nostrum quibusdam similique eum
-                    cumque adipisci sapiente provident.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam accusamus dolorum minus maiores
-                    odit laudantium vero nemo, cum eaque minima praesentium explicabo, nostrum quibusdam similique eum
-                    cumque adipisci sapiente provident. Laboriosam accusamus dolorum minus maiores odit laudantium vero
-                    nemo, cum eaque minima praesentium explicabo, nostrum quibusdam similique eum cumque adipisci
-                    sapiente provident.
-                    
-                </p>
+                <h2><?=$function->title?></h2>
+                <p> <?=$function->content?></p>
             </div>
         </div>
-        <div>
-            <img height="50%" src="../../../public/assets/image-post-2.jpg">
-            <div class="text-area">
-                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam accusamus dolorum minus maiores
-                    odit laudantium vero nemo, cum eaque minima praesentium explicabo, nostrum quibusdam similique eum
-                    cumque adipisci sapiente provident.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam accusamus dolorum minus maiores
-                    odit laudantium vero nemo, cum eaque minima praesentium explicabo, nostrum quibusdam similique eum
-                    cumque adipisci sapiente provident. Laboriosam accusamus dolorum minus maiores odit laudantium vero
-                    nemo, cum eaque minima praesentium explicabo, nostrum quibusdam similique eum cumque adipisci
-                    sapiente provident.
-                    
-                </p>
-            </div>
-        </div>
-        <div>
-            <img height="50%" src="../../../public/assets/image-post-3.jpg">
-            <div class="text-area">
-                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam accusamus dolorum minus maiores
-                    odit laudantium vero nemo, cum eaque minima praesentium explicabo, nostrum quibusdam similique eum
-                    cumque adipisci sapiente provident.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam accusamus dolorum minus maiores
-                    odit laudantium vero nemo, cum eaque minima praesentium explicabo, nostrum quibusdam similique eum
-                    cumque adipisci sapiente provident. Laboriosam accusamus dolorum minus maiores odit laudantium vero
-                    nemo, cum eaque minima praesentium explicabo, nostrum quibusdam similique eum cumque adipisci
-                    sapiente provident.
-                    
-                </p>
-            </div>
-        </div>
+       
+        <?php endforeach; ?>
+
     </div>
 </body>
 
