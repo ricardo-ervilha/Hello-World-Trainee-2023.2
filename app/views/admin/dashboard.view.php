@@ -27,9 +27,7 @@
 </head>
 
 <body>
-<div class="alert-success" role="alert">
-  Login realizado com sucesso
-</div>
+
 <div class="dashboard">
         <div class="topo">
             <h1>Bem-vindo de volta, <?php echo $_SESSION['nome'];?>!</h1>
