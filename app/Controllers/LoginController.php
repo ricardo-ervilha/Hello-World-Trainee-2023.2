@@ -71,6 +71,14 @@ class LoginController{
         // Passando a contagem como variável para a view
         return view("admin/dashboard", ['postsCount' => $postsCount, 'usersCount' => $usersCount] );
     }
+
+    public function listaPosts(){
+
+        $page = 1;
+        $total_pages = 5;
+
+        return view('site/lista_de_posts');
+    }
     
 }
     

@@ -7,6 +7,8 @@ use App\Core\Router;
 $router->get('loginView', 'LoginController@view');
 $router->post('login', 'LoginController@login');
 
+$router->get('posts', 'LoginController@listaPosts');
+
 $router->get('dashboard', 'LoginController@admin');
 $router->get('home', 'LoginController@landingPage');
 
