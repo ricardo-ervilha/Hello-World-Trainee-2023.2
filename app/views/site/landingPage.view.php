@@ -41,13 +41,12 @@
                     <div class="fundo-branco">
                         <div class="post-left">
 
-                          <?php foreach($posts as $function) : ?>
-
-                            <div class="post-left-1">
-                                <a class="image"><img src="<?=$function->image?>"></a>
-                                <a class="text-link"><p><?=$function->title?><p></p></a>
-                            </div>
-
+                            <?php foreach($posts as $function) : ?>
+                                <!-- Adicione um link para a página individual para cada post -->
+                                <a href="/postIndividualCreate/<?=$function->id?>" class="post-left-1">
+                                    <img src="<?=$function->image?>" alt="Imagem do post">
+                                    <p><?=$function->title?></p>
+                                </a>
                             <?php endforeach; ?>
 
                         </div>

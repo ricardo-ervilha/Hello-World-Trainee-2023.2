@@ -20,7 +20,7 @@ $router->get('listaDePosts', 'PostController@postsView');
 $router->post('update_user', 'UserController@update_user');
 $router->post('update_post', 'PostController@update_post');
 
-//deleteUsers
+//deleteUsers&Posts
 $router->post('deleteUser', 'UserController@delete');
 $router->post('deletePost', 'PostController@delete');
 
@@ -29,6 +29,9 @@ $router->get('listaDosPosts', 'PostController@listaDosPosts');
 
 //post individual
 $router->get('postIndividual', 'PostController@postIndividual');
+$router->get('postIndividualCreate/{postId}', 'PostController@postIndividualCreate');
+
+
 
 //dashboard
 $router->get('dashboardView', 'PostController@dashboardView');

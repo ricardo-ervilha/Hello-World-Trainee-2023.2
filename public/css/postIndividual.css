@@ -23,9 +23,6 @@
     overflow: overlay;
 }
 
-.grid-template-columns {
-}
-
 .central {
     display: flex;
     position: relative;

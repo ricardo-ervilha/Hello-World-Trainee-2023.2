@@ -129,5 +129,21 @@ class QueryBuilder
         }
     }
 
+    //PostIndiv
+    public function selectById($table, $id)
+{
+    $sql = "SELECT * FROM {$table} WHERE id = :id";
+
+    try {
+        $stmt = $this->pdo->prepare($sql);
+        $stmt->execute(['id' => $id]);
+
+        return $stmt->fetch(PDO::FETCH_ASSOC);
+    } catch (Exception $e) {
+        die($e->getMessage());
+    }
+}
+
+
 }
 
