@@ -7,6 +7,7 @@ html, body {
 
 body {
     font-family: 'Roboto', sans-serif; font-size: 18px;
+    text-align: left;
 }
 
 .sidebar {
@@ -97,27 +98,27 @@ hr {
 }
 
 
-.logout {
+.logoutt {
     margin-top: 20vh;
     margin-bottom: 5vh;
 }
 
 
-.logout h4 {
+.logoutt h4 {
     margin: 0;
 }
 
-.logout li {
+.logoutt li {
     list-style: none;
     padding-left: 40px;
 }
 
-.logout li a {
+.logoutt li a {
     text-decoration: none;
     color: white;
 }
 
-.logout li a:hover {
+.logoutt li a:hover {
     color: black;
 }
 
