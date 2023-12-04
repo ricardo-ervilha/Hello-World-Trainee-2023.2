@@ -5,6 +5,8 @@ use App\Core\Router;
 //Rotas da aplicação
 
 $router->get('loginView', 'LoginController@view');
+$router->post('login', 'LoginController@login');
+
 $router->get('dashboard', 'LoginController@admin');
 $router->get('home', 'LoginController@landingPage');
 
@@ -21,3 +23,5 @@ $router->post('update_post', 'PostController@update_post');
 //deleteUsers
 $router->post('deleteUser', 'UserController@delete');
 $router->post('deletePost', 'PostController@delete');
+
+$router->get('logout', 'LoginController@logout');
