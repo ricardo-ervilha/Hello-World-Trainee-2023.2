@@ -7,6 +7,7 @@ html, body {
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
+    width: 100%;
 }
 
 footer {
@@ -96,6 +97,10 @@ hr {
     display: none;
 }
 
+.redes-e-logo {
+    width: 100%;
+}
+
 .redes_sociais {
     vertical-align: top;
     text-align: right;
@@ -119,10 +124,28 @@ hr {
     display: inline-block;
 }
 
+.div-logo-code{
+    text-align: right;
+}
+
+.imagem-logo {
+    max-width:70px;
+    width: auto;
+    height: auto;
+    margin-right: 2%;
+    margin-top: 1.5%;
+}
+
 
 @media (max-width: 1000px) {
+
+    body {
+        width: 100%;
+    }
+    
     footer {
         height: 276px;
+        width: 100%;
         display: grid;
         grid-template-columns: 33.33% 33.33% 33.33%;
         grid-template-rows: 49% 1% 49%;
@@ -141,9 +164,15 @@ hr {
         height: 132px;
     }
 
+    .redes-e-logo {
+        width: 100%;
+        grid-area: cinco;
+        align-items: center;
+    }
+
     .sobre_nos {
         height: 132px;
-        padding-left: 10%;
+        padding-left: 20%;
         padding-right: 0;
         text-align: left;
         grid-area: dois;
@@ -186,25 +215,27 @@ hr {
     }
 
     .redes_sociais {
-        width: 100%;
-        display: inline-block;
-        padding-top: 15px;
-        grid-area: cinco;
+        padding-top: 8px;
         text-align: center;
+        padding: 0;
     }
 
     .redes_sociais h3 {
-        display: inline-block;
+        
         margin-top: 13px;
         padding-right: 5%;
         padding-left: 3%;
-        padding-top: 30px;
+        padding-top: 5px;
         vertical-align: top;
     }
 
     .redes_sociais ul {
         display: inline-block;
-        padding-top: 30px;
+        padding-top: 0px;
+    }
+
+    .div-logo-code{
+        margin-top: -1%;
     }
 }
 
@@ -227,7 +258,7 @@ hr {
     }
 }
 
-@media (max-width: 300px) {
+@media (max-width: 370px) {
 
     .icone {
         padding-left: 0;    
@@ -240,6 +271,7 @@ hr {
     .sobre_nos h3{
         font-size: 18px;
         padding-bottom: 2px;
+        padding-top: 15px;
     }
 
     .sobre_nos li {
@@ -249,6 +281,7 @@ hr {
     .duvidas h3 {
         font-size: 18px;
         padding-bottom: 2px;
+        padding-top: 15px;
     }
 
     .duvidas li {
@@ -261,5 +294,10 @@ hr {
 
     .redes_sociais ul {
         margin-left: 1.8%;
+    }
+
+    .redes_sociais li{
+        width: 45px;
+        height: auto;
     }
 }
