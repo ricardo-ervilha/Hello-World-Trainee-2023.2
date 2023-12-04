@@ -27,6 +27,11 @@
 </head>
 
 <body>
+    <div>    
+        <?php require('./app/views/admin/sidebar_admin.html')?>
+    </div>
+
+    <div class="conteudo">
         <div class="topo">
             <h1>Bem-vindo de volta, admin!</h1>
             <div class="logout">
@@ -68,6 +73,7 @@
                 </button>
             </div>
         </div>
+    </div>        
 </body>
 
 </html>

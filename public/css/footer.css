@@ -16,6 +16,7 @@ footer {
     background-color: #6495ed;
     display: grid;
     grid-template-columns: 21.4% 21% 21% 36.6%;
+    text-align: left;
 }
 
 .icone {
@@ -39,6 +40,7 @@ footer {
     margin: 0;
     padding-top: 40px;
     padding-bottom: 7px;
+    font-size: 18px;
 }
 
 .sobre_nos ul {
@@ -71,6 +73,7 @@ footer {
     margin: 0;
     padding-top: 40px;
     padding-bottom: 7px;
+    font-size: 18px;
 }
 
 .duvidas ul {
@@ -97,10 +100,6 @@ hr {
     display: none;
 }
 
-.redes-e-logo {
-    width: 100%;
-}
-
 .redes_sociais {
     vertical-align: top;
     text-align: right;
@@ -111,13 +110,15 @@ hr {
     margin: 0;
     padding-top: 40px;
     padding-bottom: 7px;
+    font-size: 18px;
 }
 
 .redes_sociais ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    padding-right: 2.5%;
+    
+    width: 100%;
 }
 
 .redes_sociais li {
@@ -290,10 +291,6 @@ hr {
     
     .redes_sociais h3 {
         font-size: 14px;
-    }
-
-    .redes_sociais ul {
-        margin-left: 1.8%;
     }
 
     .redes_sociais li{
