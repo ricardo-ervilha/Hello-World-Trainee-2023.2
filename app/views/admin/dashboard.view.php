@@ -35,7 +35,7 @@
                 <p id="seta" onclick="mostrarLista()"> &nabla;</p>
                 <button onclick="mostrarLista()"><img src="../../../public/assets/foto-usuario.png"></button>
                 <ul id="lista" class="lista-hidden">
-                    <a href="./login"><li>Trocar usuário</li></a>
+                    <a href="./loginView"><li>Trocar usuário</li></a>
                     <a href="./home"><li>Sair</li></a>
                 </ul>
             </div>
