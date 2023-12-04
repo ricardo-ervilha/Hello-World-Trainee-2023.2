@@ -40,35 +40,21 @@
 
                     <div class="fundo-branco">
                         <div class="post-left">
-                            <div class="post-left-1">
-                                <a href="https://www.google.com.br/?hl=pt-BR" target="_blank" class="image"><img src="../../../public/assets/mergulho.png" class="image"></a>
-                                <a href="https://www.google.com.br/?hl=pt-BR" target="_blank" class="text-link">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</a>
-                            </div>
-                            <div class="post-left-2">
-                                <a href="https://www.google.com.br/?hl=pt-BR" target="_blank" class="image"><img src="../../../public/assets/mergulho.png" class="image"></a>
-                                <a href="https://www.google.com.br/?hl=pt-BR" target="_blank"class="text-link">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</a>
-                            </div>
-                            <div class="post-left-3">
-                                <a href="https://www.google.com.br/?hl=pt-BR" target="_blank" class="image"><img src="../../../public/assets/mergulho.png" class="image"></a>
-                                <a href="https://www.google.com.br/?hl=pt-BR" target="_blank"class="text-link">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</a>
-                            </div>
-                        </div>
 
-                        <div class="post-right">
-                            <div class="post-right-1">
-                                <a href="https://www.google.com.br/?hl=pt-BR" target="_blank" class="image"><img src="../../../public/assets/mergulho.png" class="image"></a>
-                                <a href="https://www.google.com.br/?hl=pt-BR" target="_blank"class="text-link">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</a>
+                          <?php foreach($posts as $function) : ?>
+
+                            <div class="post-left-1">
+                                <a class="image"><img src="<?=$function->image?>"></a>
+                                <a class="text-link"><p><?=$function->title?><p></p></a>
                             </div>
-                            <div class="post-right-2">
-                                <a href="https://www.google.com.br/?hl=pt-BR" target="_blank" class="image"><img src="../../../public/assets/mergulho.png" class="image"></a>
-                                <a href="https://www.google.com.br/?hl=pt-BR" target="_blank"class="text-link">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</a>
-                            </div>
+
+                            <?php endforeach; ?>
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="footer"></div>
 </body>
 </html>
