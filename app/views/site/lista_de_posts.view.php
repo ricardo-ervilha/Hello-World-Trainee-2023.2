@@ -13,71 +13,24 @@
 </head>
 
 <body>
+    <h3>Posts Recentes</h3>
+    <h1>Hello World</h1>
 
-    <div class="conteudo">
+    <div class="flex-container">
 
-        <?php require('./app/views/site/navbar.html')?>
+        <?php foreach($posts as $function) : ?>
 
-        <h3>Posts Recentes</h3>
-        <h1>Hello World</h1>
-
-        <div class="flex-container">
-            <div>
-                <img height="50%" src="../../../public/assets/image-post-1.jpg">
-                <div class="text-area">
-                    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam accusamus dolorum minus maiores
-                        odit laudantium vero nemo, cum eaque minima praesentium explicabo, nostrum quibusdam similique eum
-                        cumque adipisci sapiente provident.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam accusamus dolorum minus maiores
-                        odit laudantium vero nemo, cum eaque minima praesentium explicabo, nostrum quibusdam similique eum
-                        cumque adipisci sapiente provident. Laboriosam accusamus dolorum minus maiores odit laudantium vero
-                        nemo, cum eaque minima praesentium explicabo, nostrum quibusdam similique eum cumque adipisci
-                        sapiente provident.
-                        
-                    </p>
-                </div>
+        <div>
+            <img height="50%" src="<?=$function->image?>">
+            <div class="text-area">
+                <h2><?=$function->title?></h2>
+                <p> <?=$function->content?></p>
             </div>
-            <div>
-                <img height="50%" src="../../../public/assets/image-post-2.jpg">
-                <div class="text-area">
-                    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam accusamus dolorum minus maiores
-                        odit laudantium vero nemo, cum eaque minima praesentium explicabo, nostrum quibusdam similique eum
-                        cumque adipisci sapiente provident.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam accusamus dolorum minus maiores
-                        odit laudantium vero nemo, cum eaque minima praesentium explicabo, nostrum quibusdam similique eum
-                        cumque adipisci sapiente provident. Laboriosam accusamus dolorum minus maiores odit laudantium vero
-                        nemo, cum eaque minima praesentium explicabo, nostrum quibusdam similique eum cumque adipisci
-                        sapiente provident.
-                        
-                    </p>
-                </div>
-            </div>
-            <div>
-                <img height="50%" src="../../../public/assets/image-post-3.jpg">
-                <div class="text-area">
-                    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam accusamus dolorum minus maiores
-                        odit laudantium vero nemo, cum eaque minima praesentium explicabo, nostrum quibusdam similique eum
-                        cumque adipisci sapiente provident.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam accusamus dolorum minus maiores
-                        odit laudantium vero nemo, cum eaque minima praesentium explicabo, nostrum quibusdam similique eum
-                        cumque adipisci sapiente provident. Laboriosam accusamus dolorum minus maiores odit laudantium vero
-                        nemo, cum eaque minima praesentium explicabo, nostrum quibusdam similique eum cumque adipisci
-                        sapiente provident.
-                        
-                    </p>
-                </div>
-            </div>
-            <div></div>
-            <div></div>
-            <div></div>
         </div>
+       
+        <?php endforeach; ?>
+
     </div>
-
-    <?php require('./app/views/site/footer.html')?>
-
 </body>
 
 </html>
