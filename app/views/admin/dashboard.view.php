@@ -27,10 +27,12 @@
 </head>
 
 <body>
-    
+<div class="alert-success" role="alert">
+  Login realizado com sucesso
+</div>
 <div class="dashboard">
         <div class="topo">
-            <h1>Bem-vindo de volta, admin!</h1>
+            <h1>Bem-vindo de volta, <?php echo $_SESSION['nome'];?>!</h1>
             <div class="logout-dashboard">
                 <p id="seta" onclick="mostrarLista()"> &nabla;</p>
                 <button onclick="mostrarLista()"><img src="../../../public/assets/foto-usuario.png"></button>
