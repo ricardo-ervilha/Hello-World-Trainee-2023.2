@@ -60,5 +60,15 @@ class LoginController{
     }
 
 }
+
+public function listaPosts(){
+
+    $posts = App::get('database')->selectAll('posts');
+    $tables = [
+        'posts' => $posts,
+    ];
+
+    return view('site/lista_de_posts', $tables);
+}
 }
     
