@@ -31,15 +31,15 @@ class PostController{
     public function postsView()
     {
         $posts = App::get('database')->selectAll('posts');
-        $tables = [
-            'posts' => $posts,
-        ];
+ 
+        $qtdPosts =  App::get('database')->contador('posts');
+        $autores = [];
 
-        $autor = App::get('database')->recuperaDadosDoAutor($posts->author_post);
-        var_dump($autor);
-        die();
+        for($i=0; $i<$qtdPosts; $i++){
+            $autores[$posts[$i]->id] = App::get('database')->recuperaDadosDoAutor($posts[$i]->author_post);
+        }
 
-        return view("admin/listaPosts", compact('tables', 'autor'));
+        return view("admin/listaPosts", ['posts' => $posts, 'autores' => $autores]);
     }
 
     public function update_post()

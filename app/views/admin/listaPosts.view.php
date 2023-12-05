@@ -44,7 +44,7 @@
 
 			<?php foreach($posts as $function) : ?>
 			
-			<tbody> <tr class='linha'> <td><?=$function->title?></td> <td><?php echo $autor;?></td> <td><?=$function->updated_at?></td>
+			<tbody> <tr class='linha'> <td><?=$function->title?></td> <td><?=$autores[($function->id)]?></td> <td><?=$function->updated_at?></td>
 					
 			<?php require ('./app/views/admin/icons/icons-posts.php'); ?>
 

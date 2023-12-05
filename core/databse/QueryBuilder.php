@@ -72,7 +72,7 @@ class QueryBuilder
 
             $stmt->execute();
 
-            return $stmt->fetchAll(PDO::FETCH_CLASS);
+            return $stmt->fetch()[0];
         }catch(Exception $e){
             die($e->getMessage());
         }
