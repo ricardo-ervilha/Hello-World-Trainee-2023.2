@@ -5,7 +5,9 @@ if(!isset($_SESSION)){
 }
 
 if(!isset($_SESSION['id'])){
-    die("Usuário não logado.<p><a href=\"loginView\">Entrar</a></p>");
+    header("Location: /loginView");
+    $_SESSION['erro_rota_admin'] = "Faça Login";
+    
 }
 
 ?>

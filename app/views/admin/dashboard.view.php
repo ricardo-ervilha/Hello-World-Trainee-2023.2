@@ -34,9 +34,14 @@ include('protect.php');
 
 <body>
 
-<div class="alert-success" role="alert">
-  Login realizado com sucesso
+<div class="alert-success" role="alert" id='msg_login'>
+    <?php if(isset($_SESSION['login_success'])): ?> 
+            <p><?= $_SESSION['login_success']?></p>
+            <?php unset($_SESSION['login_success']) ?>
+    <?php endif ?> 
 </div>
+
+
         <div class="topo">
             
 
@@ -45,8 +50,9 @@ include('protect.php');
                 <p id="seta" onclick="mostrarLista()"> &nabla;</p>
                 <button onclick="mostrarLista()"><img src="../../../public/assets/foto-usuario.png"></button>
                 <ul id="lista" class="lista-hidden">
-                    <li><a>Trocar usuário</a></li>
-                    <li><a href="/logout">Sair</a></li>
+                    <form action="logout">
+                        <button>Sair</button>
+                    </form>    
                 </ul>
             </div>
         </div>
@@ -70,16 +76,33 @@ include('protect.php');
             </div>
 
             <div class="cards-inferior">
-                <button class="card">
-                    <img src="../../../public/assets/editar-usuario.png">
-                    <p>Gerenciar <br>usuários</p>
-                </button>
-
-                <button class="card"> <img src="../../../public/assets/editar-post.png">
-                    <p><a href="/listaDePosts">>Gerenciar<br> Posts </a></p>
-                </button>
+                <div>
+                    <form action="listaDeUsuarios">
+                        <button class="card">
+                            <img src="../../../public/assets/editar-usuario.png">
+                            <p>Gerenciar <br>usuários</p>
+                        </button>
+                    </form>
+                </div>
+                <div>
+                    <form action="listaDePosts">
+                        <button class="card"> <img src="../../../public/assets/editar-post.png">
+                            <p>Gerenciar<br> Posts</p>
+                        </button>
+                    </form>
+                </div>
             </div>
         </div>
+
+        <script> 
+ setTimeout(function () {
+      document.getElementById("msg_login").style.display = "none";
+    }, 2000);
+    function hide(){
+    document.getElementById("msg_login").style.display = "none";
+    }
+</script> 
+
 </body>
 
 </html>

@@ -101,7 +101,6 @@ body{
 }
 
 
-
 /* ------------------------------ Div Senha ---------------------------*/
 .campo-senha{
     background-color: rgb(166, 198,226,0.6);
@@ -114,6 +113,7 @@ body{
     top: 1%;
     left: 50%;
     transform: translate(-50%, -50%); 
+ 
 }
 .campo-senha img{
     width: 40px;
@@ -145,13 +145,37 @@ input::placeholder{
     border: none;
 }
 
+/* ------------------------------ Mensagens de Erro ---------------------------*/
+
+.msg_erro{
+    color:white;
+    background-color: rgb(166, 198,226,0.8);
+
+    width: 500px;
+    height: min-content;
+    border-radius: 10px; 
+
+    margin:0 auto;
+    padding: 0;
+
+
+    font-size: 20px;
+    text-align: center;
+}
+
+.msg_erro p{
+    margin: 0;
+    margin-bottom: 10px;
+}
+
 
 
 
 /* ------------------------------ Botão Entrar ---------------------------*/
 .button-entrar button {
-    width: 150px;
-    height: 60px;
+    width: fit-content;
+    height: fit-content;
+    
     background-color: rgb(166, 198,226,0.8);
     border-radius: 5px;
     border: 2px solid white;;
@@ -177,6 +201,12 @@ input::placeholder{
     transition: 1s;
 }
 
+.div_login{
+
+
+    
+}
+
 /* ------------------------------ Responsividade 900px heigth ---------------------------*/
 @media(max-height: 900px){
 
@@ -200,22 +230,29 @@ input::placeholder{
         height: 270px;
 
     }
+
+    .div_login{
+
+        width: 350px;
+
+        position: relative;
+        top: 50%;
+        left: 46%;
+        transform: translate(0%, -100%);
+        
+    }
     
     /* ----- TEXTO LOGIN -----*/
 
+
     .text-login h1{
         font-size: 70px;
-        float: right;
-        margin: -40% 15% ;
     }
 
-        /* ------------- Div E-mail ----------*/
+    /* ------------- Div E-mail ----------*/
     .campo-email{
         height: 30px;
         width: 300px;
-
-        float: right;
-        margin: -20% 5% ;
     }
     .campo-email img{
         width: 25px;
@@ -231,9 +268,7 @@ input::placeholder{
     .campo-senha{
         height: 30px;
         width: 300px;
-
-        float: right;
-        margin: -12% 33.5% ;
+        margin-top: 5px;
     }
     .campo-senha img{
         width: 25px;
@@ -244,10 +279,19 @@ input::placeholder{
         width: 260px;
         height: 30px;
     } 
-    .button-entrar button{
-        float: right;
-        margin: -8% 55% ;
+
+    .button-entrar button {
+        margin-top: 5%;
+        margin-bottom: 10px;
     }
+
+    /* --------- Mensagem de erro ----------*/
+    .msg_erro{
+      
+        width: 300px;
+    }
+
+  
 
 }
     

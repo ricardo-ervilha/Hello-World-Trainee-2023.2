@@ -67,12 +67,13 @@ body {
     border: 1px solid black;
 }
 
-.logout ul li {
+.logout ul button {
     width: 100%;
+    height: 100%;
     text-align: center;
 }
 
-.logout ul li:hover {
+.logout ul button:hover {
     background-color: #2794ee;
     cursor: pointer;
 }
@@ -110,18 +111,7 @@ body {
     margin: 0;
 }
 
-.alert-success{
-    display: none;
-    animation-name: alerta-login;
-    animation-duration: 3s;
-}
 
-
-@keyframes alerta-login{
-    0% {display: block; opacity: 1; transform: translate(0, 20PX)}
-    70% {display: block;opacity: 1; transform: translate(0, 0)}
-    100%{display: block; opacity: 0;}
-}
 
 @media (max-width: 400px) {
 

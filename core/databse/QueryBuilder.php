@@ -28,7 +28,8 @@ class QueryBuilder
 
             $statement->execute($parameters);
         } catch (Exception $e) {
-            die("An error ocurred when trying to insert into database: {$e->getMessage()}");
+            ("An error ocurred when trying to insert into database: {$e->getMessage()}");
+            $_SESSION['msg_error'] = array('msg'=>$e->getMessage(), 'count' => 0);
         }
     }
 

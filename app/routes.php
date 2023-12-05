@@ -8,7 +8,7 @@ $router->get('loginView', 'LoginController@view');
 $router->post('login', 'LoginController@login');
 
 $router->get('dashboard', 'LoginController@dashboard');
-$router->get('home', 'LoginController@home');
+$router->get('listaPosts', 'LoginController@listaPosts');
 
 $router->post('users/create', 'UserController@usersCreate');
 $router->post('posts/create', 'PostController@postsCreate');
