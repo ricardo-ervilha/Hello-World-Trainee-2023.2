@@ -15,17 +15,12 @@ class PostController{
         move_uploaded_file($_FILES['image']['tmp_name'], $imagePath);
         $now = new DateTime();
 
-        if(!isset($_SESSION)) {
-            session_start();
-        }
-        $author_post = $_SESSION['id'];
-
         $parameters = [
             'title' => $_POST['title'],
             'content' => $_POST['content'],
             'image' => $imagePath,
             'created_at' =>  $now->format('Y-m-d H:i:s'),
-            'author_post' =>$author_post,
+            'author_post' => 1,
         ];
 
         App::get('database')->insert('posts', $parameters);
@@ -36,15 +31,15 @@ class PostController{
     public function postsView()
     {
         $posts = App::get('database')->selectAll('posts');
-        $tables = [
-            'posts' => $posts,
-        ];
+ 
+        $qtdPosts =  App::get('database')->contador('posts');
+        $autores = [];
 
-        $autor = App::get('database')->recuperaDadosDoAutor($posts->author_post);
-        var_dump($autor);
-        die();
+        for($i=0; $i<$qtdPosts; $i++){
+            $autores[$posts[$i]->id] = App::get('database')->recuperaDadosDoAutor($posts[$i]->author_post);
+        }
 
-        return view("admin/listaPosts", compact('tables', 'autor'));
+        return view("admin/listaPosts", ['posts' => $posts, 'autores' => $autores]);
     }
 
     public function update_post()
@@ -71,4 +66,3 @@ class PostController{
        }
 
 }
-    

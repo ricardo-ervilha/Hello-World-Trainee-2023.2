@@ -4,6 +4,7 @@ body {
     background-color: #87ceeb;
     font-family: 'Roboto', sans-serif;
     height: 100%;
+    padding-left: 10px;
 }
 
 h3 {
@@ -47,4 +48,8 @@ h3 {
     display: -webkit-box;
     -webkit-line-clamp: 6;
     -webkit-box-orient: vertical;
+}
+
+.pagination{
+    margin: 0 auto;
 }

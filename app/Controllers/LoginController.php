@@ -60,6 +60,16 @@ class LoginController{
             }
     }
 
+    public function logout_trocar_user(){
+        session_destroy();
+        header("Location: /loginView");
+    }
+
+    public function logout_sair(){
+        session_destroy();
+        header("Location: /home");
+    }
+
       
 
     public function landingPage(){
@@ -82,12 +92,38 @@ class LoginController{
 
     public function listaPosts(){
 
-        $posts = App::get('database')->selectAll('posts');
+         $page = intval($_GET['pagina']);
+        if(isset($_GET["pagina"]) && empty($_GET["pagina"])){
+            $page = intval($_GET['pagina']);
+
+            if($page <= 0 ){
+                return redirect('posts');
+            }
+        }
+
+        
+
+        
+        $itens_por_page = 2;
+        $start_limit = $itens_por_page * $page - $itens_por_page;
+        $rows_count = App::get('database')->contador('posts');
+
+        if($start_limit > $rows_count){
+            return redirect('posts');
+        }
+
+         $total_pages = ceil($rows_count / $itens_por_page);
+
+
+        $posts = App::get('database')->selectAllPosts('posts', $start_limit, $itens_por_page);
+        
+
         $tables = [
             'posts' => $posts,
         ];
+       
 
-        return view('site/lista_de_posts', $tables);
+        return view('site/lista_de_posts', compact("posts", "page", "total_pages"));
     }
     
 }

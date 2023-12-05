@@ -7,7 +7,6 @@ if(!isset($_SESSION)){
 if(!isset($_SESSION['id'])){
     header("Location: /loginView");
     $_SESSION['erro_rota_admin'] = "Faça Login";
-    
 }
 
 ?>

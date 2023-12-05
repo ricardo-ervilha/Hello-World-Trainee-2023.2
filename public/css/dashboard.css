@@ -8,6 +8,21 @@ html{
     text-align: center;
 }
 
+.alert-success{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;;
+    color:#155724;
+    background-color:#d4edda;
+    border-color:#c3e6cb;
+    margin: 0;
+}
+
+.alert-success hr{
+    margin: 0;
+    border-top-color:#b1dfbb
+}
+
+
 .topo {
     display: inline-block;
     width: 100%;
@@ -65,7 +80,7 @@ html{
 
 .show {
     list-style: none;
-    line-height: 45px;
+
     width: 115px;
     background-color: #5cacee;
     color: #FFF;
@@ -78,9 +93,15 @@ html{
     width: 100%;
     height: 100%;
     text-align: center;
+    vertical-align: middle;
 }
 
-.logout-dashboard ul li:hover {
+.logout-dashboard ul button{
+    width: 100%;
+    border-bottom: solid 0.5px black;
+}
+
+.logout-dashboard ul button:hover {
     background-color: #2794ee;
     cursor: pointer;
 }
@@ -119,8 +140,6 @@ html{
     padding-top: 4%;
     margin: 0;
 }
-
-
 
 @media (max-width: 400px) {
 

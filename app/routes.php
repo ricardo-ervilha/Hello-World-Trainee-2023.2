@@ -6,6 +6,8 @@ use App\Core\Router;
 
 $router->get('loginView', 'LoginController@view');
 $router->post('login', 'LoginController@login');
+$router->get('logout_sair', 'LoginController@logout_sair');
+$router->get('logout_trocar_user', 'LoginController@logout_trocar_user');
 
 $router->get('posts', 'LoginController@listaPosts');
 
@@ -26,4 +28,4 @@ $router->post('update_post', 'PostController@update_post');
 $router->post('deleteUser', 'UserController@delete');
 $router->post('deletePost', 'PostController@delete');
 
-$router->get('logout', 'LoginController@logout');
+

@@ -49,6 +49,28 @@ class QueryBuilder
         }
     }
 
+    public function selectAllPosts($table, $start_limit = null, $rows_count = null)
+    {
+        
+        $sql = "SELECT * FROM {$table}";
+        
+        if (($start_limit >= 0) && ($rows_count > 0)){
+            $sql = $sql . " LIMIT {$start_limit}, {$rows_count}";
+        }
+
+        
+
+        try{
+            $stmt = $this->pdo->prepare($sql);
+
+            $stmt->execute();
+
+            return $stmt->fetchAll(PDO::FETCH_CLASS);
+        }catch(Exception $e){
+            die($e->getMessage());
+        }
+    }
+
     
     public function selectFive($table)
     {
@@ -74,7 +96,7 @@ class QueryBuilder
 
             $stmt->execute();
 
-            return $stmt->fetchAll(PDO::FETCH_CLASS);
+            return $stmt->fetch()[0];
         }catch(Exception $e){
             die($e->getMessage());
         }
@@ -194,6 +216,7 @@ class QueryBuilder
             die("An error ocurred when trying to insert into database: {$e->getMessage()}");
         }
     }
+
 
 
 
