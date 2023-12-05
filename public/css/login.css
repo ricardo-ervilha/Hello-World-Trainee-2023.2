@@ -147,9 +147,9 @@ input::placeholder{
 
 /* ------------------------------ Mensagens de Erro ---------------------------*/
 
-.msg_erro{
-    color:white;
-    background-color: rgb(166, 198,226,0.8);
+.msg_erro_login{
+    color:WHITE;
+    background-color: rgba(255, 0, 0, 0.6);
 
     width: 500px;
     height: min-content;
@@ -163,7 +163,28 @@ input::placeholder{
     text-align: center;
 }
 
-.msg_erro p{
+.msg_erro_login p{
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.msg_erro_rota{
+    color:white;
+    background-color: rgba(255, 165, 0, 0.8);
+
+    width: 500px;
+    height: min-content;
+    border-radius: 10px; 
+
+    margin:0 auto;
+    padding: 0;
+
+
+    font-size: 20px;
+    text-align: center;
+}
+
+.msg_erro_rota p{
     margin: 0;
     margin-bottom: 10px;
 }
@@ -201,11 +222,6 @@ input::placeholder{
     transition: 1s;
 }
 
-.div_login{
-
-
-    
-}
 
 /* ------------------------------ Responsividade 900px heigth ---------------------------*/
 @media(max-height: 900px){
@@ -286,8 +302,11 @@ input::placeholder{
     }
 
     /* --------- Mensagem de erro ----------*/
-    .msg_erro{
-      
+    .msg_erro_login{
+        width: 300px;
+    }
+
+    .msg_erro_rota{
         width: 300px;
     }
 

@@ -68,7 +68,7 @@
         <div></div>
         <div></div>
         <div></div>
-        <?php require ('./app/includes/pagination.php'); ?>
+
     </div>
 </body>
 

@@ -31,7 +31,7 @@
                 </div>
 
                 <div class="campo-email">
-                    <img src="../../../public/assets/icon-user-white (2).png" alt="Ícone de login">
+                    <span class=><img src="../../../public/assets/icon-user-white (2).png" alt="Ícone de login"></span>
                     <input type="email" name="email" required>
                 </div>
 
@@ -40,14 +40,14 @@
                     <input type="password" name="password" required>
                 </div>
 
-                <div class="msg_erro">
+                <div class="msg_erro_login">
                     <?php if(isset($_SESSION['erro_login'])): ?> 
                         <p><?= $_SESSION['erro_login']?><p>
                         <?php unset($_SESSION['erro_login']) ?>
                     <?php endif ?>  
                 </div>
 
-                <div class="msg_erro">
+                <div class="msg_erro_rota">
                     <?php if(isset($_SESSION['erro_rota_admin'])): ?> 
                         <?= $_SESSION['erro_rota_admin']?>
                         <?php unset($_SESSION['erro_rota_admin']) ?>
