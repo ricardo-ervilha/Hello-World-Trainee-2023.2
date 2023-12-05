@@ -92,14 +92,17 @@ class LoginController{
 
     public function listaPosts(){
 
-         $page = intval($_GET['pagina']);
-        if(isset($_GET["pagina"]) && empty($_GET["pagina"])){
-            $page = intval($_GET['pagina']);
 
-            if($page <= 0 ){
-                return redirect('posts');
-            }
+        $page=1;
+
+        if(isset($_GET["pagina"]) && !empty($_GET['pagina'])){
+            $page = intval($_GET['pagina']);
         }
+
+        if($page <= 0 ){
+            return redirect('posts');
+        }
+        
 
         
 
