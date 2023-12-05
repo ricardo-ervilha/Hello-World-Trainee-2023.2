@@ -97,7 +97,7 @@ include('protect.php');
         <script> 
  setTimeout(function () {
       document.getElementById("msg_login").style.display = "none";
-    }, 2000);
+    }, 5000);
     function hide(){
     document.getElementById("msg_login").style.display = "none";
     }
