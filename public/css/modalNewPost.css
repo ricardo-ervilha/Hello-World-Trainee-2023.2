@@ -1,0 +1,178 @@
+body{
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size:30px;
+}
+
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 2;
+    left:0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+
+.modal-newpost-content{
+    background-color: #87ceeb;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 40vw;
+    min-width: min-content;
+
+    
+    height: max-content;
+    max-height: 85vh;
+    min-height: min-content;
+    
+    border-radius: 15px;
+    border: 2px solid black;
+
+    padding: 20px;
+    overflow: auto;
+}
+
+
+/* ------------------------------------FECHAR--------------------------- */
+.modal-newpost-content span{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 20px;
+    height: 20px;
+    font-size: 25px;
+}
+
+.modal-newpost-content span:hover{
+    cursor: pointer;
+}
+
+/* ------------------------------------CABEÇALHO--------------------------- */
+.modal-head{
+    text-align: center;
+    border-bottom: solid 1px;
+}
+.modal-head h1{
+    margin: 0;
+    font-size: 150%;
+}
+
+/* ------------------------------------CAMPOS--------------------------- */
+.newpost-content-body{
+    margin: 20px auto;
+    margin-bottom: 0;
+    text-align: left;
+}
+
+.newpost-content-body h2{
+    font-size: 80%;
+    color: black;
+
+    text-shadow: none;
+
+    text-align: left;
+    margin:0;
+}
+
+.newpost-content-body input{
+    width: 100%;
+
+    font-size: 20px;
+    margin-bottom: 20px;
+
+    border: none;
+    border-radius: 5px; 
+
+    outline:0;
+}
+
+
+
+.div-conteudo textarea{
+    font-size: 70%;
+    font-family: 'Roboto', sans-serif;
+
+    width: 100%;
+    height: 400px;
+
+    margin-top: 5px;
+    margin-bottom: 20px;
+
+    border: none;
+    border-radius: 5px; 
+
+    resize: none;
+
+    outline: 0;
+ }
+
+ .div-image input[type=file] {
+    display: none;
+ }
+
+ .div-image label{
+    display:block;
+    background-color: #007bff; 
+    color: white;
+
+    font-size: 20px;
+    text-align: center;
+
+    width:200px;
+    border-radius: 5px; 
+    outline:0;
+    margin-top: 5px;
+    
+ }
+
+ .div-image label:hover{
+    cursor: pointer;
+ }
+
+ .div-date{
+    display: none;
+ }
+ .div-date h2{
+    width: max-content;
+    margin-top: 20px;;
+ }
+
+ .div-date input{
+    width: 200px;
+    background-color: #007bff; 
+    color: white;
+ }
+
+ .div-date input:hover{
+    cursor: pointer;
+ }
+
+.div-postar {
+    margin-top: 20px;
+}
+
+.div-postar button{
+    width: 100%;
+    border-radius: 5px;
+    background-color: #007bff; 
+    color: white;
+
+    font-size: 120%;
+    text-align: center;
+}
+
+
+.div-postar button:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+

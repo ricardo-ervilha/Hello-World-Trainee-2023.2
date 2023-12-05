@@ -12,22 +12,25 @@ class LoginController{
         return view("site/login");
     }
 
+    public function __construct()
+    {
+        if(!isset($_SESSION)) {
+            session_start();
+        }
+
+    }
+        
+
     public function login()
     {
         if(isset($_POST['email']) || isset($_POST['password'])) {
 
-            if(strlen($_POST['email']) == 0) {
-                echo "Preencha seu e-mail";
-            } else if(strlen($_POST['password']) == 0) {
-                echo "Preencha sua senha";
-            } else {
         
                 $email = $_POST['email'];
                 $senha = $_POST['password'];
 
         
                 $quantidade = App::get('database')->validateLogin($email, $senha);
-        
                 if($quantidade == 1) {
                     
                     $usuario = App::get('database')->selectUser($email, $senha);
@@ -41,18 +44,23 @@ class LoginController{
         
                     $_SESSION['id'] = $usuario['id'];
                     $_SESSION['nome'] = $usuario['name'];
+                    $_SESSION['login_success'] = "Login realizado com sucesso!";
 
-                    
                     header("Location: /dashboard");
+
         
-                } else {
-                    echo "Falha ao logar! E-mail ou senha incorretos";
+                } else{
+
+                    $_SESSION['erro_login'] = "Verifique Email e Senha";
+                
+                    header("Location: /loginView");
                 }
+
         
             }
-        }
+    }
 
-    }  
+      
 
     public function landingPage(){
 

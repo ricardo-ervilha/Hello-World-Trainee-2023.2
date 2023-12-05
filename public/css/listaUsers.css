@@ -71,6 +71,7 @@ th{
     text-align: center;
     border-bottom: 1px solid white;
     text-shadow: 2px 2px 1px rgba(0,0,0,0.8);
+    color: white;
 }
 
 /* ---------------Conteúdo------------ */
@@ -79,10 +80,11 @@ td{
     text-align: center;
     color: black;
     border-bottom: 1px solid white;
+    vertical-align: top;
 }
 
 /* --------------Ícones Ações-------------- */
-.tabela img{
+.icones{
     width: 25px;
     height: 25px;
 }
@@ -100,7 +102,10 @@ button{
     opacity:0.5;
 }
 
-
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+  }
 
 /* ------------------------------------RESPONSIVIDADE--------------------------- */
 

@@ -1,3 +1,9 @@
+<?php
+
+include('protect.php');
+
+?>
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -14,7 +20,7 @@
 		<div class="container">
 			<h1 class="h1-list-users">Lista de Usuários</h1>
 			<div class="new-user">
-					<button id="add-user">
+					<button id="open-new">
 						<div class="button-new user"><img src="../../../public/assets/icon-add.png"></div>
 						<div class="text-new-user"><h2>Novo Usuário</h2></div>
 					</button>

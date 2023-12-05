@@ -22,7 +22,8 @@ document.querySelectorAll('#add-user').forEach(function (button) {
 });
 
 
-/* Modais do Paulo */
+
+/* Modais do Paulo - VISUALIZAR USER/POST    */
 
 document.querySelectorAll('.icon-visualizar').forEach(function (button) {
     button.addEventListener('click', function () {

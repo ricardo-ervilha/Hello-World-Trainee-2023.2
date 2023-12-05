@@ -11,6 +11,7 @@ include ('protect.php');
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="../../../public/css/dashboard.css">
     <title>Dashboard</title>
 
@@ -33,6 +34,12 @@ include ('protect.php');
 <body>
 
 <div class="dashboard">
+    <div class="alert-success" role="alert" id='msg_login'>
+        <?php if(isset($_SESSION['login_success'])): ?> 
+                <p><?= $_SESSION['login_success']?></p>
+                <?php unset($_SESSION['login_success']) ?>
+        <?php endif ?> 
+    </div>
         <div class="topo">
             <h1>Bem-vindo(a) de volta, <?php echo $_SESSION['nome'];?>!</h1>
             <div class="logout-dashboard">
@@ -74,6 +81,14 @@ include ('protect.php');
                 </a>
             </div>
         </div>
+        
+        <script> 
+            setTimeout(function () {
+                document.getElementById("msg_login").style.display = "none";
+                }, 5000);
+            function hide(){
+            document.getElementById("msg_login").style.display = "none";
+        </script> 
 </div>
 </body>
 
