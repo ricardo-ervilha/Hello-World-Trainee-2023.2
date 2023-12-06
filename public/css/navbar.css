@@ -40,9 +40,12 @@
     margin: 0;
     text-align: center;
     width: 100%;
+    display: flex;
+    justify-content: space-around;
 }
 
 .navigation li {
+    width: 100%;
     list-style: none;
     display: inline-block;
     line-height: 87px;
@@ -53,7 +56,7 @@
 }
 
 .navigation .posts{
-    padding-right: 30%;
+    
 }
 
 .navigation li a {

@@ -9,6 +9,8 @@
 </head>
 <body>
 
+    <?php require('./app/views/site/navbar.html')?>
+
     <div class="conteudo">
         <!--Imagens-->
         <img src="../../../public/assets//Ellipse1.png" class="overlay-image">
@@ -43,6 +45,8 @@
             </div>
         </div>
     </div>
+
+    <?php require('./app/views/site/footer.html')?>
 
 </body>
 </html>
