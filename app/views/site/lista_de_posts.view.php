@@ -13,6 +13,9 @@
 </head>
 
 <body>
+
+    <?php require('./app/views/site/navbar.html')?>
+
     <h3>Posts Recentes</h3>
     <h1>Hello World</h1>
 
@@ -31,6 +34,9 @@
         <?php endforeach; ?>
 
     </div>
+
+    <?php require('./app/views/site/footer.html')?>
+
 </body>
 
 </html>

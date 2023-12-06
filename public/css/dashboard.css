@@ -6,6 +6,15 @@ body {
     text-align: center;
 }
 
+.unificacao {
+    display: flex;
+}
+
+.conteudo{
+    width: 100%;
+    text-align: center;
+}
+
 .topo {
     display: inline-block;
     width: 100%;

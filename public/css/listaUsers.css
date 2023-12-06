@@ -2,12 +2,12 @@ body{
     color: rgb(255, 255, 255);
     font-family: 'Roboto', sans-serif;
     font-size:30px;
+    display: flex;
 }
 
  /* ----- Fundo da lista ------ */
 .container {
-
-    max-width: 100%;
+    width: 100%;
     margin: 0;
     padding: 20px;
     background-color: rgba(166, 198, 226,0.5);

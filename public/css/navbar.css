@@ -1,15 +1,11 @@
-html, body {
-    margin: 0;
-    padding: 0;
-    font-size: 0;
-}
 
-body {
-    font-family: 'Roboto', sans-serif; font-size: 18px;
-}
 
 .navegacao {
     background-color: #6495ed;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    font-family: 'Roboto', sans-serif; font-size: 18px;
 }
 
 nav {

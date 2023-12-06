@@ -1,16 +1,11 @@
-html, body {
+
+footer {
     padding: 0;
     margin: 0;
     font-size: 0;
-}
-
-body {
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     width: 100%;
-}
-
-footer {
     height: 162px;
     width: 100%;
     background-color: #6495ed;
@@ -27,7 +22,7 @@ footer {
 }
 
 .icone img {
-    height: 162px;
+    height: 152px;
 }
 
 .sobre_nos {

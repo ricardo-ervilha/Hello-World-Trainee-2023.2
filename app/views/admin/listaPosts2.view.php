@@ -17,6 +17,9 @@
 
 
 	<body>
+
+		<?php require('./app/views/admin/sidebar_admin.html')?>
+
 		<div class="container">
 
 			<h1 class="h1-list-users">Lista de Posts</h1>

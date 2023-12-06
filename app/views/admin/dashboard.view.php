@@ -27,50 +27,53 @@
 </head>
 
 <body>
-    <div>    
-        <?php require('./app/views/admin/sidebar_admin.html')?>
-    </div>
-
-    <div class="conteudo">
-        <div class="topo">
-            <h1>Bem-vindo de volta, admin!</h1>
-            <div class="logout">
-                <p id="seta" onclick="mostrarLista()"> &nabla;</p>
-                <button onclick="mostrarLista()"><img src="../../../public/assets/foto-usuario.png"></button>
-                <ul id="lista" class="lista-hidden">
-                    <li><a>Trocar usuário</a></li>
-                    <li><a>Sair</a></li>
-                </ul>
-            </div>
+    <div class="unificacao">
+        
+        <div>
+            <?php require('./app/views/admin/sidebar_admin.html')?>
         </div>
 
-        <div class="bloco-cards">
-
-            <div class="cards-superior">
-
-                <button class="card"> <img src="../../../public/assets/info-usuarios.png">
-                    <p><span style="font-size: 28px;">50</span> <br> Users</p>
-                </button>
-
-                <button class="card"> <img src="../../../public/assets/info-publi.png">
-                    <p><span style="font-size: 28px;">200</span> <br> Posts </p>
-                </button>
-
-                <button class="card"> <img src="../../../public/assets/info-avaliacoes.png">
-                    <p><span style="font-size: 28px;">100</span> <br> Avaliações </p>
-                </button>
-
+        <div class="conteudo">
+            <div class="topo">
+                <h1>Bem-vindo de volta, admin!</h1>
+                <div class="logout">
+                    <p id="seta" onclick="mostrarLista()"> &nabla;</p>
+                    <button onclick="mostrarLista()"><img src="../../../public/assets/foto-usuario.png"></button>
+                    <ul id="lista" class="lista-hidden">
+                        <li><a>Trocar usuário</a></li>
+                        <li><a>Sair</a></li>
+                    </ul>
+                </div>
             </div>
 
-            <div class="cards-inferior">
-                <button class="card">
-                    <img src="../../../public/assets/editar-usuario.png">
-                    <p>Gerenciar <br>usuários</p>
-                </button>
+            <div class="bloco-cards">
 
-                <button class="card"> <img src="../../../public/assets/editar-post.png">
-                    <p>Gerenciar<br> Posts </p>
-                </button>
+                <div class="cards-superior">
+
+                    <button class="card"> <img src="../../../public/assets/info-usuarios.png">
+                        <p><span style="font-size: 28px;">50</span> <br> Users</p>
+                    </button>
+
+                    <button class="card"> <img src="../../../public/assets/info-publi.png">
+                        <p><span style="font-size: 28px;">200</span> <br> Posts </p>
+                    </button>
+
+                    <button class="card"> <img src="../../../public/assets/info-avaliacoes.png">
+                        <p><span style="font-size: 28px;">100</span> <br> Avaliações </p>
+                    </button>
+
+                </div>
+
+                <div class="cards-inferior">
+                    <button class="card">
+                        <img src="../../../public/assets/editar-usuario.png">
+                        <p>Gerenciar <br>usuários</p>
+                    </button>
+
+                    <button class="card"> <img src="../../../public/assets/editar-post.png">
+                        <p>Gerenciar<br> Posts </p>
+                    </button>
+                </div>
             </div>
         </div>
     </div>        
