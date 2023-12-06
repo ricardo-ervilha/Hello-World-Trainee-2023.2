@@ -30,3 +30,6 @@ $router->post('deletePost', 'PostController@delete');
 
 //dashboard
 $router->get('dashboardView', 'PostController@dashboardView');
+
+//post individual
+$router->get('postIndividual', 'PostController@postIndividual');
