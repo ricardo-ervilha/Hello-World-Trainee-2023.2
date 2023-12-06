@@ -4,12 +4,11 @@ body {
     background-color: #87ceeb;
     font-family: 'Roboto', sans-serif;
     height: 100%;
-    padding-left: 10px;
 }
 
 h3 {
     font-weight: 400;
-    padding-top: 10px;
+    padding-top: 40px;
 }
 
 .flex-container {

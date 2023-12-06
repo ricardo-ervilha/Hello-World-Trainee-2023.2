@@ -13,7 +13,7 @@
 
 <body>
 
-    <div class="navigation"></div>
+    <?php require('./app/views/site/navbar.html')?>
 
     <div class="conteudo">
 
@@ -56,5 +56,8 @@
             </div>
         </div>
     </div>
+
+    <?php require('./app/views/site/footer.html')?>
+
 </body>
 </html>

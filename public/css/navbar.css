@@ -1,19 +1,17 @@
-
-html, body {
-    margin: 0;
+*{
     padding: 0;
-    font-size: 0;
-}
-
-body {
-    font-family: 'Roboto', sans-serif; font-size: 18px;
+    margin: 0;
 }
 
 .navegacao {
     background-color: #6495ed;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    font-family: 'Roboto', sans-serif; font-size: 18px;
 }
 
-nav {
+.navbarr {
     height: 87px;
     background-color: #6495ed;
     display: grid;
@@ -22,6 +20,7 @@ nav {
 
 .icon {
     height: 87px;
+    text-align: left;
 }
 
 .icon img {
@@ -90,6 +89,7 @@ nav {
     background-color: #5088ED;
     color: black;
     box-shadow: 2px 2px 1px #303030;
+    line-height: normal;
 }
 
 .criar a {
@@ -153,6 +153,7 @@ nav {
         background-color: #6495ed;
         height: auto;
         width: 100%;
+        text-align: left;
     }
 
     .navjs ul {

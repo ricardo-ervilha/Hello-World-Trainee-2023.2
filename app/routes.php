@@ -28,4 +28,5 @@ $router->post('update_post', 'PostController@update_post');
 $router->post('deleteUser', 'UserController@delete');
 $router->post('deletePost', 'PostController@delete');
 
-
+//dashboard
+$router->get('dashboardView', 'PostController@dashboardView');

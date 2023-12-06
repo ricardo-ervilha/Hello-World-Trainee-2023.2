@@ -17,6 +17,9 @@ include('protect.php');
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 	</head>
 	<body>
+
+		<?php require('./app/views/admin/sidebar_admin.html')?>
+
 		<div class="container">
 			<h1 class="h1-list-users">Lista de Usuários</h1>
 			<div class="new-user">

@@ -3,11 +3,12 @@ body{
     font-family: 'Roboto', sans-serif;
     font-size:24px;
     font-weight: 400;
+    display: flex;
 }
 
  /* ----- Fundo da lista ------ */
 .container {
-    max-width: 100%;
+    width: 100%;
     height: auto;
     margin: 0;
     padding: 20px;

@@ -14,6 +14,9 @@
 </head>
 
 <body>
+
+    <?php require('./app/views/site/navbar.html')?>
+
     <h3>Posts Recentes</h3>
     <h1>Hello World</h1>
 
@@ -36,6 +39,9 @@
     <div class="pagination">
         <?php require './app/views/includes/pagination.php'?>
     </div>
+
+    <?php require('./app/views/site/footer.html')?>
+
 </body>
 
 </html>

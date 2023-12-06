@@ -65,4 +65,8 @@ class PostController{
         header('Location: /listaDePosts');   
        }
 
+    public function dashboardView()
+    {
+        return view("admin/dashboard");
+    }   
 }

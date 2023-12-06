@@ -7,9 +7,15 @@ html, body {
 
 body {
     font-family: 'Roboto', sans-serif; font-size: 18px;
+    text-align: left;
 }
 
 .sidebar {
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    font-family: 'Roboto', sans-serif; font-size: 18px;
+    text-align: left;
     height: 100vh;
     max-width: 100px;
     background-color: #6495ed;
@@ -42,6 +48,7 @@ body {
     margin-top: 41px;
     background-color: #A6C6E2;
     margin-left: 26px;
+    color: black;
 }
 
 .threeline-div:hover {
@@ -89,7 +96,16 @@ body {
     color: black;
 }
 
-hr {
+.divisa {
+    display: block;
+    unicode-bidi: isolate;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 1px;
     margin: 0;
     width: 85%;
     margin-left: 7.5%;
@@ -97,27 +113,27 @@ hr {
 }
 
 
-.logout {
+.logoutt {
     margin-top: 20vh;
     margin-bottom: 5vh;
 }
 
 
-.logout h4 {
+.logoutt h4 {
     margin: 0;
 }
 
-.logout li {
+.logoutt li {
     list-style: none;
     padding-left: 40px;
 }
 
-.logout li a {
+.logoutt li a {
     text-decoration: none;
     color: white;
 }
 
-.logout li a:hover {
+.logoutt li a:hover {
     color: black;
 }
 
