@@ -38,25 +38,25 @@
 
     <?php require('./app/views/site/navbar.html')?>
 
-    <div class="unificacao">
+<div class="unificacao">
 
-        <h3>Posts Recentes</h3>
-        <h1>Hello World</h1>
-        <!-- Barra de pesquisa-->
-        <div class="row">
-            <div class="col-md-8 offset-md-2">
-                <form action="">
-                    <div class="input-group">
-                        <input type="search" class="form-control form-control-lg" placeholder="Busque por Posts" name="busca" value="<?php if(isset($_GET['busca'])) echo $_GET['busca']; ?>">
-                        <div class="input-group-append">
-                            <button type="submit" class="btn btn-lg btn-default" style="background-color: #e3e3e3; border-radius: 0">
-                                <i class="fa fa-search"></i>
-                            </button>
-                        </div>
+    <h3>Posts Recentes</h3>
+    <h1>Hello World</h1>
+    <!-- Barra de pesquisa-->
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <form action="">
+                <div class="input-group">
+                    <input type="search" class="form-control form-control-lg" placeholder="Busque por Posts" name="busca" value="<?php if(isset($_GET['busca'])) echo $_GET['busca']; ?>">
+                    <div class="input-group-append">
+                        <button type="submit" class="btn btn-lg btn-default" style="background-color: #e3e3e3; border-radius: 0">
+                            <i class="fa fa-search"></i>
+                        </button>
                     </div>
-                </form>
-            </div>
+                </div>
+            </form>
         </div>
+    </div>
 
         <div class="flex-container">
             <?php foreach ($posts as $function) : ?>
@@ -72,7 +72,7 @@
             <?php endforeach; ?>
         </div>
 
-    </div>
+</div>
 
     <?php require('./app/views/site/footer.html')?>
 
