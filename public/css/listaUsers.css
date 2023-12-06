@@ -5,6 +5,8 @@ body{
     font-weight: 400;
     display: flex;
     background-color: rgba(166, 198, 226,0.5);
+    min-width: min-content;
+    min-height: 100%;
 }
 
  /* ----- Fundo da lista ------ */
