@@ -147,10 +147,10 @@ body {
     padding-left: 10px;
 }
 
-.close{
+.close-sidebar{
     max-width: 280px;
 }
 
-.close-icons{
+.close-icons-sidebar{
     display: inline-block;
 }
