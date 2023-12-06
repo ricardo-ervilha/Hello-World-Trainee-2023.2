@@ -43,7 +43,7 @@
 
                             <?php foreach($posts as $function) : ?>
                                 <!-- Adicione um link para a página individual para cada post -->
-                                <a href="/postIndividualCreate/<?=$function->id?>" class="post-left-1">
+                                <a href="/postIndividual?id=<?=$function->id?>" class="post-left-1">
                                     <img src="<?=$function->image?>" alt="Imagem do post">
                                     <p><?=$function->title?></p>
                                 </a>
