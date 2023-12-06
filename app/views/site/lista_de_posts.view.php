@@ -35,7 +35,7 @@
 </head>
 
 <body>
-    <h3>Posts Recentes</h3>
+    <h4>Posts Recentes</h4>
     <h1>Hello World</h1>
     <!-- Barra de pesquisa-->
     <div class="row">
