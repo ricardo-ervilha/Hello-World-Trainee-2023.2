@@ -15,12 +15,16 @@ class PostController{
         move_uploaded_file($_FILES['image']['tmp_name'], $imagePath);
         $now = new DateTime();
 
+        if(!isset($_SESSION)) {
+            session_start();
+        }
+        
         $parameters = [
             'title' => $_POST['title'],
             'content' => $_POST['content'],
             'image' => $imagePath,
             'created_at' =>  $now->format('Y-m-d H:i:s'),
-            'author_post' => 1,
+            'author_post' => $_SESSION['id'],
         ];
 
         App::get('database')->insert('posts', $parameters);

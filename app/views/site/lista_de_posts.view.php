@@ -17,7 +17,7 @@
 
     <?php require('./app/views/site/navbar.html')?>
 
-    <h3>Posts Recentes</h3>
+    <h4>Posts Recentes</h4>
     <h1>Hello World</h1>
 
     <div class="flex-container">

@@ -4,6 +4,7 @@ body{
     font-size:24px;
     font-weight: 400;
     display: flex;
+    background-color: rgba(166, 198, 226,0.5);
 }
 
  /* ----- Fundo da lista ------ */
@@ -12,9 +13,6 @@ body{
     height: auto;
     margin: 0;
     padding: 20px;
-    background-color: rgba(166, 198, 226,0.5);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
 }
 
 

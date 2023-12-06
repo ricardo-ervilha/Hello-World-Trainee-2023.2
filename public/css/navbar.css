@@ -90,7 +90,8 @@
     color: black;
     box-shadow: 2px 2px 1px #303030;
     line-height: normal;
-}
+    cursor: pointer;
+    }
 
 .criar a {
     text-decoration: none;
