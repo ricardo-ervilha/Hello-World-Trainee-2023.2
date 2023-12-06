@@ -29,9 +29,6 @@ $router->get('listaDosPosts', 'PostController@listaDosPosts');
 
 //post individual
 $router->get('postIndividual', 'PostController@postIndividual');
-$router->get('postIndividualCreate/{postId}', 'PostController@postIndividualCreate');
-
-
 
 //dashboard
 $router->get('dashboardView', 'PostController@dashboardView');

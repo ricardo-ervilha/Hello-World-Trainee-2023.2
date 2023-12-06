@@ -67,32 +67,32 @@ class PostController{
     }
     
     public function postIndividual()
-    {
-        return view("site/postIndividual");
-    }   
+{
+    // Obtém o ID do post da query string
+    $idPost = ($_GET['id']);
+    
+    // Obtém os dados do post do banco de dados usando o ID
+    $post = App::get('database')->selectById('posts', $idPost);
+    
+    // Verifica se o post foi encontrado
+    if (!$post) {
+        die('Post não encontrado');
+    }
+
+    // Define os dados a serem passados para a view
+    $data = [
+        'post' => $post,
+    ];
+
+    // Chama a view e passa os dados
+    return view("site/postIndividual", $data);
+}
+ 
 
     public function dashboardView()
     {
         return view("admin/dashboard");
     }
-    public function postIndividualCreate($postId)
-    {
-    // Use o QueryBuilder para obter os dados do post específico do banco de dados
-    $post = App::get('database')->selectById('posts', $postId);
-    // Verifique se o post foi encontrado
-    if (!$post) {
-        die('Post não encontrado');
-    }
-
-    // Agora, você precisa enviar esses dados para a sua view (página HTML)
-    $data = [
-        'post' => $post,
-    ];
-
-    // Use a função view para incluir o HTML da página e passe os dados
-    return view("site/postIndividual/", $data);
-}
-
 
 }
     
