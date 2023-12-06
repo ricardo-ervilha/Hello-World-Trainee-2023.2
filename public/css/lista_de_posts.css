@@ -28,6 +28,14 @@ h4 {
     margin-bottom: 5%;
     border: solid 0.5px rgba(0, 0, 0, 0.3);
     overflow: hidden;
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+}
+
+.flex-container>div:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 .text-area {

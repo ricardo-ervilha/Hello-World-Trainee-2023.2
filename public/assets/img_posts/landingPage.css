@@ -133,6 +133,13 @@ html, body{
     display: inline-block;
     margin-bottom: 3%;
     vertical-align: top;
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+}
+
+.post-left-1:hover{
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 .post-right {
