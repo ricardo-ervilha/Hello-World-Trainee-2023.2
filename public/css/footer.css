@@ -95,7 +95,7 @@ footer {
     color: black;
 }
 
-hr {
+.divisoria {
     display: none;
 }
 
@@ -203,7 +203,7 @@ hr {
         font-size: 14px;
     }
 
-    hr {
+    .divisoria {
         display: block;
         width: 90%;
         height: 2px;
@@ -212,6 +212,7 @@ hr {
         grid-area: quatro;
         background-color: black;
         border: none;
+        margin-left: 5%;
     }
 
     .redes_sociais {
