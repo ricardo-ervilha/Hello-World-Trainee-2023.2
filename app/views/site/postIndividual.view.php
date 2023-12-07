@@ -8,14 +8,11 @@
     <script src="../../../public/js/postIndividual.js"></script>
 </head>
 <body>
-
+<div class="nav">
     <?php require('./app/views/site/navbar.html')?>
-
+</div>
     <div class="conteudo">
-        <!--Imagens-->
-        <img src="../../../public/assets//Ellipse1.png" class="overlay-image">
-        <img src="../../../public/assets//marcaDagua.png" class="marcaDagua">
-        
+        <!--Imagens-->        
         <div class="card-container grid-template-columns">
             
             <div class="central">
@@ -26,13 +23,13 @@
                 
                 <div class="main-content">
                     <!-- Exibe o conteúdo antes da imagem -->
-                    <p><?= $contentBeforeImage ?></p>
+                    <p class="paragraph"><?= $contentBeforeImage ?></p>
 
                     <!-- Use o caminho real da imagem do post que é passado para a view -->
                     <img src="<?= $post['image'] ?>" class="icone">
 
                     <!-- Exibe o conteúdo após a imagem -->
-                    <p><?= $contentAfterImage ?></p>
+                    <p class="paragraph"><?= $contentAfterImage ?></p>
                     
                 </div>
 
@@ -45,8 +42,6 @@
             </div>
         </div>
     </div>
-
-    <?php require('./app/views/site/footer.html')?>
 
 </body>
 </html>
