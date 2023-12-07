@@ -65,6 +65,11 @@
                 </a>
             </div>
         <?php endforeach; ?>
+
+        
+    </div>
+    <div class="pagination">
+        <?php require './app/views/includes/pagination.php'?>
     </div>
 </body>
 

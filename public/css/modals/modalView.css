@@ -19,10 +19,11 @@
     left: 50%;
     transform: translate(-50%, -50%);
 
-    width: 600px;
-    min-width: min-content; 
+    width: 80vw;
+    max-width: 400px;
+    min-width: min-content;
 
-    max-height: max-content;
+    max-height: 70vh;
     min-height: min-content;
     
     border-radius: 15px;
@@ -50,7 +51,7 @@
 
 /* ------------------------------------CABEÇALHO--------------------------- */
 .modal-head{
-    text-align: left;
+    text-align: center;
     border-bottom: solid 1px;
 }
 .modal-head h1{
@@ -62,7 +63,7 @@
 .content-body{
     width: 100%;
     text-align: left;    
-    display: grid;
+
 }
 .content-body h2{
     font-size: 80%;
@@ -100,12 +101,12 @@
 @media(max-height:900px){
 
   
-    .content-body{
+    /* .content-body{
         height: 40vh;
-        display: grid;
+
     }
 
     .modal-head{
         text-align: center;
-    }
+    } */
 }

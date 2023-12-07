@@ -1,26 +1,23 @@
 body{
     color: rgb(255, 255, 255);
     font-family: 'Roboto', sans-serif;
-    font-size:24px;
-    font-weight: 400;
     display: flex;
     background-color: rgba(166, 198, 226,0.5);
-    min-width: min-content;
-    min-height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
  /* ----- Fundo da lista ------ */
 .container {
     width: 100%;
     height: auto;
-    margin: 0;
     padding: 20px;
 }
 
 
 .h1-list-users{
     font-size:200%;
-    text-shadow: 5px 5px 2px rgba(0,0,0,0.8);
+    text-shadow: 4px 4px 2px rgba(0,0,0,0.8);
     color: white;
     padding: 15px;
     text-align: center;
@@ -28,6 +25,7 @@ body{
     border-radius: 5px;
     border: 1px solid white;
     margin-bottom: 0;
+    overflow: hidden;
 }
 
 /* ------------ div do Botão "Novo Usuário" ----------*/
@@ -75,8 +73,11 @@ th{
     color: white;
 }
 
+
 /* ---------------Conteúdo------------ */
 td{
+
+    font-size: 120%;
     padding: 10px;
     text-align: center;
     color: black;
@@ -85,6 +86,11 @@ td{
 }
 
 /* --------------Ícones Ações-------------- */
+
+.btn-acoes{
+    min-width: max-content;
+}
+
 .icones{
     width: 25px;
     height: 25px;
@@ -109,6 +115,25 @@ button{
   }
 
 /* ------------------------------------RESPONSIVIDADE--------------------------- */
+@media (max-width: 480px){
+    .container {
+        width: 60vw;
+        overflow-x: auto;
+    }
+
+    .tabela thead th{
+        display: none;
+        flex-direction: column;
+        min-width: max-content;
+    }
+    .tabela tbody td{
+        display: flex;
+        flex-direction: column;
+    }
+    .tabela tbody{
+        height: min-content;
+        border: 3px solid #6495ED
+    }
 
 
-
+}

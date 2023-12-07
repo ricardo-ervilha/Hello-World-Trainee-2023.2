@@ -7,7 +7,8 @@
         </div>
 
         <div class="modal-newuser-content-body">
-            <div class="name" id="name">
+
+            <div class="input-name" id="name">
                 <h2>Nome: </h2>
                 <input type="text" placeholder="Primeiro nome" name="name">
                 <input type="text" placeholder="Sobrenome" name="sobrenome">

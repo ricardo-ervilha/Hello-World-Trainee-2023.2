@@ -18,34 +18,36 @@
     
 
     <div class="tela-login" >
-        <form action="/login" method="POST">
-            <div class=logo>
+        
+
+            <div class="logo" id="logo">
                 <img src="../../../public/assets/logo_hello_world.png" alt="Logo Hello World">
             </div>
 
-            <div class="div_login">
-                <div class="text-login">
+            <div class="div_login" >
+            <form action="/login" method="POST">
+                <div class="text-login" id="titulo_login">
                     <h1 >Login</h1>
                 </div>
 
-                <div class="campo-email">
+                <div class="campo-email" id="campo-email">
                     <span class=><img src="../../../public/assets/icon-user-white (2).png" alt="Ícone de login"></span>
                     <input type="email" name="email" required>
                 </div>
 
-                <div class="campo-senha">
+                <div class="campo-senha" id="campo-senha" id="campo-senha">
                     <img src="../../../public/assets/icon-key-white.png" alt="Ícone de senha">
                     <input type="password" name="password" required>
                 </div>
 
-                <div class="msg_erro_login">
+                <div class="msg_erro_login" id="msg_erro">
                     <?php if(isset($_SESSION['erro_login'])): ?> 
                         <p><?= $_SESSION['erro_login']?><p>
                         <?php unset($_SESSION['erro_login']) ?>
                     <?php endif ?>  
                 </div>
 
-                <div class="msg_erro_rota">
+                <div class="msg_erro_rota" id="msg_erro">
                     <?php if(isset($_SESSION['erro_rota_admin'])): ?> 
                         <?= $_SESSION['erro_rota_admin']?>
                         <?php unset($_SESSION['erro_rota_admin']) ?>
@@ -55,9 +57,10 @@
                 <div class="button-entrar">
                     <button type="submit" >Entrar</a></button>
                 </div>
-                
+                </form>
             </div>
-        </form>
+
+       
     </div>
     
 

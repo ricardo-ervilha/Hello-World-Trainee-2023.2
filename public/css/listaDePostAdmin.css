@@ -11,6 +11,7 @@
 }
 
 h1 {
+    overflow: hidden;
     color: white;
     padding: 15px;
     text-align: center;

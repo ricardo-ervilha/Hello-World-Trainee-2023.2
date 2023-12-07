@@ -1,3 +1,7 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+}
 .modal{
     display: none;
     position: fixed;
@@ -22,7 +26,8 @@
     width: 70vw;
     min-width: min-content;
 
-    height: 85vh;
+    height: 80vh;
+    max-height: max-content;
     min-height: min-content;
     
     border-radius: 15px;
@@ -111,7 +116,9 @@
     font-family: 'Roboto', sans-serif;
 
     width: 100%;
-    height: 400px;
+    height: 55vh;
+    max-height: 600px ;
+    min-height: 300px;
 
     margin-top: 5px;
     margin-bottom: 20px;
@@ -189,4 +196,11 @@
     width: auto;
     height: auto;
     max-width: 100%;
+}
+
+@media(max-width: 500px){
+    .div-conteudo textarea{
+        height: 300px ;
+
+     }
 }

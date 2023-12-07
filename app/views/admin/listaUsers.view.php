@@ -45,8 +45,8 @@ include('protect.php');
 					<?php foreach ($users as $function) : ?>
 
 					<tbody> <tr> <td><?=$function->id?></td> <td><?=$function->name?></td> <td><?=$function->email?></td>
-					
-					<?php require ('./app/views/admin/icons/icons-users.php'); ?>
+				
+						<?php require ('./app/views/admin/icons/icons-users.php'); ?>
 
 					</tr>
 

@@ -7,7 +7,7 @@
         </a>
       </li>
 
-      <?php for ($page_number=1; $page_number < $total_pages; $page_number++) : ?>
+      <?php for ($page_number=1; $page_number <= $total_pages; $page_number++) : ?>
           <li class="page-item <?= $page_number == $page ? "active" : "" ?>">
               <a href="?pagina=<?= $page_number ?>" class="page-link" ><?= $page_number ?></a>
           </li>
