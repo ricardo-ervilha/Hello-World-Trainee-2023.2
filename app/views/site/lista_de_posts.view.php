@@ -43,7 +43,7 @@
     <h3>Posts Recentes</h3>
     <h1>Hello World</h1>
     <!-- Barra de pesquisa-->
-    <div class="row">
+    <div class="roww">
         <div class="col-md-8 offset-md-2">
             <form action="">
                 <div class="input-group">
