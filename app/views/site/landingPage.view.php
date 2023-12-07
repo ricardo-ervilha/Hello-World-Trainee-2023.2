@@ -61,8 +61,8 @@
             </div>
         </div>
     </div>
-
+<div class="rodape">
     <?php require('./app/views/site/footer.html')?>
-
+</div>
 </body>
 </html>
