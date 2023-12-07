@@ -236,7 +236,7 @@ input::placeholder{
 @media(max-width: 700px){
     .tela-login{
         width: 90vw;
-        height: 90vh;
+        max-height: max-content;
     }
 }
 
