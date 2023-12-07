@@ -73,8 +73,11 @@
         </div>
 
 </div>
+<div class="pagination">
+        <?php require './app/views/includes/pagination.php'?>
+    </div>
 
-    <?php require('./app/views/site/footer.html')?>
+<?php require('./app/views/site/footer.html')?>
 
 </body>
 
