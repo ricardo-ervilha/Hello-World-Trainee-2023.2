@@ -35,7 +35,12 @@
 </head>
 
 <body>
-    <h4>Posts Recentes</h4>
+
+    <?php require('./app/views/site/navbar.html')?>
+
+<div class="unificacao">
+
+    <h3>Posts Recentes</h3>
     <h1>Hello World</h1>
     <!-- Barra de pesquisa-->
     <div class="row">
@@ -71,6 +76,7 @@
     <div class="pagination">
         <?php require './app/views/includes/pagination.php'?>
     </div>
+
 </body>
 
 </html>
