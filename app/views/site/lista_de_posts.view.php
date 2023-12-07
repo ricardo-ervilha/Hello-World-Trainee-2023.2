@@ -43,7 +43,7 @@
     <h3>Posts Recentes</h3>
     <h1>Hello World</h1>
     <!-- Barra de pesquisa-->
-    <div class="row">
+    <div class="roww">
         <div class="col-md-8 offset-md-2">
             <form action="">
                 <div class="input-group">
@@ -58,24 +58,26 @@
         </div>
     </div>
 
-    <div class="flex-container">
-        <?php foreach ($posts as $function) : ?>
-            <div>
-                <a href="/postIndividual?id=<?= $function->id ?>">
-                    <img height="50%" src="<?= $function->image ?>">
-                    <div class="text-area">
-                        <h2><?= $function->title ?></h2>
-                        <p><?= $function->content ?></p>
-                    </div>
-                </a>
-            </div>
-        <?php endforeach; ?>
+        <div class="flex-container">
+            <?php foreach ($posts as $function) : ?>
+                <div>
+                    <a href="/postIndividual?id=<?= $function->id ?>">
+                        <img height="50%" src="<?= $function->image ?>">
+                        <div class="text-area">
+                            <h2><?= $function->title ?></h2>
+                            <p><?= $function->content ?></p>
+                        </div>
+                    </a>
+                </div>
+            <?php endforeach; ?>
+        </div>
 
-        
-    </div>
-    <div class="pagination">
+</div>
+<div class="pagination">
         <?php require './app/views/includes/pagination.php'?>
     </div>
+
+<?php require('./app/views/site/footer.html')?>
 
 </body>
 

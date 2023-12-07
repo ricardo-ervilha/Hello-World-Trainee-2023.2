@@ -25,7 +25,7 @@ body {
     justify-content: space-between;
     overflow-x: hidden;
     position: fixed;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 4px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
 .top {

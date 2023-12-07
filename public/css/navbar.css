@@ -9,6 +9,7 @@
     padding: 0;
     font-size: 0;
     font-family: 'Roboto', sans-serif; font-size: 18px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .navbarr {
@@ -118,7 +119,11 @@
     
     .navigation .posts{
         padding-right: 21%;
-    }  
+    }
+    
+    .navigation ul {
+        display: block;
+    }
 } 
 
 
